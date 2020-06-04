@@ -1,0 +1,29 @@
+{
+  "name": "amine",
+  "version": "0.0.1",
+  "description": "Simple CSS framework",
+  "main": "source/amine.scss",
+  "scripts": {
+    "sass-compile": "npm run sass-compile-expanded && npm run sass-compile-compressed",
+    "sass-compile-expanded": "node-sass --output-style expanded source/amine.scss output/amine.css",
+    "sass-compile-compressed": "node-sass --output-style compressed source/amine.scss output/amine.min.css",
+    "sass-watch": "node-sass --watch source/amine.scss output/amine.watch.css --output-style expanded"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icmx/amine.git"
+  },
+  "keywords": [
+    "css",
+    "css-framework"
+  ],
+  "author": "icmx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icmx/amine/issues"
+  },
+  "homepage": "https://github.com/icmx/amine",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
