@@ -1,0 +1,191 @@
+.am-table {
+  border-collapse: collapse;
+  width: 100%;
+
+  th {
+    text-align: left;
+    font-weight: 600;
+  }
+
+  // td {
+  //   // well, no styles for this time
+  // }
+
+  thead {
+    tr {
+      border-bottom: solid 1px lighten($am-color-black, 60%);
+    }
+  }
+
+  tbody {
+    tr {
+      border-top: solid 1px lighten($am-color-black, 80%);
+    }
+
+    tr:first-child {
+      border-top: 0;
+    }
+  }
+
+  tfoot {
+    tr {
+      border-top: solid 1px lighten($am-color-black, 60%);
+    }
+  }
+
+  &--type-comfy {
+    th {
+      font-size: 10pt;
+      padding: 8px 12px;
+    }
+
+    td {
+      font-size: 11pt;
+      padding: 8px 12px;
+    }
+  }
+
+  &--type-compact {
+    th {
+      font-size: 10pt;
+      padding: 8px 12px;
+    }
+
+    td {
+      font-size: 11pt;
+      padding: 8px 12px;
+    }
+
+    th,
+    td {
+      padding: 4px 4px;
+      font-size: 11pt;
+
+      border-left: solid 1px lighten($am-color-black, 60%);
+    }
+
+    th:first-child,
+    td:first-child {
+      border-left: none;
+    }
+  }
+
+  &--interactive {
+    tbody tr {
+      transition: background-color 0.16s;
+      cursor: pointer;
+    }
+
+    tbody tr:hover {
+      background-color: lighten($am-color-black, 85%);
+    }
+
+    tbody tr:active {
+      background-color: lighten($am-color-black, 80%);
+    }
+  }
+
+  $_colors: (
+    primary: $am-color-primary,
+    neutral: $am-color-neutral,
+    success: $am-color-success,
+    warning: $am-color-warning,
+    failure: $am-color-failure,
+  );
+
+  @each $key, $value in $_colors {
+    &--mark-#{$key} {
+      background-color: mix($value, $am-color-white, 20%);
+    }
+
+    &--interactive &--mark-#{$key} {
+      &:hover {
+        background-color: mix($value, $am-color-white, 25%);
+      }
+
+      &:active {
+        background-color: mix($value, $am-color-white, 30%);
+      }
+    }
+
+    &--selection-#{$key} {
+      border-color: mix($value, $am-color-white, 40%) !important;
+    }
+  }
+
+  &--selection {
+    $_selections: (t, top, null, null, null), (r, null, right, null, null),
+      (tr, top, right, null, null), (b, null, null, bottom, null),
+      (tb, top, null, bottom, null), (rb, null, right, bottom, null),
+      (trb, top, right, bottom, null), (l, null, null, null, left),
+      (tl, top, null, null, left), (rl, null, right, null, left),
+      (trl, top, right, null, left), (bl, null, null, bottom, left),
+      (tbl, top, null, bottom, left), (rbl, null, right, bottom, left),
+      (trbl, top, right, bottom, left), (a, top, right, bottom, left);
+
+    @mixin _selection($top: null, $right: null, $bottom: null, $left: null) {
+      @if ($top) {
+        border-top-width: 3px !important;
+        border-top-style: solid;
+      }
+
+      @if ($right) {
+        border-right-width: 3px !important;
+        border-right-style: solid;
+      }
+
+      @if ($bottom) {
+        border-bottom-width: 3px !important;
+        border-bottom-style: solid;
+      }
+
+      @if ($left) {
+        border-left-width: 3px !important;
+        border-left-style: solid;
+      }
+    }
+
+    @each $item in $_selections {
+      &-#{nth($item, 1)} {
+        @include _selection(
+          nth($item, 2),
+          nth($item, 3),
+          nth($item, 4),
+          nth($item, 5)
+        );
+      }
+    }
+  }
+
+  &--align {
+    $_aligns: (a, middle, center), (t, top, null), (tl, top, left),
+      (tc, top, center), (tr, top, right), (m, middle, null), (ml, middle, left),
+      (mc, middle, center), (mr, middle, right), (b, bottom, null),
+      (bl, bottom, left), (bc, bottom, center), (br, bottom, right),
+      (l, null, left), (c, null, left), (r, null, left);
+
+    @mixin _align($x: null, $y: null) {
+      @if ($x) {
+        text-align: $x;
+      }
+
+      @if ($y) {
+        vertical-align: $y;
+      }
+    }
+
+    @each $item in $_aligns {
+      &-#{nth($item, 1)} {
+        @include _align(nth($item, 3), nth($item, 2));
+      }
+    }
+  }
+
+  &--nowrap {
+    white-space: nowrap;
+  }
+
+  &--thin {
+    width: 1%;
+  }
+}
