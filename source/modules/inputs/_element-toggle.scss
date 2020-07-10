@@ -1,0 +1,112 @@
+%__shared-toggle-shaping {
+  @include _square(32px);
+
+  -moz-appearance: none;
+  appearance: none;
+
+  cursor: pointer;
+
+  &::before {
+    content: ' ';
+    display: block;
+
+    width: 100%;
+    height: 18px;
+
+    margin-top: 7px;
+    margin-left: 0px;
+
+    border-radius: 1000px;
+  }
+
+  &::after {
+    content: ' ';
+    display: block;
+
+    @include _square(12px);
+
+    margin-top: -15px;
+    margin-left: 3px;
+
+    border-radius: 50%;
+  }
+
+  &:checked {
+    &::after {
+      margin-left: calc(100% - 15px);
+    }
+  }
+}
+
+%__shared-toggle-coloring {
+  & {
+    &::before {
+      background-color: lighten($am-color-black, 80%);
+    }
+
+    &::after {
+      background-color: lighten($am-color-black, 95%);
+    }
+
+    &:hover::before {
+      background-color: lighten($am-color-black, 60%);
+    }
+
+    &:focus::before {
+      box-shadow: __shared-input-box-shadow($am-color-primary);
+    }
+  }
+
+  &:checked {
+    &::before {
+      border-color: $am-color-primary;
+      background-color: $am-color-primary;
+    }
+
+    &::after {
+      background-color: lighten($am-color-black, 95%);
+    }
+
+    &:hover::before {
+      background-color: darken($am-color-primary, 15%);
+    }
+  }
+}
+
+%__shared-toggle-disableable {
+  &:disabled {
+    & {
+      cursor: not-allowed;
+
+      &::before {
+        background-color: transparentize(lighten($am-color-black, 80%), 0.5);
+      }
+    }
+
+    &:checked {
+      &::before {
+        background-color: transparentize($am-color-primary, 0.5);
+      }
+    }
+  }
+}
+
+%__shared-toggle-transitions {
+  & {
+    &::before {
+      transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+    }
+
+    &::after {
+      transition: background-color 0.15s, border-color 0.15s, margin-left 0.15s;
+    }
+  }
+}
+
+input[type='checkbox'].am-toggle {
+  @extend %__shared;
+  @extend %__shared-toggle-shaping;
+  @extend %__shared-toggle-coloring;
+  @extend %__shared-toggle-disableable;
+  @extend %__shared-toggle-transitions;
+}

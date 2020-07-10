@@ -1,0 +1,27 @@
+$__shared-input-value-color: 0;
+$__shared-input-placeholder-color: 0;
+$__shared-input-border-color: 0;
+
+@function __shared-input-box-shadow($color) {
+  @return 0px 0px 0px 3px transparentize($color, 0.65);
+}
+
+@mixin _square($size) {
+  min-width: $size;
+  min-height: $size;
+
+  width: $size;
+  height: $size;
+
+  max-width: $size;
+  max-height: $size;
+}
+
+%__shared {
+  outline: none;
+  box-shadow: none;
+
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+}

@@ -1,0 +1,92 @@
+%__shared-radio-shaping {
+  @include _square(32px);
+
+  -moz-appearance: none;
+  appearance: none;
+
+  cursor: pointer;
+
+  &::before {
+    content: ' ';
+    display: block;
+
+    @include _square(16px);
+
+    margin-top: 7px;
+    margin-left: 7px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10000px;
+  }
+}
+
+%__shared-radio-coloring {
+  & {
+    &::before {
+      background-color: lighten($am-color-black, 95%);
+      background-size: 0px;
+      border-color: lighten($am-color-black, 80%);
+    }
+
+    &:hover::before {
+      border-color: lighten($am-color-black, 60%);
+    }
+
+    &:focus::before {
+      box-shadow: __shared-input-box-shadow($am-color-primary);
+    }
+  }
+
+  &:checked {
+    &::before {
+      border-color: transparent;
+      background-color: $am-color-primary;
+
+      background-image: url('../assets/icon-inputs-radio.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 8px;
+    }
+
+    &:hover::before {
+      background-color: darken($am-color-primary, 15%);
+    }
+  }
+}
+
+%__shared-radio-disableable {
+  &:disabled {
+    cursor: not-allowed;
+
+    & {
+      &::before {
+        border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+      }
+    }
+
+    &:checked {
+      &::before {
+        border-color: transparent;
+        background-color: transparentize($am-color-primary, 0.5);
+      }
+    }
+  }
+}
+
+%__shared-radio-transitions {
+  & {
+    &::before {
+      transition: background-color 0.15s, background-size 0.15s,
+        border-color 0.15s, box-shadow 0.15s;
+    }
+  }
+}
+
+input[type='radio'].am-radio {
+  @extend %__shared;
+  @extend %__shared-radio-shaping;
+  @extend %__shared-radio-coloring;
+  @extend %__shared-radio-disableable;
+  @extend %__shared-radio-transitions;
+}
