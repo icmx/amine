@@ -1,0 +1,130 @@
+%__shared-shaping {
+  outline: none;
+  border: none;
+  box-shadow: none;
+
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  padding: 6px 12px;
+
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+
+  font-family: 'Segoe UI';
+  font-size: 11pt;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s,
+    box-shadow 0.15s;
+}
+
+@mixin __shared-coloring($color) {
+  &:focus {
+    box-shadow: 0px 0px 0px 3px transparentize($color, 0.65);
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.am-button--main {
+    color: #ffffff;
+    background-color: $color;
+    border-color: transparent;
+
+    &:hover {
+      background-color: darken($color, 15%);
+    }
+
+    &:active {
+      background-color: lighten($color, 15%);
+    }
+
+    &:disabled {
+      background-color: transparentize($color, 0.5);
+    }
+  }
+
+  &.am-button--misc {
+    color: $color;
+    background-color: transparent;
+    border-color: $color;
+
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 15%);
+      border-color: transparent;
+    }
+
+    &:active {
+      background-color: lighten($color, 15%);
+    }
+
+    &:disabled {
+      color: transparentize($color, 0.5);
+      background-color: transparent;
+      border-color: transparentize($color, 0.5);
+    }
+  }
+
+  &.am-button--text {
+    color: $color;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 15%);
+    }
+
+    &:active {
+      background-color: lighten($color, 15%);
+    }
+
+    &:disabled {
+      color: transparentize($color, 0.5);
+      background-color: transparent;
+    }
+  }
+}
+
+@mixin __shared {
+  @extend %__shared-shaping;
+
+  &.am-button--primary {
+    @include __shared-coloring($am-color-primary);
+  }
+
+  &.am-button--success {
+    @include __shared-coloring($am-color-success);
+  }
+
+  &.am-button--warning {
+    @include __shared-coloring($am-color-warning);
+  }
+
+  &.am-button--failure {
+    @include __shared-coloring($am-color-failure);
+  }
+
+  &.am-button--block {
+    display: block;
+    width: 100%;
+  }
+}
+
+button.am-button {
+  @include __shared;
+}
+
+input[type='button'] {
+  @include __shared;
+}
+
+input[type='submit'] {
+  @include __shared;
+}
