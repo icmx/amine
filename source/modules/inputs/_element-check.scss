@@ -1,0 +1,101 @@
+%__shared-check-shaping {
+  min-height: 32px;
+  min-width: 18px;
+
+  width: 18px;
+
+  // TODO: Remove when `appearance` will be supported
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  cursor: pointer;
+
+  &::before {
+    content: ' ';
+    display: block;
+
+    width: 16px;
+    height: 16px;
+
+    margin-top: 7px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4px;
+  }
+}
+
+%__shared-check-coloring {
+  & {
+    &::before {
+      background-color: lighten($am-color-black, 100%);
+      background-size: 0px;
+      border-color: lighten($am-color-black, 80%);
+    }
+
+    &:hover::before {
+      border-color: lighten($am-color-black, 60%);
+    }
+
+    &:focus::before {
+      box-shadow: __shared-input-box-shadow($am-color-primary);
+    }
+  }
+
+  &:checked {
+    &::before {
+      border-color: transparent;
+      background-color: $am-color-primary;
+
+      background-image: url('../assets/icon-inputs-check.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 10px;
+    }
+
+    &:hover::before {
+      background-color: darken($am-color-primary, 15%);
+    }
+  }
+}
+
+%__shared-check-disableable {
+  &:disabled {
+    cursor: not-allowed;
+
+    & {
+      &::before {
+        border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+      }
+    }
+
+    &:checked {
+      &::before {
+        border-color: transparent;
+        background-color: transparentize($am-color-primary, 0.5);
+      }
+    }
+  }
+}
+
+%__shared-check-transitions {
+  & {
+    &::before {
+      transition: background-color 0.15s, background-size 0.15s,
+        border-color 0.15s, box-shadow 0.15s;
+    }
+  }
+}
+
+@mixin __shared-check() {
+  @extend %__shared;
+  @extend %__shared-check-shaping;
+  @extend %__shared-check-coloring;
+  @extend %__shared-check-disableable;
+  @extend %__shared-check-transitions;
+}
+
+input[type='checkbox'].am-check {
+  @include __shared-check();
+}
