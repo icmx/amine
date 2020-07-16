@@ -392,16 +392,15 @@ input.am-check[type='checkbox'], input.am-field[type='text'], input.am-field[typ
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
+  margin: 0;
 }
 
 input.am-check[type='checkbox'] {
-  min-width: 32px;
   min-height: 32px;
-  width: 32px;
-  height: 32px;
-  max-width: 32px;
-  max-height: 32px;
+  min-width: 18px;
+  width: 18px;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
 }
@@ -409,21 +408,16 @@ input.am-check[type='checkbox'] {
 input.am-check[type='checkbox']::before {
   content: ' ';
   display: block;
-  min-width: 16px;
-  min-height: 16px;
   width: 16px;
   height: 16px;
-  max-width: 16px;
-  max-height: 16px;
   margin-top: 7px;
-  margin-left: 7px;
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
 }
 
 input.am-check[type='checkbox']::before {
-  background-color: #f2f2f2;
+  background-color: white;
   background-size: 0px;
   border-color: #cccccc;
 }
@@ -467,8 +461,8 @@ input.am-check[type='checkbox']::before {
 }
 
 input.am-field[type='text'], input.am-field[type='search'], input.am-field[type='email'], input.am-field[type='tel'], input.am-field[type='url'], input.am-field[type='password'], input.am-field[type='number'], input.am-field[type='time'], input.am-field[type='date'], input.am-field[type='file'], select.am-field, textarea.am-field {
+  min-width: 80px;
   min-height: 34px;
-  height: 34px;
   padding: 6px 8px;
   font-family: 'Segoe UI', sans-serif;
   font-size: 11pt;
@@ -484,7 +478,8 @@ input.am-field[type='text']::placeholder, input.am-field[type='search']::placeho
 
 input.am-field[type='text'], input.am-field[type='search'], input.am-field[type='email'], input.am-field[type='tel'], input.am-field[type='url'], input.am-field[type='password'], input.am-field[type='number'], input.am-field[type='time'], input.am-field[type='date'], input.am-field[type='file'], select.am-field, textarea.am-field {
   color: #1a1a1a;
-  background-color: #f2f2f2;
+  background-color: white;
+  background-color: #fff;
   border-color: #cccccc;
 }
 
@@ -636,13 +631,11 @@ textarea.am-field {
 }
 
 input.am-radio[type='radio'] {
-  min-width: 32px;
   min-height: 32px;
-  width: 32px;
-  height: 32px;
-  max-width: 32px;
-  max-height: 32px;
+  min-width: 18px;
+  width: 18px;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
 }
@@ -650,21 +643,16 @@ input.am-radio[type='radio'] {
 input.am-radio[type='radio']::before {
   content: ' ';
   display: block;
-  min-width: 16px;
-  min-height: 16px;
   width: 16px;
   height: 16px;
-  max-width: 16px;
-  max-height: 16px;
   margin-top: 7px;
-  margin-left: 7px;
   border-style: solid;
   border-width: 1px;
   border-radius: 10000px;
 }
 
 input.am-radio[type='radio']::before {
-  background-color: #f2f2f2;
+  background-color: white;
   background-size: 0px;
   border-color: #cccccc;
 }
@@ -708,13 +696,11 @@ input.am-radio[type='radio']::before {
 }
 
 input.am-toggle[type='checkbox'] {
-  min-width: 32px;
   min-height: 32px;
-  width: 32px;
-  height: 32px;
-  max-width: 32px;
-  max-height: 32px;
+  min-width: 34px;
+  width: 34px;
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
 }
@@ -732,12 +718,8 @@ input.am-toggle[type='checkbox']::before {
 input.am-toggle[type='checkbox']::after {
   content: ' ';
   display: block;
-  min-width: 12px;
-  min-height: 12px;
   width: 12px;
   height: 12px;
-  max-width: 12px;
-  max-height: 12px;
   margin-top: -15px;
   margin-left: 3px;
   border-radius: 50%;
@@ -801,22 +783,29 @@ hr.am-hr {
   margin: 24px 0;
   width: 100%;
   height: 1px;
-  background-color: #999999;
+  background-color: #cccccc;
 }
 
 button.am-button, input[type='button'], input[type='submit'] {
   outline: none;
-  border: none;
   box-shadow: none;
+  display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
+  margin: 0;
   padding: 6px 12px;
+  border: none;
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
   font-family: 'Segoe UI';
   font-size: 11pt;
   font-weight: 600;
+  white-space: nowrap;
+  min-width: 80px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
   cursor: pointer;
   transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
@@ -1650,4 +1639,43 @@ input[type='submit'].am-button--failure.am-button--text:disabled {
 input[type='submit'].am-button--block {
   display: block;
   width: 100%;
+}
+
+.am-label {
+  display: inline-block;
+  font-size: 11pt;
+  font-weight: 400;
+  color: #666666;
+}
+
+.am-label__required {
+  font-weight: 900;
+  color: crimson;
+}
+
+.am-label__optional {
+  font-weight: 600;
+  font-style: italic;
+  color: #999999;
+}
+
+.am-tip {
+  font-size: 10pt;
+  font-weight: 600;
+}
+
+.am-tip--neutral {
+  color: #999999;
+}
+
+.am-tip--success {
+  color: forestgreen;
+}
+
+.am-tip--warning {
+  color: orangered;
+}
+
+.am-tip--failure {
+  color: crimson;
 }
