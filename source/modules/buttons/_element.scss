@@ -1,13 +1,16 @@
 %__shared-shaping {
   outline: none;
-  border: none;
   box-shadow: none;
 
+  display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
 
+  margin: 0;
+
   padding: 6px 12px;
 
+  border: none;
   border-radius: 2px;
   border-width: 1px;
   border-style: solid;
@@ -15,6 +18,12 @@
   font-family: 'Segoe UI';
   font-size: 11pt;
   font-weight: 600;
+
+  white-space: nowrap;
+  min-width: 80px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   cursor: pointer;
 

@@ -1,7 +1,8 @@
 %__shared-field-shaping {
   & {
+    min-width: 80px;
     min-height: 34px;
-    height: 34px;
+
     padding: 6px 8px;
 
     font-family: 'Segoe UI', sans-serif;
@@ -21,7 +22,8 @@
 %__shared-field-coloring {
   & {
     color: lighten($am-color-black, 10%);
-    background-color: lighten($am-color-black, 95%);
+    background-color: lighten($am-color-black, 100%);
+    background-color: #fff;
     border-color: lighten($am-color-black, 80%);
 
     &::placeholder {

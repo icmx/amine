@@ -1,7 +1,12 @@
 %__shared-toggle-shaping {
-  @include _square(32px);
+  min-height: 32px;
+  min-width: 34px;
 
+  width: 34px;
+
+  // TODO: Remove when `appearance` will be supported
   -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
 
   cursor: pointer;
@@ -23,7 +28,8 @@
     content: ' ';
     display: block;
 
-    @include _square(12px);
+    width: 12px;
+    height: 12px;
 
     margin-top: -15px;
     margin-left: 3px;
