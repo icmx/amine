@@ -1,0 +1,67 @@
+.am-pair {
+  width: 100%;
+
+  display: inline-flex;
+  vertical-align: middle;
+
+  &__label,
+  &__input {
+    & > .am-tip {
+      margin-top: 6px;
+    }
+  }
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--column > &__label {
+    margin-bottom: 8px;
+  }
+
+  &--column > &__input {
+    & > * {
+      width: 100%;
+    }
+  }
+
+  &--row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &--row > &__label {
+    margin-top: 5px;
+    margin-right: 12px;
+
+    // TODO: This width must be set from outside blocks too
+    min-width: 40%;
+    flex-basis: 40%;
+  }
+
+  &--row > &__input {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    & > textarea.am-field {
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+
+  &--box {
+    flex-direction: row-reverse;
+  }
+
+  &--box > &__input {
+    margin-right: 12px;
+  }
+
+  &--box > &__label {
+    margin-top: 5px;
+
+    flex-grow: 1;
+  }
+}
