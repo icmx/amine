@@ -1,3 +1,5 @@
+@use '../core';
+
 %__shared-shaping {
   outline: none;
   box-shadow: none;
@@ -55,8 +57,8 @@
     }
 
     &:disabled {
-      color: lighten($am-color-black, 60%);
-      background-color: lighten($am-color-black, 80%);
+      color: lighten(core.$am-color-black, 60%);
+      background-color: lighten(core.$am-color-black, 80%);
     }
   }
 
@@ -76,9 +78,9 @@
     }
 
     &:disabled {
-      color: lighten($am-color-black, 60%);
+      color: lighten(core.$am-color-black, 60%);
       background-color: transparent;
-      border-color: lighten($am-color-black, 80%);
+      border-color: lighten(core.$am-color-black, 80%);
     }
   }
 
@@ -97,7 +99,7 @@
     }
 
     &:disabled {
-      color: lighten($am-color-black, 60%);
+      color: lighten(core.$am-color-black, 60%);
       background-color: transparent;
     }
   }
@@ -107,19 +109,19 @@
   @extend %__shared-shaping;
 
   &.am-button--primary {
-    @include __shared-coloring($am-color-primary);
+    @include __shared-coloring(core.$am-color-primary);
   }
 
   &.am-button--success {
-    @include __shared-coloring($am-color-success);
+    @include __shared-coloring(core.$am-color-success);
   }
 
   &.am-button--warning {
-    @include __shared-coloring($am-color-warning);
+    @include __shared-coloring(core.$am-color-warning);
   }
 
   &.am-button--failure {
-    @include __shared-coloring($am-color-failure);
+    @include __shared-coloring(core.$am-color-failure);
   }
 
   &.am-button--block {

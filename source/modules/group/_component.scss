@@ -1,3 +1,5 @@
+@use '../core';
+
 .am-group {
   display: inline-flex;
   vertical-align: middle;
@@ -13,10 +15,10 @@
 
     padding: 6px 8px;
 
-    color: lighten($am-color-black, 40%);
-    background-color: lighten($am-color-black, 90%);
+    color: lighten(core.$am-color-black, 40%);
+    background-color: lighten(core.$am-color-black, 90%);
 
-    border: solid lighten($am-color-black, 80%) 1px;
+    border: solid lighten(core.$am-color-black, 80%) 1px;
     border-right: none;
   }
 
@@ -51,7 +53,7 @@
   }
 
   & > .am-label:first-child {
-    border-left: solid 1px lighten($am-color-black, 80%);
+    border-left: solid 1px lighten(core.$am-color-black, 80%);
   }
 
   & > .am-label:last-child,
@@ -62,7 +64,7 @@
   }
 
   & > .am-label:last-child {
-    border-right: solid 1px lighten($am-color-black, 80%);
+    border-right: solid 1px lighten(core.$am-color-black, 80%);
   }
 
   &--block {

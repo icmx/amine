@@ -1,20 +1,22 @@
+@use '../core';
+
 .am-tip {
   font-size: 10pt;
   font-weight: 600;
 
   &--neutral {
-    color: lighten($am-color-black, 60%);
+    color: lighten(core.$am-color-black, 60%);
   }
 
   &--success {
-    color: $am-color-success;
+    color: core.$am-color-success;
   }
 
   &--warning {
-    color: $am-color-warning;
+    color: core.$am-color-warning;
   }
 
   &--failure {
-    color: $am-color-failure;
+    color: core.$am-color-failure;
   }
 }

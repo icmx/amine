@@ -1,3 +1,5 @@
+@use '../core';
+
 %__shared-field-shaping {
   & {
     min-width: 80px;
@@ -21,59 +23,59 @@
 
 %__shared-field-coloring {
   & {
-    color: lighten($am-color-black, 10%);
-    background-color: lighten($am-color-black, 100%);
+    color: lighten(core.$am-color-black, 10%);
+    background-color: lighten(core.$am-color-black, 100%);
     background-color: #fff;
-    border-color: lighten($am-color-black, 80%);
+    border-color: lighten(core.$am-color-black, 80%);
 
     &::placeholder {
-      color: transparentize(lighten($am-color-black, 10%), 0.7);
+      color: transparentize(lighten(core.$am-color-black, 10%), 0.7);
     }
   }
 
   &:hover {
-    border-color: lighten($am-color-black, 60%);
+    border-color: lighten(core.$am-color-black, 60%);
   }
 
   &:focus {
-    border-color: $am-color-primary;
-    box-shadow: __shared-input-box-shadow($am-color-primary);
+    border-color: core.$am-color-primary;
+    box-shadow: __shared-input-box-shadow(core.$am-color-primary);
 
     &::placeholder {
-      color: transparentize(lighten($am-color-black, 10%), 0.8);
+      color: transparentize(lighten(core.$am-color-black, 10%), 0.8);
     }
   }
 
   &:focus:hover {
-    border-color: darken($am-color-primary, 15%);
+    border-color: darken(core.$am-color-primary, 15%);
   }
 }
 
 %__shared-field-validable {
   & {
-    border-color: $am-color-success;
+    border-color: core.$am-color-success;
   }
 
   &:hover {
-    border-color: darken($am-color-success, 15%);
+    border-color: darken(core.$am-color-success, 15%);
   }
 
   &:focus {
-    box-shadow: __shared-input-box-shadow($am-color-success);
+    box-shadow: __shared-input-box-shadow(core.$am-color-success);
   }
 }
 
 %__shared-field-invalidable {
   & {
-    border-color: $am-color-failure;
+    border-color: core.$am-color-failure;
   }
 
   &:hover {
-    border-color: darken($am-color-failure, 15%);
+    border-color: darken(core.$am-color-failure, 15%);
   }
 
   &:focus {
-    box-shadow: __shared-input-box-shadow($am-color-failure);
+    box-shadow: __shared-input-box-shadow(core.$am-color-failure);
   }
 }
 
@@ -81,10 +83,10 @@
   &:disabled {
     cursor: not-allowed;
 
-    color: transparentize(lighten($am-color-black, 10%), 0.5);
-    background-color: transparentize(lighten($am-color-black, 75%), 0.5);
+    color: transparentize(lighten(core.$am-color-black, 10%), 0.5);
+    background-color: transparentize(lighten(core.$am-color-black, 75%), 0.5);
 
-    border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+    border-color: transparentize(lighten(core.$am-color-black, 80%), 0.5);
   }
 }
 

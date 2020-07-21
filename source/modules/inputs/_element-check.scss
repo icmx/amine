@@ -1,3 +1,5 @@
+@use '../core';
+
 %__shared-check-shaping {
   min-height: 32px;
   min-width: 18px;
@@ -29,24 +31,24 @@
 %__shared-check-coloring {
   & {
     &::before {
-      background-color: lighten($am-color-black, 100%);
+      background-color: lighten(core.$am-color-black, 100%);
       background-size: 0px;
-      border-color: lighten($am-color-black, 80%);
+      border-color: lighten(core.$am-color-black, 80%);
     }
 
     &:hover::before {
-      border-color: lighten($am-color-black, 60%);
+      border-color: lighten(core.$am-color-black, 60%);
     }
 
     &:focus::before {
-      box-shadow: __shared-input-box-shadow($am-color-primary);
+      box-shadow: __shared-input-box-shadow(core.$am-color-primary);
     }
   }
 
   &:checked {
     &::before {
       border-color: transparent;
-      background-color: $am-color-primary;
+      background-color: core.$am-color-primary;
 
       background-image: url('../assets/icons/check.svg');
       background-size: 24px;
@@ -55,7 +57,7 @@
     }
 
     &:hover::before {
-      background-color: darken($am-color-primary, 15%);
+      background-color: darken(core.$am-color-primary, 15%);
     }
   }
 }
@@ -66,14 +68,14 @@
 
     & {
       &::before {
-        border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+        border-color: transparentize(lighten(core.$am-color-black, 80%), 0.5);
       }
     }
 
     &:checked {
       &::before {
         border-color: transparent;
-        background-color: transparentize($am-color-primary, 0.5);
+        background-color: transparentize(core.$am-color-primary, 0.5);
       }
     }
   }
