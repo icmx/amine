@@ -11,7 +11,7 @@
 
     border-style: solid;
     border-width: 1px;
-    border-radius: 2px;
+    border-radius: 3px;
   }
 
   &::placeholder {
@@ -136,27 +136,23 @@
   @extend %__shared-field-transitions;
 }
 
-@mixin __shared-field-input-picker($background-image-url) {
+@mixin __shared-field-input-picker($name, $background-image-url) {
   & {
-    padding-right: 0;
     padding-top: 0;
     padding-bottom: 0;
   }
 
-  &::-webkit-calendar-picker-indicator {
-    @include am-debug();
-
-    margin: 0;
+  &::-webkit-#{$name} {
+    margin: 0 -8px 0 0;
     padding: 0;
     height: 30px;
     width: 30px;
 
     background: none;
-
     background-image: url($background-image-url);
     background-repeat: no-repeat;
-    background-position: center right 6px;
-    background-size: 18px;
+    background-position: center right 4px;
+    background-size: 24px;
 
     cursor: pointer;
   }
@@ -168,6 +164,15 @@ input[type='text'].am-field {
 
 input[type='search'].am-field {
   @include __shared-field();
+  @include __shared-field-input-picker(
+    search-cancel-button,
+    '../assets/icons/times.svg'
+  );
+
+  &::-webkit-search-cancel-button {
+    opacity: 1;
+    -webkit-appearance: none;
+  }
 }
 
 input[type='email'].am-field {
@@ -184,10 +189,6 @@ input[type='url'].am-field {
 
 input[type='password'].am-field {
   @include __shared-field();
-
-  & {
-    letter-spacing: 2px;
-  }
 }
 
 input[type='number'].am-field {
@@ -197,14 +198,16 @@ input[type='number'].am-field {
 input[type='time'].am-field {
   @include __shared-field();
   @include __shared-field-input-picker(
-    '../assets/icon-inputs-field-input-time.svg'
+    calendar-picker-indicator,
+    '../assets/icons/clock.svg'
   );
 }
 
 input[type='date'].am-field {
   @include __shared-field();
   @include __shared-field-input-picker(
-    '../assets/icon-inputs-field-input-date.svg'
+    calendar-picker-indicator,
+    '../assets/icons/calendar.svg'
   );
 }
 
@@ -215,30 +218,30 @@ input[type='file'].am-field {
 select.am-field {
   @include __shared-field();
 
-  & {
-    -webkit-appearance: none;
-    -moz-appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 
-    max-width: 100%;
-    padding-right: 30px;
+  max-width: 100%;
+  padding-right: 34px;
 
-    background-image: url('../assets/icon-inputs-field-select.svg');
-    background-repeat: no-repeat;
-    background-position: center right 10px;
-    background-size: 12px;
-  }
+  background-image: url('../assets/icons/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: center right 4px;
+  background-size: 24px;
 }
 
 textarea.am-field {
   @include __shared-field();
 
-  & {
-    display: block;
-    width: 100%;
-    height: 74px;
+  display: block;
 
-    line-height: 145%;
+  width: 100%;
+  height: 74px;
+  line-height: 145%;
 
-    resize: vertical;
-  }
+  resize: vertical;
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+  display: none;
 }

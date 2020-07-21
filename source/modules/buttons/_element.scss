@@ -11,7 +11,7 @@
   padding: 6px 12px;
 
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   border-width: 1px;
   border-style: solid;
 
@@ -25,6 +25,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
+  user-select: none;
   cursor: pointer;
 
   transition: color 0.15s, background-color 0.15s, border-color 0.15s,
@@ -54,7 +55,8 @@
     }
 
     &:disabled {
-      background-color: transparentize($color, 0.5);
+      color: lighten($am-color-black, 60%);
+      background-color: lighten($am-color-black, 80%);
     }
   }
 
@@ -74,9 +76,9 @@
     }
 
     &:disabled {
-      color: transparentize($color, 0.5);
+      color: lighten($am-color-black, 60%);
       background-color: transparent;
-      border-color: transparentize($color, 0.5);
+      border-color: lighten($am-color-black, 80%);
     }
   }
 
@@ -95,7 +97,7 @@
     }
 
     &:disabled {
-      color: transparentize($color, 0.5);
+      color: lighten($am-color-black, 60%);
       background-color: transparent;
     }
   }
