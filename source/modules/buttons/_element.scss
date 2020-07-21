@@ -55,7 +55,8 @@
     }
 
     &:disabled {
-      background-color: transparentize($color, 0.5);
+      color: lighten($am-color-black, 60%);
+      background-color: lighten($am-color-black, 80%);
     }
   }
 
@@ -75,9 +76,9 @@
     }
 
     &:disabled {
-      color: transparentize($color, 0.5);
+      color: lighten($am-color-black, 60%);
       background-color: transparent;
-      border-color: transparentize($color, 0.5);
+      border-color: lighten($am-color-black, 80%);
     }
   }
 
@@ -96,7 +97,7 @@
     }
 
     &:disabled {
-      color: transparentize($color, 0.5);
+      color: lighten($am-color-black, 60%);
       background-color: transparent;
     }
   }

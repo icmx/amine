@@ -48,10 +48,10 @@
       border-color: transparent;
       background-color: $am-color-primary;
 
-      background-image: url('../assets/icon-inputs-radio.svg');
-      background-position: center;
+      background-image: url('../assets/icons/radio.svg');
+      background-size: 24px;
       background-repeat: no-repeat;
-      background-size: 8px;
+      background-position: center;
     }
 
     &:hover::before {
