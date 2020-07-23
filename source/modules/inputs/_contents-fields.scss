@@ -1,85 +1,98 @@
 @use '../core';
 
-%__shared-field-shaping {
+.am-input,
+.am-select,
+.am-textarea {
+  @extend %-shared;
+
   & {
-    min-width: 80px;
-    min-height: 34px;
+    & {
+      min-width: 80px;
+      min-height: 34px;
 
-    padding: 6px 8px;
+      padding: 6px 8px;
 
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 11pt;
-    font-weight: 400;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 11pt;
+      font-weight: 400;
 
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 3px;
-  }
-
-  &::placeholder {
-    opacity: 1;
-  }
-}
-
-%__shared-field-coloring {
-  & {
-    color: lighten(core.$am-color-black, 10%);
-    background-color: lighten(core.$am-color-black, 100%);
-    background-color: #fff;
-    border-color: lighten(core.$am-color-black, 80%);
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 3px;
+    }
 
     &::placeholder {
-      color: transparentize(lighten(core.$am-color-black, 10%), 0.7);
+      opacity: 1;
     }
   }
 
-  &:hover {
-    border-color: lighten(core.$am-color-black, 60%);
-  }
+  & {
+    & {
+      color: lighten(core.$am-color-black, 10%);
+      background-color: lighten(core.$am-color-black, 100%);
+      border-color: lighten(core.$am-color-black, 80%);
 
-  &:focus {
-    border-color: core.$am-color-primary;
-    box-shadow: __shared-input-box-shadow(core.$am-color-primary);
+      &::placeholder {
+        color: transparentize(lighten(core.$am-color-black, 10%), 0.7);
+      }
+    }
 
-    &::placeholder {
-      color: transparentize(lighten(core.$am-color-black, 10%), 0.8);
+    &:hover {
+      border-color: lighten(core.$am-color-black, 60%);
+    }
+
+    &:focus {
+      border-color: core.$am-color-primary;
+      box-shadow: __shared-input-box-shadow(core.$am-color-primary);
+
+      &::placeholder {
+        color: transparentize(lighten(core.$am-color-black, 10%), 0.8);
+      }
+    }
+
+    &:focus:hover {
+      border-color: darken(core.$am-color-primary, 15%);
     }
   }
 
-  &:focus:hover {
-    border-color: darken(core.$am-color-primary, 15%);
-  }
-}
+  &--validable:valid {
+    & {
+      border-color: core.$am-color-success;
+    }
 
-%__shared-field-validable {
-  & {
-    border-color: core.$am-color-success;
-  }
+    &:hover {
+      border-color: darken(core.$am-color-success, 15%);
+    }
 
-  &:hover {
-    border-color: darken(core.$am-color-success, 15%);
-  }
-
-  &:focus {
-    box-shadow: __shared-input-box-shadow(core.$am-color-success);
-  }
-}
-
-%__shared-field-invalidable {
-  & {
-    border-color: core.$am-color-failure;
+    &:focus {
+      box-shadow: __shared-input-box-shadow(core.$am-color-success);
+    }
   }
 
-  &:hover {
-    border-color: darken(core.$am-color-failure, 15%);
+  &--invalidable:invalid {
+    & {
+      border-color: core.$am-color-failure;
+    }
+
+    &:hover {
+      border-color: darken(core.$am-color-failure, 15%);
+    }
+
+    &:focus {
+      box-shadow: __shared-input-box-shadow(core.$am-color-failure);
+    }
   }
 
-  &:focus {
-    box-shadow: __shared-input-box-shadow(core.$am-color-failure);
+  &--ghost {
+    border-color: transparent;
+    background-color: transparent;
   }
-}
 
-%__shared-field-disableable {
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
   &:disabled {
     cursor: not-allowed;
 
@@ -88,23 +101,7 @@
 
     border-color: transparentize(lighten(core.$am-color-black, 80%), 0.5);
   }
-}
 
-%__shared-field-ghost {
-  & {
-    border-color: transparent;
-    background-color: transparent;
-  }
-}
-
-%__shared-field-block {
-  & {
-    display: block;
-    width: 100%;
-  }
-}
-
-%__shared-field-transitions {
   transition: color 0.15s, background-color 0.15s, border-color 0.15s,
     box-shadow 0.15s;
 
@@ -113,113 +110,58 @@
   }
 }
 
-@mixin __shared-field() {
-  @extend %__shared;
-  @extend %__shared-field-shaping;
-  @extend %__shared-field-coloring;
-
-  &--validable:valid {
-    @extend %__shared-field-validable;
-  }
-
-  &--invalidable:invalid {
-    @extend %__shared-field-invalidable;
-  }
-
-  &--ghost {
-    @extend %__shared-field-ghost;
-  }
-
-  &--block {
-    @extend %__shared-field-block;
-  }
-
-  @extend %__shared-field-disableable;
-  @extend %__shared-field-transitions;
-}
-
-@mixin __shared-field-input-picker($name, $background-image-url) {
-  & {
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
-  &::-webkit-#{$name} {
-    margin: 0 -8px 0 0;
-    padding: 0;
-    height: 30px;
-    width: 30px;
-
-    background: none;
-    background-image: url($background-image-url);
-    background-repeat: no-repeat;
-    background-position: center right 4px;
-    background-size: 24px;
-
-    cursor: pointer;
+.am-input[list] {
+  &::-webkit-calendar-picker-indicator {
+    display: none;
   }
 }
 
-input[type='text'].am-field {
-  @include __shared-field();
+.am-input[type='search'],
+.am-input[type='time'],
+.am-input[type='date'] {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-input[type='search'].am-field {
-  @include __shared-field();
-  @include __shared-field-input-picker(
-    search-cancel-button,
-    '../assets/icons/times.svg'
-  );
+.am-input[type='search']::-webkit-search-cancel-button,
+.am-input[type='time']::-webkit-calendar-picker-indicator,
+.am-input[type='date']::-webkit-calendar-picker-indicator {
+  margin: 0 -8px 0 0;
+  padding: 0;
+  height: 30px;
+  width: 30px;
 
+  background: none;
+
+  background-repeat: no-repeat;
+  background-position: center right 4px;
+  background-size: 24px;
+
+  cursor: pointer;
+}
+
+.am-input[type='search'] {
   &::-webkit-search-cancel-button {
-    opacity: 1;
+    background-image: url('../assets/icons/times.svg');
+    
     -webkit-appearance: none;
+    opacity: 1;
   }
 }
 
-input[type='email'].am-field {
-  @include __shared-field();
+.am-input[type='time'] {
+  &::-webkit-calendar-picker-indicator {
+    background-image: url('../assets/icons/clock.svg');
+  }
 }
 
-input[type='tel'].am-field {
-  @include __shared-field();
+.am-input[type='date'] {
+  &::-webkit-calendar-picker-indicator {
+    background-image: url('../assets/icons/calendar.svg');
+  }
 }
 
-input[type='url'].am-field {
-  @include __shared-field();
-}
-
-input[type='password'].am-field {
-  @include __shared-field();
-}
-
-input[type='number'].am-field {
-  @include __shared-field();
-}
-
-input[type='time'].am-field {
-  @include __shared-field();
-  @include __shared-field-input-picker(
-    calendar-picker-indicator,
-    '../assets/icons/clock.svg'
-  );
-}
-
-input[type='date'].am-field {
-  @include __shared-field();
-  @include __shared-field-input-picker(
-    calendar-picker-indicator,
-    '../assets/icons/calendar.svg'
-  );
-}
-
-input[type='file'].am-field {
-  @include __shared-field();
-}
-
-select.am-field {
-  @include __shared-field();
-
+.am-select {
   -webkit-appearance: none;
   -moz-appearance: none;
 
@@ -232,18 +174,13 @@ select.am-field {
   background-size: 24px;
 }
 
-textarea.am-field {
-  @include __shared-field();
-
-  display: block;
-
-  width: 100%;
+.am-textarea {
   height: 74px;
   line-height: 145%;
 
-  resize: vertical;
-}
+  max-width: 100%;
 
-input[list]::-webkit-calendar-picker-indicator {
-  display: none;
+  &--block {
+    resize: vertical;
+  }
 }

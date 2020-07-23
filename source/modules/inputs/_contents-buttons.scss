@@ -1,40 +1,6 @@
 @use '../core';
 
-%__shared-shaping {
-  outline: none;
-  box-shadow: none;
-
-  display: inline-block;
-  vertical-align: middle;
-  box-sizing: border-box;
-
-  margin: 0;
-
-  padding: 6px 12px;
-
-  border: none;
-  border-radius: 3px;
-  border-width: 1px;
-  border-style: solid;
-
-  font-family: 'Segoe UI';
-  font-size: 11pt;
-  font-weight: 600;
-
-  white-space: nowrap;
-  min-width: 80px;
-  max-width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-
-  user-select: none;
-  cursor: pointer;
-
-  transition: color 0.15s, background-color 0.15s, border-color 0.15s,
-    box-shadow 0.15s;
-}
-
-@mixin __shared-coloring($color) {
+@mixin -coloring($color) {
   &:focus {
     box-shadow: 0px 0px 0px 3px transparentize($color, 0.65);
   }
@@ -105,39 +71,52 @@
   }
 }
 
-@mixin __shared {
-  @extend %__shared-shaping;
+.am-button {
+  @extend %-shared;
 
-  &.am-button--primary {
-    @include __shared-coloring(core.$am-color-primary);
+  & {
+    padding: 6px 12px;
+
+    border: none;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+
+    font-family: 'Segoe UI';
+    font-size: 11pt;
+    font-weight: 600;
+
+    white-space: nowrap;
+    min-width: 80px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s,
+      box-shadow 0.15s;
   }
 
-  &.am-button--success {
-    @include __shared-coloring(core.$am-color-success);
+  &--primary {
+    @include -coloring(core.$am-color-primary);
   }
 
-  &.am-button--warning {
-    @include __shared-coloring(core.$am-color-warning);
+  &--success {
+    @include -coloring(core.$am-color-success);
   }
 
-  &.am-button--failure {
-    @include __shared-coloring(core.$am-color-failure);
+  &--warning {
+    @include -coloring(core.$am-color-warning);
   }
 
-  &.am-button--block {
+  &--failure {
+    @include -coloring(core.$am-color-failure);
+  }
+
+  &--block {
     display: block;
     width: 100%;
   }
-}
-
-button.am-button {
-  @include __shared;
-}
-
-input[type='button'] {
-  @include __shared;
-}
-
-input[type='submit'] {
-  @include __shared;
 }

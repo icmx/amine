@@ -22,7 +22,9 @@
     border-right: none;
   }
 
-  & > .am-field {
+  & > .am-input,
+  & > .am-select,
+  & > .am-textarea {
     flex-grow: 1;
 
     width: 1%;
@@ -33,23 +35,29 @@
   }
 
   & > .am-label,
-  & > .am-field,
+  & > .am-input,
+  & > .am-select,
+  & > .am-textarea,
   & > .am-button {
     box-sizing: border-box;
 
-    margin-right: -1px !important;
-    border-radius: 0 !important;
+    margin-right: -1px;
+    border-radius: 0;
   }
 
-  & > .am-field:focus,
+  & > .am-input:focus,
+  & > .am-select:focus,
+  & > .am-textarea:focus,
   & > .am-button:focus {
     z-index: 1;
   }
 
   & > .am-label:first-child,
-  & > .am-field:first-child,
+  & > .am-input:first-child,
+  & > .am-select:first-child,
+  & > .am-textarea:first-child,
   & > .am-button:first-child {
-    border-radius: 3px 0 0 3px !important;
+    border-radius: 3px 0 0 3px;
   }
 
   & > .am-label:first-child {
@@ -57,10 +65,12 @@
   }
 
   & > .am-label:last-child,
-  & > .am-field:last-child,
+  & > .am-input:last-child,
+  & > .am-select:last-child,
+  & > .am-textarea:last-child,
   & > .am-button:last-child {
-    border-radius: 0 3px 3px 0 !important;
-    margin-right: 0px !important;
+    border-radius: 0 3px 3px 0;
+    margin-right: 0px;
   }
 
   & > .am-label:last-child {
