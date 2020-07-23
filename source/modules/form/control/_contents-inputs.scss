@@ -43,7 +43,8 @@
 
     &:focus {
       border-color: core.$am-color-primary;
-      box-shadow: __shared-input-box-shadow(core.$am-color-primary);
+      box-shadow: -shared-input-box-shadow(core.$am-color-primary);
+      z-index: 1;
 
       &::placeholder {
         color: transparentize(lighten(core.$am-color-black, 10%), 0.8);
@@ -65,7 +66,7 @@
     }
 
     &:focus {
-      box-shadow: __shared-input-box-shadow(core.$am-color-success);
+      box-shadow: -shared-input-box-shadow(core.$am-color-success);
     }
   }
 
@@ -79,7 +80,7 @@
     }
 
     &:focus {
-      box-shadow: __shared-input-box-shadow(core.$am-color-failure);
+      box-shadow: -shared-input-box-shadow(core.$am-color-failure);
     }
   }
 

@@ -45,13 +45,6 @@
     border-radius: 0;
   }
 
-  & > .am-input:focus,
-  & > .am-select:focus,
-  & > .am-textarea:focus,
-  & > .am-button:focus {
-    z-index: 1;
-  }
-
   & > .am-label:first-child,
   & > .am-input:first-child,
   & > .am-select:first-child,
