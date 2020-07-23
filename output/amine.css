@@ -428,6 +428,7 @@ body.am {
 }
 .am-button--primary:focus {
   box-shadow: 0px 0px 0px 3px rgba(65, 105, 225, 0.35);
+  z-index: 1;
 }
 .am-button--primary:disabled {
   cursor: not-allowed;
@@ -483,6 +484,7 @@ body.am {
 }
 .am-button--success:focus {
   box-shadow: 0px 0px 0px 3px rgba(34, 139, 34, 0.35);
+  z-index: 1;
 }
 .am-button--success:disabled {
   cursor: not-allowed;
@@ -538,6 +540,7 @@ body.am {
 }
 .am-button--warning:focus {
   box-shadow: 0px 0px 0px 3px rgba(255, 69, 0, 0.35);
+  z-index: 1;
 }
 .am-button--warning:disabled {
   cursor: not-allowed;
@@ -593,6 +596,7 @@ body.am {
 }
 .am-button--failure:focus {
   box-shadow: 0px 0px 0px 3px rgba(220, 20, 60, 0.35);
+  z-index: 1;
 }
 .am-button--failure:disabled {
   cursor: not-allowed;
@@ -715,6 +719,7 @@ body.am {
 .am-textarea:focus {
   border-color: royalblue;
   box-shadow: 0px 0px 0px 3px rgba(65, 105, 225, 0.35);
+  z-index: 1;
 }
 .am-input:focus::placeholder,
 .am-select:focus::placeholder,
@@ -888,7 +893,7 @@ input[type=checkbox].am-check:hover::before {
   border-color: #999999;
 }
 input[type=checkbox].am-check:focus::before {
-  box-shadow: 0px 0px 0px 3px rgba(65, 105, 225, 0.35);
+  box-shadow: __shared-input-box-shadow(royalblue);
 }
 input[type=checkbox].am-check:checked::before {
   border-color: transparent;
@@ -943,7 +948,7 @@ input[type=radio].am-radio:hover::before {
   border-color: #999999;
 }
 input[type=radio].am-radio:focus::before {
-  box-shadow: 0px 0px 0px 3px rgba(65, 105, 225, 0.35);
+  box-shadow: __shared-input-box-shadow(royalblue);
 }
 input[type=radio].am-radio:checked::before {
   border-color: transparent;
@@ -1010,7 +1015,7 @@ input[type=checkbox].am-toggle:hover::before {
   background-color: #999999;
 }
 input[type=checkbox].am-toggle:focus::before {
-  box-shadow: 0px 0px 0px 3px rgba(65, 105, 225, 0.35);
+  box-shadow: __shared-input-box-shadow(royalblue);
 }
 input[type=checkbox].am-toggle:checked::before {
   border-color: royalblue;
@@ -1085,9 +1090,6 @@ body.am {
   box-sizing: border-box;
   margin-right: -1px;
   border-radius: 0;
-}
-.am-group > .am-input:focus, .am-group > .am-select:focus, .am-group > .am-textarea:focus, .am-group > .am-button:focus {
-  z-index: 1;
 }
 .am-group > .am-label:first-child, .am-group > .am-input:first-child, .am-group > .am-select:first-child, .am-group > .am-textarea:first-child, .am-group > .am-button:first-child {
   border-radius: 3px 0 0 3px;
