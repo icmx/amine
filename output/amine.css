@@ -5,7 +5,7 @@ html.am {
 
 body.am {
   max-width: 800px;
-  padding: 48px 48px;
+  padding: 72px 72px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -54,7 +54,7 @@ html.am {
 
 body.am {
   max-width: 800px;
-  padding: 48px 48px;
+  padding: 72px 72px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -351,6 +351,33 @@ body.am {
   width: 1%;
 }
 
+html.am {
+  padding: 48px;
+  background-color: #f2f2f2;
+}
+
+body.am {
+  max-width: 800px;
+  padding: 72px 72px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  border-radius: 3px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+hr.am-hr {
+  border: none;
+  margin: 24px 0;
+  width: 100%;
+  height: 1px;
+  background-color: #cccccc;
+}
+
 input[type=checkbox].am-toggle, input[type=radio].am-radio, input[type=checkbox].am-check, .am-input,
 .am-select,
 .am-textarea, .am-button {
@@ -369,7 +396,7 @@ html.am {
 
 body.am {
   max-width: 800px;
-  padding: 48px 48px;
+  padding: 72px 72px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -631,7 +658,7 @@ html.am {
 
 body.am {
   max-width: 800px;
-  padding: 48px 48px;
+  padding: 72px 72px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -821,7 +848,7 @@ html.am {
 
 body.am {
   max-width: 800px;
-  padding: 48px 48px;
+  padding: 72px 72px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -1018,116 +1045,7 @@ html.am {
 
 body.am {
   max-width: 800px;
-  padding: 48px 48px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
-  font-family: "Segoe UI", sans-serif;
-  font-size: 12pt;
-  font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
-}
-
-hr.am-hr {
-  border: none;
-  margin: 24px 0;
-  width: 100%;
-  height: 1px;
-  background-color: #cccccc;
-}
-
-.am-pair {
-  width: 100%;
-  display: inline-flex;
-  vertical-align: middle;
-}
-.am-pair__label > .am-tip, .am-pair__input > .am-tip {
-  margin-top: 6px;
-}
-.am-pair--column {
-  flex-direction: column;
-}
-.am-pair--column > .am-pair__label {
-  margin-bottom: 8px;
-}
-.am-pair--column > .am-pair__input > * {
-  width: 100%;
-}
-.am-pair--row {
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-.am-pair--row > .am-pair__label {
-  margin-top: 5px;
-  margin-right: 12px;
-  min-width: 40%;
-  flex-basis: 40%;
-}
-.am-pair--row > .am-pair__input {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-}
-.am-pair--row > .am-pair__input > textarea.am-field {
-  flex-grow: 1;
-  flex-shrink: 1;
-}
-.am-pair--box {
-  flex-direction: row-reverse;
-}
-.am-pair--box > .am-pair__input {
-  margin-right: 12px;
-}
-.am-pair--box > .am-pair__label {
-  margin-top: 5px;
-  flex-grow: 1;
-}
-
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 48px 48px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
-  font-family: "Segoe UI", sans-serif;
-  font-size: 12pt;
-  font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
-}
-
-.am-label {
-  display: inline-block;
-  font-size: 11pt;
-  font-weight: 400;
-  color: #666666;
-}
-.am-label__required {
-  font-weight: 900;
-  color: crimson;
-}
-.am-label__optional {
-  font-weight: 600;
-  font-style: italic;
-  color: #999999;
-}
-
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 48px 48px;
+  padding: 72px 72px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -1195,7 +1113,89 @@ html.am {
 
 body.am {
   max-width: 800px;
-  padding: 48px 48px;
+  padding: 72px 72px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  border: solid 1px #cccccc;
+  border-radius: 3px;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
+}
+
+.am-label {
+  display: inline-block;
+  font-size: 11pt;
+  font-weight: 400;
+  color: #666666;
+}
+.am-label__required {
+  font-weight: 900;
+  color: crimson;
+}
+.am-label__optional {
+  font-weight: 600;
+  font-style: italic;
+  color: #999999;
+}
+
+.am-pair {
+  width: 100%;
+  display: inline-flex;
+  vertical-align: middle;
+}
+.am-pair__label > .am-tip, .am-pair__input > .am-tip {
+  margin-top: 6px;
+}
+.am-pair--column {
+  flex-direction: column;
+}
+.am-pair--column > .am-pair__label {
+  margin-bottom: 8px;
+}
+.am-pair--column > .am-pair__input > * {
+  width: 100%;
+}
+.am-pair--row {
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.am-pair--row > .am-pair__label {
+  margin-top: 5px;
+  margin-right: 12px;
+  min-width: 40%;
+  flex-basis: 40%;
+}
+.am-pair--row > .am-pair__input {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.am-pair--row > .am-pair__input > textarea.am-field {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.am-pair--box {
+  flex-direction: row-reverse;
+}
+.am-pair--box > .am-pair__input {
+  margin-right: 12px;
+}
+.am-pair--box > .am-pair__label {
+  margin-top: 5px;
+  flex-grow: 1;
+}
+
+html.am {
+  padding: 48px;
+  background-color: #f2f2f2;
+}
+
+body.am {
+  max-width: 800px;
+  padding: 72px 72px;
   margin: 0 auto;
   box-sizing: border-box;
   background-color: #ffffff;
