@@ -1,21 +1,23 @@
+@use '../../core';
+
 .am-label {
   display: inline-block;
 
   font-size: 11pt;
   font-weight: 400;
 
-  color: lighten($am-color-black, 40%);
+  color: lighten(core.$am-color-black, 40%);
 
   &__required {
     font-weight: 900;
 
-    color: $am-color-failure;
+    color: core.$am-color-failure;
   }
 
   &__optional {
     font-weight: 600;
     font-style: italic;
 
-    color: lighten($am-color-black, 60%);
+    color: lighten(core.$am-color-black, 60%);
   }
 }

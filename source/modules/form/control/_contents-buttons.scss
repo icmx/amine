@@ -1,0 +1,123 @@
+@use '../../core';
+
+@mixin -coloring($color) {
+  &:focus {
+    box-shadow: 0px 0px 0px 3px transparentize($color, 0.65);
+    z-index: 1;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &.am-button--main {
+    color: #ffffff;
+    background-color: $color;
+    border-color: transparent;
+
+    &:hover {
+      background-color: darken($color, 15%);
+    }
+
+    &:active {
+      background-color: lighten($color, 15%);
+    }
+
+    &:disabled {
+      color: lighten(core.$am-color-black, 60%);
+      background-color: lighten(core.$am-color-black, 80%);
+    }
+  }
+
+  &.am-button--misc {
+    color: $color;
+    background-color: transparent;
+    border-color: $color;
+
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 15%);
+      border-color: transparent;
+    }
+
+    &:active {
+      background-color: lighten($color, 15%);
+    }
+
+    &:disabled {
+      color: lighten(core.$am-color-black, 60%);
+      background-color: transparent;
+      border-color: lighten(core.$am-color-black, 80%);
+    }
+  }
+
+  &.am-button--text {
+    color: $color;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:hover {
+      color: #ffffff;
+      background-color: darken($color, 15%);
+    }
+
+    &:active {
+      background-color: lighten($color, 15%);
+    }
+
+    &:disabled {
+      color: lighten(core.$am-color-black, 60%);
+      background-color: transparent;
+    }
+  }
+}
+
+.am-button {
+  @extend %-shared;
+
+  & {
+    padding: 6px 12px;
+
+    border: none;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+
+    font-family: 'Segoe UI';
+    font-size: 11pt;
+    font-weight: 600;
+
+    white-space: nowrap;
+    min-width: 80px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    user-select: none;
+    cursor: pointer;
+
+    transition: color 0.15s, background-color 0.15s, border-color 0.15s,
+      box-shadow 0.15s;
+  }
+
+  &--primary {
+    @include -coloring(core.$am-color-primary);
+  }
+
+  &--success {
+    @include -coloring(core.$am-color-success);
+  }
+
+  &--warning {
+    @include -coloring(core.$am-color-warning);
+  }
+
+  &--failure {
+    @include -coloring(core.$am-color-failure);
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+}

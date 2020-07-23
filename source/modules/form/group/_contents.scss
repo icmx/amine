@@ -1,0 +1,76 @@
+@use '../../core';
+
+.am-group {
+  display: inline-flex;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  max-width: 100%;
+
+  & > .am-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    padding: 6px 8px;
+
+    color: lighten(core.$am-color-black, 40%);
+    background-color: lighten(core.$am-color-black, 90%);
+
+    border: solid lighten(core.$am-color-black, 80%) 1px;
+    border-right: none;
+  }
+
+  & > .am-input,
+  & > .am-select,
+  & > .am-textarea {
+    flex-grow: 1;
+
+    width: 1%;
+  }
+
+  & > .am-button {
+    flex-shrink: 1;
+  }
+
+  & > .am-label,
+  & > .am-input,
+  & > .am-select,
+  & > .am-textarea,
+  & > .am-button {
+    box-sizing: border-box;
+
+    margin-right: -1px;
+    border-radius: 0;
+  }
+
+  & > .am-label:first-child,
+  & > .am-input:first-child,
+  & > .am-select:first-child,
+  & > .am-textarea:first-child,
+  & > .am-button:first-child {
+    border-radius: 3px 0 0 3px;
+  }
+
+  & > .am-label:first-child {
+    border-left: solid 1px lighten(core.$am-color-black, 80%);
+  }
+
+  & > .am-label:last-child,
+  & > .am-input:last-child,
+  & > .am-select:last-child,
+  & > .am-textarea:last-child,
+  & > .am-button:last-child {
+    border-radius: 0 3px 3px 0;
+    margin-right: 0px;
+  }
+
+  & > .am-label:last-child {
+    border-right: solid 1px lighten(core.$am-color-black, 80%);
+  }
+
+  &--block {
+    width: 100%;
+  }
+}

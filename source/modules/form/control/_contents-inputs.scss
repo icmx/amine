@@ -1,0 +1,187 @@
+@use '../../core';
+
+.am-input,
+.am-select,
+.am-textarea {
+  @extend %-shared;
+
+  & {
+    & {
+      min-width: 80px;
+      min-height: 34px;
+
+      padding: 6px 8px;
+
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 11pt;
+      font-weight: 400;
+
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 3px;
+    }
+
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  & {
+    & {
+      color: lighten(core.$am-color-black, 10%);
+      background-color: lighten(core.$am-color-black, 100%);
+      border-color: lighten(core.$am-color-black, 80%);
+
+      &::placeholder {
+        color: transparentize(lighten(core.$am-color-black, 10%), 0.7);
+      }
+    }
+
+    &:hover {
+      border-color: lighten(core.$am-color-black, 60%);
+    }
+
+    &:focus {
+      border-color: core.$am-color-primary;
+      box-shadow: -shared-input-box-shadow(core.$am-color-primary);
+      z-index: 1;
+
+      &::placeholder {
+        color: transparentize(lighten(core.$am-color-black, 10%), 0.8);
+      }
+    }
+
+    &:focus:hover {
+      border-color: darken(core.$am-color-primary, 15%);
+    }
+  }
+
+  &--validable:valid {
+    & {
+      border-color: core.$am-color-success;
+    }
+
+    &:hover {
+      border-color: darken(core.$am-color-success, 15%);
+    }
+
+    &:focus {
+      box-shadow: -shared-input-box-shadow(core.$am-color-success);
+    }
+  }
+
+  &--invalidable:invalid {
+    & {
+      border-color: core.$am-color-failure;
+    }
+
+    &:hover {
+      border-color: darken(core.$am-color-failure, 15%);
+    }
+
+    &:focus {
+      box-shadow: -shared-input-box-shadow(core.$am-color-failure);
+    }
+  }
+
+  &--ghost {
+    border-color: transparent;
+    background-color: transparent;
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+
+    color: transparentize(lighten(core.$am-color-black, 10%), 0.5);
+    background-color: transparentize(lighten(core.$am-color-black, 75%), 0.5);
+
+    border-color: transparentize(lighten(core.$am-color-black, 80%), 0.5);
+  }
+
+  transition: color 0.15s, background-color 0.15s, border-color 0.15s,
+    box-shadow 0.15s;
+
+  &::placeholder {
+    transition: color 0.15s;
+  }
+}
+
+.am-input[list] {
+  &::-webkit-calendar-picker-indicator {
+    display: none;
+  }
+}
+
+.am-input[type='search'],
+.am-input[type='time'],
+.am-input[type='date'] {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.am-input[type='search']::-webkit-search-cancel-button,
+.am-input[type='time']::-webkit-calendar-picker-indicator,
+.am-input[type='date']::-webkit-calendar-picker-indicator {
+  margin: 0 -8px 0 0;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+
+  background: none;
+
+  background-repeat: no-repeat;
+  background-position: center right 4px;
+  background-size: 24px;
+
+  cursor: pointer;
+}
+
+.am-input[type='search'] {
+  &::-webkit-search-cancel-button {
+    background-image: url('../assets/icons/times.svg');
+    
+    -webkit-appearance: none;
+    opacity: 1;
+  }
+}
+
+.am-input[type='time'] {
+  &::-webkit-calendar-picker-indicator {
+    background-image: url('../assets/icons/clock.svg');
+  }
+}
+
+.am-input[type='date'] {
+  &::-webkit-calendar-picker-indicator {
+    background-image: url('../assets/icons/calendar.svg');
+  }
+}
+
+.am-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  max-width: 100%;
+  padding-right: 34px;
+
+  background-image: url('../assets/icons/chevron-down.svg');
+  background-repeat: no-repeat;
+  background-position: center right 4px;
+  background-size: 24px;
+}
+
+.am-textarea {
+  height: 74px;
+  line-height: 145%;
+
+  max-width: 100%;
+
+  &--block {
+    resize: vertical;
+  }
+}
