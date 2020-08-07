@@ -1,0 +1,17 @@
+@mixin -exact-width($width) {
+  min-width: $width;
+  max-width: $width;
+}
+
+.am-content > .am-item {
+  box-sizing: border-box;
+  padding: 18px 24px;
+
+  height: 100%;
+
+  @for $i from 1 through 12 {
+    &--c#{$i} {
+      @include -exact-width(#{((100 / 12) * $i) + '%'});
+    }
+  }
+}
