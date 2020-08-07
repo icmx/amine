@@ -1,20 +1,8 @@
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 h1.am-h1 {
@@ -47,23 +35,11 @@ h6.am-h6 {
   font-weight: 600;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 .am-table {
@@ -351,23 +327,11 @@ body.am {
   width: 1%;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 hr.am-hr {
@@ -389,23 +353,11 @@ input[type=checkbox].am-toggle, input[type=radio].am-radio, input[type=checkbox]
   margin: 0;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 .am-button {
@@ -655,23 +607,11 @@ body.am {
   width: 100%;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 .am-input,
@@ -846,23 +786,11 @@ body.am {
   resize: vertical;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 input[type=checkbox].am-check {
@@ -1043,23 +971,11 @@ input[type=checkbox].am-toggle::after {
   transition: background-color 0.15s, border-color 0.15s, margin-left 0.15s;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 .am-group {
@@ -1108,23 +1024,11 @@ body.am {
   width: 100%;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 .am-label {
@@ -1190,23 +1094,11 @@ body.am {
   flex-grow: 1;
 }
 
-html.am {
-  padding: 48px;
-  background-color: #f2f2f2;
-}
-
-body.am {
-  max-width: 800px;
-  padding: 72px 72px;
-  margin: 0 auto;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  border: solid 1px #cccccc;
-  border-radius: 3px;
+body.am-body {
+  margin: 0;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.05);
 }
 
 .am-tip {
@@ -1224,4 +1116,101 @@ body.am {
 }
 .am-tip--failure {
   color: crimson;
+}
+
+.am-content > .am-item {
+  box-sizing: border-box;
+  padding: 18px 24px;
+  height: 100%;
+}
+.am-content > .am-item--c1 {
+  min-width: 8.3333333333%;
+  max-width: 8.3333333333%;
+}
+.am-content > .am-item--c2 {
+  min-width: 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+.am-content > .am-item--c3 {
+  min-width: 25%;
+  max-width: 25%;
+}
+.am-content > .am-item--c4 {
+  min-width: 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.am-content > .am-item--c5 {
+  min-width: 41.6666666667%;
+  max-width: 41.6666666667%;
+}
+.am-content > .am-item--c6 {
+  min-width: 50%;
+  max-width: 50%;
+}
+.am-content > .am-item--c7 {
+  min-width: 58.3333333333%;
+  max-width: 58.3333333333%;
+}
+.am-content > .am-item--c8 {
+  min-width: 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+.am-content > .am-item--c9 {
+  min-width: 75%;
+  max-width: 75%;
+}
+.am-content > .am-item--c10 {
+  min-width: 83.3333333333%;
+  max-width: 83.3333333333%;
+}
+.am-content > .am-item--c11 {
+  min-width: 91.6666666667%;
+  max-width: 91.6666666667%;
+}
+.am-content > .am-item--c12 {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.am-content {
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1400px;
+}
+
+body.am-body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.am-section {
+  box-sizing: border-box;
+}
+.am-section--bang {
+  min-height: 56px;
+  background-color: #f8b0be;
+  border-bottom: solid 1px #e6e6e6;
+}
+.am-section--head {
+  min-height: 56px;
+  position: sticky;
+  top: 0;
+  background-color: #ffffff;
+  border-bottom: solid 1px #e6e6e6;
+}
+.am-section--hero {
+  min-height: 300px;
+  background-color: #e0e6fa;
+  border-bottom: solid 1px #e6e6e6;
+}
+.am-section--body {
+  background-color: #f2f2f2;
+}
+.am-section--foot {
+  min-height: 300px;
+  background-color: #ffffff;
+  border-top: solid 1px #e6e6e6;
 }
