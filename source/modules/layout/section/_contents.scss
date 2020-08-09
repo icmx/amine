@@ -4,15 +4,11 @@
   box-sizing: border-box;
 
   &--bang {
-    min-height: 56px;
-
     background-color: lighten(core.$am-color-failure, 36%);
     border-bottom: solid 1px lighten(core.$am-color-black, 90%);
   }
 
   &--head {
-    min-height: 56px;
-
     position: sticky;
     top: 0;
 
@@ -21,19 +17,17 @@
   }
 
   &--hero {
-    min-height: 300px;
-
     background-color: lighten(core.$am-color-primary, 36%);
     border-bottom: solid 1px lighten(core.$am-color-black, 90%);
   }
 
   &--body {
+    min-height: 50vh;
+
     background-color: darken(core.$am-color-white, 5%);
   }
 
   &--foot {
-    min-height: 300px;
-
     background-color: core.$am-color-white;
     border-top: solid 1px lighten(core.$am-color-black, 90%);
   }

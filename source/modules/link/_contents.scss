@@ -1,0 +1,19 @@
+@use '../core';
+
+.am-link {
+  & {
+    color: core.$am-color-primary;
+    text-decoration: none;
+
+    transition: color 0.15s, box-shadow 0.15s;
+  }
+
+  &:hover {
+    box-shadow: inset 0 -0.125em lighten(core.$am-color-primary, 28%);
+  }
+
+  &:active {
+    color: core.$am-color-failure;
+    box-shadow: inset 0 -0.125em lighten(core.$am-color-failure, 28%);
+  }
+}
