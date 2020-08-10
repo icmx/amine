@@ -1,5 +1,3 @@
-@use '../../core';
-
 @mixin -coloring($color) {
   &:focus {
     box-shadow: 0px 0px 0px 3px transparentize($color, 0.65);
@@ -24,8 +22,8 @@
     }
 
     &:disabled {
-      color: lighten(core.$am-color-black, 60%);
-      background-color: lighten(core.$am-color-black, 80%);
+      color: lighten($am-color-black, 60%);
+      background-color: lighten($am-color-black, 80%);
     }
   }
 
@@ -45,9 +43,9 @@
     }
 
     &:disabled {
-      color: lighten(core.$am-color-black, 60%);
+      color: lighten($am-color-black, 60%);
       background-color: transparent;
-      border-color: lighten(core.$am-color-black, 80%);
+      border-color: lighten($am-color-black, 80%);
     }
   }
 
@@ -66,7 +64,7 @@
     }
 
     &:disabled {
-      color: lighten(core.$am-color-black, 60%);
+      color: lighten($am-color-black, 60%);
       background-color: transparent;
     }
   }
@@ -101,19 +99,19 @@
   }
 
   &--primary {
-    @include -coloring(core.$am-color-primary);
+    @include -coloring($am-color-primary);
   }
 
   &--success {
-    @include -coloring(core.$am-color-success);
+    @include -coloring($am-color-success);
   }
 
   &--warning {
-    @include -coloring(core.$am-color-warning);
+    @include -coloring($am-color-warning);
   }
 
   &--failure {
-    @include -coloring(core.$am-color-failure);
+    @include -coloring($am-color-failure);
   }
 
   &--block {

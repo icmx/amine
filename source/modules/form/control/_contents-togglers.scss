@@ -1,6 +1,4 @@
-@use '../../core';
-
-input[type='checkbox'].am-check {
+.am-check {
   @extend %-shared;
 
   & {
@@ -34,24 +32,24 @@ input[type='checkbox'].am-check {
   & {
     & {
       &::before {
-        background-color: lighten(core.$am-color-black, 100%);
+        background-color: lighten($am-color-black, 100%);
         background-size: 0px;
-        border-color: lighten(core.$am-color-black, 80%);
+        border-color: lighten($am-color-black, 80%);
       }
 
       &:hover::before {
-        border-color: lighten(core.$am-color-black, 60%);
+        border-color: lighten($am-color-black, 60%);
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow(core.$am-color-primary);
+        box-shadow: __shared-input-box-shadow($am-color-primary);
       }
     }
 
     &:checked {
       &::before {
         border-color: transparent;
-        background-color: core.$am-color-primary;
+        background-color: $am-color-primary;
 
         background-image: url('../assets/icons/check.svg');
         background-size: 24px;
@@ -60,7 +58,7 @@ input[type='checkbox'].am-check {
       }
 
       &:hover::before {
-        background-color: darken(core.$am-color-primary, 15%);
+        background-color: darken($am-color-primary, 15%);
       }
     }
   }
@@ -71,14 +69,14 @@ input[type='checkbox'].am-check {
 
       & {
         &::before {
-          border-color: transparentize(lighten(core.$am-color-black, 80%), 0.5);
+          border-color: transparentize(lighten($am-color-black, 80%), 0.5);
         }
       }
 
       &:checked {
         &::before {
           border-color: transparent;
-          background-color: transparentize(core.$am-color-primary, 0.5);
+          background-color: transparentize($am-color-primary, 0.5);
         }
       }
     }
@@ -92,9 +90,7 @@ input[type='checkbox'].am-check {
   }
 }
 
-///////////
-
-input[type='radio'].am-radio {
+.am-radio {
   @extend %-shared;
 
   & {
@@ -130,24 +126,24 @@ input[type='radio'].am-radio {
   & {
     & {
       &::before {
-        background-color: lighten(core.$am-color-black, 100%);
+        background-color: lighten($am-color-black, 100%);
         background-size: 0px;
-        border-color: lighten(core.$am-color-black, 80%);
+        border-color: lighten($am-color-black, 80%);
       }
 
       &:hover::before {
-        border-color: lighten(core.$am-color-black, 60%);
+        border-color: lighten($am-color-black, 60%);
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow(core.$am-color-primary);
+        box-shadow: __shared-input-box-shadow($am-color-primary);
       }
     }
 
     &:checked {
       &::before {
         border-color: transparent;
-        background-color: core.$am-color-primary;
+        background-color: $am-color-primary;
 
         background-image: url('../assets/icons/radio.svg');
         background-size: 24px;
@@ -156,7 +152,7 @@ input[type='radio'].am-radio {
       }
 
       &:hover::before {
-        background-color: darken(core.$am-color-primary, 15%);
+        background-color: darken($am-color-primary, 15%);
       }
     }
   }
@@ -167,14 +163,14 @@ input[type='radio'].am-radio {
 
       & {
         &::before {
-          border-color: transparentize(lighten(core.$am-color-black, 80%), 0.5);
+          border-color: transparentize(lighten($am-color-black, 80%), 0.5);
         }
       }
 
       &:checked {
         &::before {
           border-color: transparent;
-          background-color: transparentize(core.$am-color-primary, 0.5);
+          background-color: transparentize($am-color-primary, 0.5);
         }
       }
     }
@@ -192,7 +188,7 @@ input[type='radio'].am-radio {
 
 /////////////////////
 
-input[type='checkbox'].am-toggle {
+.am-toggle {
   @extend %-shared;
 
   & {
@@ -244,34 +240,34 @@ input[type='checkbox'].am-toggle {
   & {
     & {
       &::before {
-        background-color: lighten(core.$am-color-black, 80%);
+        background-color: lighten($am-color-black, 80%);
       }
 
       &::after {
-        background-color: lighten(core.$am-color-black, 95%);
+        background-color: lighten($am-color-black, 95%);
       }
 
       &:hover::before {
-        background-color: lighten(core.$am-color-black, 60%);
+        background-color: lighten($am-color-black, 60%);
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow(core.$am-color-primary);
+        box-shadow: __shared-input-box-shadow($am-color-primary);
       }
     }
 
     &:checked {
       &::before {
-        border-color: core.$am-color-primary;
-        background-color: core.$am-color-primary;
+        border-color: $am-color-primary;
+        background-color: $am-color-primary;
       }
 
       &::after {
-        background-color: lighten(core.$am-color-black, 95%);
+        background-color: lighten($am-color-black, 95%);
       }
 
       &:hover::before {
-        background-color: darken(core.$am-color-primary, 15%);
+        background-color: darken($am-color-primary, 15%);
       }
     }
   }
@@ -282,16 +278,13 @@ input[type='checkbox'].am-toggle {
         cursor: not-allowed;
 
         &::before {
-          background-color: transparentize(
-            lighten(core.$am-color-black, 80%),
-            0.5
-          );
+          background-color: transparentize(lighten($am-color-black, 80%), 0.5);
         }
       }
 
       &:checked {
         &::before {
-          background-color: transparentize(core.$am-color-primary, 0.5);
+          background-color: transparentize($am-color-primary, 0.5);
         }
       }
     }

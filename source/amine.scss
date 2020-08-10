@@ -1,7 +1,5 @@
-@use './modules/core';
-@use './modules/h1-h6';
-@use './modules/table';
-@use './modules/hr';
-@use './modules/form';
-@use './modules/layout';
-@use './modules/link';
+@import './modules/core';
+@import './modules/elements';
+@import './modules/form';
+@import './modules/layout';
+@import './modules/typo';

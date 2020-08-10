@@ -1,34 +1,34 @@
-@use '../../core';
-
 .am-section {
   box-sizing: border-box;
 
   &--bang {
-    background-color: lighten(core.$am-color-failure, 36%);
-    border-bottom: solid 1px lighten(core.$am-color-black, 90%);
+    background-color: lighten($am-color-failure, 36%);
+    border-bottom: solid 1px lighten($am-color-black, 90%);
   }
 
   &--head {
     position: sticky;
     top: 0;
 
-    background-color: core.$am-color-white;
-    border-bottom: solid 1px lighten(core.$am-color-black, 90%);
+    background-color: $am-color-white;
+    border-bottom: solid 1px lighten($am-color-black, 90%);
   }
 
   &--hero {
-    background-color: lighten(core.$am-color-primary, 36%);
-    border-bottom: solid 1px lighten(core.$am-color-black, 90%);
+    background-color: lighten($am-color-primary, 36%);
+    border-bottom: solid 1px lighten($am-color-black, 90%);
   }
 
   &--body {
     min-height: 50vh;
 
-    background-color: darken(core.$am-color-white, 5%);
+    background-color: darken($am-color-white, 5%);
   }
 
   &--foot {
-    background-color: core.$am-color-white;
-    border-top: solid 1px lighten(core.$am-color-black, 90%);
+    min-height: 20vh;
+
+    background-color: $am-color-white;
+    border-top: solid 1px lighten($am-color-black, 90%);
   }
 }
