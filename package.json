@@ -1,7 +1,7 @@
 {
   "name": "amine",
-  "version": "0.0.1",
-  "description": "Simple CSS framework",
+  "version": "0.0.2",
+  "description": "CSS library",
   "main": "source/amine.scss",
   "scripts": {
     "sass-compile": "npm run sass-compile-expanded && npm run sass-compile-compressed",

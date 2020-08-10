@@ -1,25 +1,7 @@
-html.am {
-  padding: 48px;
+.am {
+  margin: 0;
 
-  background-color: darken($am-color-white, 5%);
-}
-
-body.am {
-  max-width: 800px;
-  
-  padding: 72px 72px;
-  margin: 0 auto;
-  
-  box-sizing: border-box;
-  
-  background-color: $am-color-white;
-  border: solid 1px lighten($am-color-black, 80%);
-  border-radius: 3px;
-  
   font-family: 'Segoe UI', sans-serif;
   font-size: 12pt;
   font-weight: 400;
-  
-  box-shadow: 0px 0px 12px 0px transparentize($am-color-black, 0.95);
 }
-

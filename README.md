@@ -1,6 +1,6 @@
 # Amine
 
-Simple CSS framework, currently in development.
+Simple CSS library, currently in development.
 
 ## Quick Facts (aka Goals)
 

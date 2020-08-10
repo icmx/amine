@@ -1,4 +1,4 @@
-@mixin _outline($color, $amount) {
+@mixin -outline($color, $amount) {
   outline-style: solid !important;
   outline-width: 1px !important;
   outline-offset: 1px !important;
@@ -7,7 +7,7 @@
 
 @mixin am-debug() {
   & {
-    @include _outline($am-color-debug, 0.2);
+    @include -outline($am-color-debug, 0.2);
 
     background-color: transparentize($am-color-debug, 0.8) !important;
   }
@@ -15,14 +15,14 @@
 
 @mixin am-debug-interactive() {
   & {
-    @include _outline($am-color-debug, 0.2);
+    @include -outline($am-color-debug, 0.2);
 
     background-color: transparentize($am-color-debug, 0.8) !important;
     transition: all 0.16s !important;
   }
 
   &:hover {
-    @include _outline($am-color-debug, 0.4);
+    @include -outline($am-color-debug, 0.4);
 
     background-color: transparentize($am-color-debug, 0.6) !important;
   }

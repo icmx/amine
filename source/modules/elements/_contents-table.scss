@@ -1,5 +1,3 @@
-@use '../core';
-
 .am-table {
   border-collapse: collapse;
   width: 100%;
@@ -15,13 +13,13 @@
 
   thead {
     tr {
-      border-bottom: solid 1px lighten(core.$am-color-black, 60%);
+      border-bottom: solid 1px lighten($am-color-black, 60%);
     }
   }
 
   tbody {
     tr {
-      border-top: solid 1px lighten(core.$am-color-black, 80%);
+      border-top: solid 1px lighten($am-color-black, 80%);
     }
 
     tr:first-child {
@@ -31,7 +29,7 @@
 
   tfoot {
     tr {
-      border-top: solid 1px lighten(core.$am-color-black, 60%);
+      border-top: solid 1px lighten($am-color-black, 60%);
     }
   }
 
@@ -63,7 +61,7 @@
       padding: 4px 4px;
       font-size: 11pt;
 
-      border-left: solid 1px lighten(core.$am-color-black, 60%);
+      border-left: solid 1px lighten($am-color-black, 60%);
     }
 
     th:first-child,
@@ -79,39 +77,39 @@
     }
 
     tbody tr:hover {
-      background-color: lighten(core.$am-color-black, 85%);
+      background-color: lighten($am-color-black, 85%);
     }
 
     tbody tr:active {
-      background-color: lighten(core.$am-color-black, 80%);
+      background-color: lighten($am-color-black, 80%);
     }
   }
 
   $_colors: (
-    primary: core.$am-color-primary,
-    neutral: core.$am-color-neutral,
-    success: core.$am-color-success,
-    warning: core.$am-color-warning,
-    failure: core.$am-color-failure,
+    primary: $am-color-primary,
+    neutral: $am-color-neutral,
+    success: $am-color-success,
+    warning: $am-color-warning,
+    failure: $am-color-failure,
   );
 
   @each $key, $value in $_colors {
     &--mark-#{$key} {
-      background-color: mix($value, core.$am-color-white, 20%);
+      background-color: mix($value, $am-color-white, 20%);
     }
 
     &--interactive &--mark-#{$key} {
       &:hover {
-        background-color: mix($value, core.$am-color-white, 25%);
+        background-color: mix($value, $am-color-white, 25%);
       }
 
       &:active {
-        background-color: mix($value, core.$am-color-white, 30%);
+        background-color: mix($value, $am-color-white, 30%);
       }
     }
 
     &--selection-#{$key} {
-      border-color: mix($value, core.$am-color-white, 40%) !important;
+      border-color: mix($value, $am-color-white, 40%) !important;
     }
   }
 
