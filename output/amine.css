@@ -1360,17 +1360,17 @@
 }
 
 .am-typo-display-1 {
-  font-size: 8em;
+  font-size: 10vw;
   font-weight: 200;
 }
 
 .am-typo-display-2 {
-  font-size: 6em;
+  font-size: 8vw;
   font-weight: 200;
 }
 
 .am-typo-display-3 {
-  font-size: 4em;
+  font-size: 6vw;
   font-weight: 200;
 }
 
