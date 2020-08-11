@@ -3,15 +3,45 @@
   max-width: $width;
 }
 
+@mixin -fraction-12($fraction) {
+  @include -exact-width(#{((100 / 12) * $fraction) + '%'});
+}
+
 .am-content > .am-item {
   box-sizing: border-box;
   padding: 18px 24px;
 
   height: 100%;
 
+  @media screen and (max-width: 768px) {
+    &\@d,
+    &\@\!m {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &\@m,
+    &\@\!d {
+      display: none;
+    }
+  }
+
   @for $i from 1 through 12 {
     &--c#{$i} {
-      @include -exact-width(#{((100 / 12) * $i) + '%'});
+      @include -fraction-12($i);
+    }
+
+    @media screen and (max-width: 768px) {
+      &--c#{$i}\@m {
+        @include -fraction-12($i);
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      &--c#{$i}\@d {
+        @include -fraction-12($i);
+      }
     }
   }
 }
