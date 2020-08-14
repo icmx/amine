@@ -1016,8 +1016,8 @@
 }
 
 .am-tip {
-  font-size: 10pt;
-  font-weight: 600;
+  font-size: 11pt;
+  font-weight: 400;
 }
 .am-tip--neutral {
   color: #999999;
@@ -1034,7 +1034,7 @@
 
 .am-content > .am-item {
   box-sizing: border-box;
-  padding: 18px 24px;
+  padding: 18px;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
@@ -1247,6 +1247,18 @@
   height: 100%;
   max-width: 1400px;
 }
+.am-content--left {
+  justify-content: flex-start;
+}
+.am-content--center {
+  justify-content: center;
+}
+.am-content--sides {
+  justify-content: space-between;
+}
+.am-content--right {
+  justify-content: flex-end;
+}
 
 .am-section {
   box-sizing: border-box;
@@ -1263,7 +1275,6 @@
 }
 .am-section--hero {
   background-color: #e0e6fa;
-  border-bottom: solid 1px #e6e6e6;
 }
 .am-section--body {
   min-height: 50vh;
@@ -1284,7 +1295,7 @@
 }
 
 .am-typo-monospace {
-  font-family: "Consolas", monospace;
+  font-family: monospace;
 }
 
 .am-typo-subscript {
@@ -1324,7 +1335,7 @@
 .am-typo-keyboard {
   margin: 0 -0.15em;
   padding: 0 0.15em;
-  font-family: "Consolas", monospace;
+  font-family: monospace;
   border: solid 1px #999999;
   border-radius: 2px;
 }
@@ -1337,16 +1348,16 @@
   background-color: #e6e6e6;
 }
 
-.am-typo-anchor {
+.am-typo-link {
   color: royalblue;
   text-decoration: none;
   transition: color 0.15s, box-shadow 0.15s;
   cursor: pointer;
 }
-.am-typo-anchor:hover {
+.am-typo-link:hover {
   box-shadow: inset 0 -0.125em #bccaf4;
 }
-.am-typo-anchor:active {
+.am-typo-link:active {
   color: crimson;
   box-shadow: inset 0 -0.125em #f48aa0;
 }
@@ -1357,6 +1368,34 @@
 
 .am-typo-inline {
   display: inline;
+}
+
+.am-typo-major {
+  color: #333333;
+}
+
+.am-typo-minor {
+  color: #666666;
+}
+
+.am-typo-disabled {
+  color: #999999;
+}
+
+.am-typo-primary {
+  color: royalblue;
+}
+
+.am-typo-success {
+  color: forestgreen;
+}
+
+.am-typo-warning {
+  color: orangered;
+}
+
+.am-typo-failure {
+  color: crimson;
 }
 
 .am-typo-display-1 {
@@ -1417,44 +1456,4 @@
 .am-typo-small {
   font-size: 0.85em;
   font-weight: 400;
-}
-
-.am-typo-major {
-  color: #333333;
-}
-
-.am-typo-minor {
-  color: #666666;
-}
-
-.am-typo-disabled {
-  color: #999999;
-}
-
-.am-typo-primary {
-  color: royalblue;
-}
-
-.am-typo-success {
-  color: forestgreen;
-}
-
-.am-typo-warning {
-  color: orangered;
-}
-
-.am-typo-failure {
-  color: crimson;
-}
-
-.am-typo-left {
-  text-align: left;
-}
-
-.am-typo-center {
-  text-align: center;
-}
-
-.am-typo-right {
-  text-align: right;
 }
