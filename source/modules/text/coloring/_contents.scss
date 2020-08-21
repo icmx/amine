@@ -1,27 +1,27 @@
-.am-typo-major {
+.am-main {
   color: lighten($am-color-black, 20%);
 }
 
-.am-typo-minor {
+.am-misc {
   color: lighten($am-color-black, 40%);
 }
 
-.am-typo-disabled {
+.am-mute {
   color: lighten($am-color-black, 60%);
 }
 
-.am-typo-primary {
+.am-primary {
   color: $am-color-primary;
 }
 
-.am-typo-success {
+.am-success {
   color: $am-color-success;
 }
 
-.am-typo-warning {
+.am-warning {
   color: $am-color-warning;
 }
 
-.am-typo-failure {
+.am-failure {
   color: $am-color-failure;
 }
