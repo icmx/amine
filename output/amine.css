@@ -1323,6 +1323,7 @@
 }
 
 .am-blockcode {
+  display: block;
   padding: 6px 12px !important;
   font-family: monospace;
   border-radius: 3px;
@@ -1342,7 +1343,7 @@
   padding: 0 0.1em;
   border-radius: 3px;
   color: #333333;
-  background-color: #ffdacc;
+  background-color: #ffece6;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -1445,9 +1446,9 @@
   font-weight: 700;
 }
 
-.am-leading {
-  font-size: 1.2em;
-  font-weight: 200;
+.am-large {
+  font-size: 1.4em;
+  font-weight: 400;
 }
 
 .am-regular {
@@ -1457,4 +1458,5 @@
 
 .am-small {
   font-size: 0.85em;
+  font-weight: 400;
 }
