@@ -4,13 +4,6 @@
   display: inline-flex;
   vertical-align: middle;
 
-  &__label,
-  &__input {
-    & > .am-note {
-      margin-top: 6px;
-    }
-  }
-
   &--column {
     flex-direction: column;
   }
@@ -63,5 +56,10 @@
     margin-top: 5px;
 
     flex-grow: 1;
+  }
+
+  &__label > &__tip,
+  &__input > &__tip {
+    margin-top: 6px;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amine — CSS library</title>
-    <link rel="stylesheet" href="output/amine.css" />
+    <link rel="stylesheet" href="output/amine.min.css" />
   </head>
   <body class="am">
     <div class="am-section am-section--head">
@@ -33,61 +33,89 @@
     </div>
     <div class="am-section am-section--body">
       <div class="am-content">
-        <div class="am-item am-item--c12 am-item@m">
-          <span class="am-typo--monospace">@m</span> — only visible at mobile
-          device
-        </div>
-        <div class="am-item am-item--c12 am-item@d">
-          <span class="am-typo--monospace">@d</span> — only visible at desktop
-          device
-        </div>
         <div class="am-item am-item--c2@d am-item--c12@m">
           <p><a href="#" class="am-link">Link test</a></p>
           <p><a href="#" class="am-link">Suppose that's nav links</a></p>
           <p><a href="#" class="am-link">And yet another one</a></p>
         </div>
         <div class="am-item am-item--c10@d am-item--c12@m">
-          <p>No style</p>
-          <p><span class="am-bold">.am-bold</span></p>
-          <p><span class="am-italic">.am-italic</span></p>
-          <p><span class="am-underline">.am-underline</span></p>
-          <p><span class="am-strikethrough">.am-strikethrough</span></p>
-          <p><span class="am-subscript">.am-subscript</span></p>
-          <p><span class="am-superscript">.am-superscript</span></p>
-          <p><span class="am-blockquote">.am-blockquote</span></p>
-          <p><span class="am-code">.am-code</span></p>
-          <p><span class="am-blockcode">.am-blockcode</span></p>
-          <p><span class="am-code">.am-code</span></p>
-          <p><span class="am-key">.am-key</span></p>
-          <p><span class="am-mark">.am-mark</span></p>
-          <p>
-            <span class="am-note">.am-note</span>, and also with modifiers:
-            <span class="am-note am-note--primary">*--primary</span>,
-            <span class="am-note am-note--success">*--success</span>,
-            <span class="am-note am-note--warning">*--warning</span>,
-            <span class="am-note am-note--failure">*--failure</span>
-          </p>
-          <div class="am-hr"></div>
-          <p><span class="am-main">.am-main</span></p>
-          <p><span class="am-misc">.am-misc</span></p>
-          <p><span class="am-mute">.am-mute</span></p>
-          <p><span class="am-primary">.am-primary</span></p>
-          <p><span class="am-success">.am-success</span></p>
-          <p><span class="am-warning">.am-warning</span></p>
-          <p><span class="am-failure">.am-failure</span></p>
-          <div class="am-hr"></div>
-          <p><span class="am-display-1">.am-display-1</span></p>
-          <p><span class="am-display-2">.am-display-2</span></p>
-          <p><span class="am-display-3">.am-display-3</span></p>
-          <p><span class="am-heading-1">.am-heading-1</span></p>
-          <p><span class="am-heading-2">.am-heading-2</span></p>
-          <p><span class="am-heading-3">.am-heading-3</span></p>
-          <p><span class="am-heading-4">.am-heading-4</span></p>
-          <p><span class="am-heading-5">.am-heading-5</span></p>
-          <p><span class="am-heading-6">.am-heading-6</span></p>
-          <p><span class="am-large">.am-leading</span></p>
-          <p><span class="am-regular">.am-regular</span></p>
-          <p><span class="am-small">.am-small</span></p>
+          <article>
+            <h1 class="am-h1">Typography</h1>
+            <h2 class="am-h2">Basic</h2>
+            <p>No style — this is how text looks like in default way.</p>
+            <p>
+              Also non-styled: lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Voluptatum odit eligendi velit dolorum possimus,
+              quos ipsa vitae dolore iure earum totam quae blanditiis sint, at
+              harum eum sit? Nulla, expedita.
+            </p>
+            <p>
+              <span class="am-bold">.am-bold</span> or
+              <span class="am-b">.am-b</span> as an alias
+            </p>
+            <p>
+              <span class="am-italic">.am-italic</span> or
+              <span class="am-i">.am-i</span>
+            </p>
+            <p>
+              <span class="am-underline">.am-underline</span> or
+              <span class="am-u">.am-u</span>
+            </p>
+            <p>
+              <span class="am-strikethrough">.am-strikethrough</span> or
+              <span class="am-s">.am-s</span>
+            </p>
+            <p>
+              <span class="am-subscript">.am-subscript</span> or
+              <span class="am-sub">.am-sub</span>, use it in C<span
+                class="am-sub"
+                >10</span
+              >H<span class="am-sub">12</span>N<span class="am-sub">2</span>O,
+              for example
+            </p>
+            <p>
+              <span class="am-superscript">.am-superscript</span> or
+              <span class="am-sup">.am-sup</span>, use it in x<span
+                class="am-sup"
+                >2</span
+              >
+              + y<span class="am-sup">2</span> = z<span class="am-sup">2</span>,
+              for example
+            </p>
+            <p><span class="am-blockquote">.am-blockquote</span></p>
+            <p><span class="am-code">.am-code</span></p>
+            <p><span class="am-blockcode">.am-blockcode</span></p>
+            <p><span class="am-key">.am-key</span></p>
+            <p><span class="am-mark">.am-mark</span></p>
+            <p>
+              <span class="am-note">.am-note</span>, and also with modifiers:
+              <span class="am-note am-note--primary">*--primary</span>,
+              <span class="am-note am-note--success">*--success</span>,
+              <span class="am-note am-note--warning">*--warning</span>,
+              <span class="am-note am-note--failure">*--failure</span>
+            </p>
+            <div class="am-h2">Coloring</div>
+            <p><span class="am-main">.am-main</span></p>
+            <p><span class="am-misc">.am-misc</span></p>
+            <p><span class="am-mute">.am-mute</span></p>
+            <p><span class="am-primary">.am-primary</span></p>
+            <p><span class="am-success">.am-success</span></p>
+            <p><span class="am-warning">.am-warning</span></p>
+            <p><span class="am-failure">.am-failure</span></p>
+            <div class="am-h2">Sizing</div>
+            <p><span class="am-display-1">.am-display-1</span></p>
+            <p><span class="am-display-2">.am-display-2</span></p>
+            <p><span class="am-display-3">.am-display-3</span></p>
+            <p><span class="am-heading-1">.am-heading-1</span></p>
+            <p><span class="am-heading-2">.am-heading-2</span></p>
+            <p><span class="am-heading-3">.am-heading-3</span></p>
+            <p><span class="am-heading-4">.am-heading-4</span></p>
+            <p><span class="am-heading-5">.am-heading-5</span></p>
+            <p><span class="am-heading-6">.am-heading-6</span></p>
+            <p><span class="am-large">.am-large</span></p>
+            <p><span class="am-regular">.am-regular</span></p>
+            <p><span class="am-small">.am-small</span></p>
+          </article>
         </div>
       </div>
     </div>
