@@ -5,7 +5,7 @@
 
   max-width: 100%;
 
-  & > .am-label {
+  & > .am-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,7 +32,7 @@
     flex-shrink: 1;
   }
 
-  & > .am-label,
+  & > .am-item,
   & > .am-input,
   & > .am-select,
   & > .am-textarea,
@@ -43,7 +43,7 @@
     border-radius: 0;
   }
 
-  & > .am-label:first-child,
+  & > .am-item:first-child,
   & > .am-input:first-child,
   & > .am-select:first-child,
   & > .am-textarea:first-child,
@@ -51,11 +51,11 @@
     border-radius: 3px 0 0 3px;
   }
 
-  & > .am-label:first-child {
+  & > .am-item:first-child {
     border-left: solid 1px lighten($am-color-black, 80%);
   }
 
-  & > .am-label:last-child,
+  & > .am-item:last-child,
   & > .am-input:last-child,
   & > .am-select:last-child,
   & > .am-textarea:last-child,
@@ -64,8 +64,17 @@
     margin-right: 0px;
   }
 
-  & > .am-label:last-child {
+  & > .am-item:last-child {
     border-right: solid 1px lighten($am-color-black, 80%);
+  }
+
+  & > .am-item:only-child,
+  & > .am-input:only-child,
+  & > .am-select:only-child,
+  & > .am-textarea:only-child,
+  & > .am-button:only-child {
+    border-radius: 3px 3px 3px 3px;
+    margin-right: 0px;
   }
 
   &--block {

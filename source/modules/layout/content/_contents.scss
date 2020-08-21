@@ -6,4 +6,20 @@
 
   height: 100%;
   max-width: 1400px;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--sides {
+    justify-content: space-between;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
 }
