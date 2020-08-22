@@ -1,4 +1,4 @@
-.am-check {
+.am-checkbox {
   @extend %-shared;
 
   & {
@@ -42,7 +42,7 @@
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow($am-color-primary);
+        box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
 
@@ -136,7 +136,7 @@
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow($am-color-primary);
+        box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
 
@@ -186,9 +186,7 @@
   }
 }
 
-/////////////////////
-
-.am-toggle {
+.am-switch {
   @extend %-shared;
 
   & {
@@ -252,7 +250,7 @@
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow($am-color-primary);
+        box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
 
