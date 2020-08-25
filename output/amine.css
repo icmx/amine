@@ -5,10 +5,6 @@
   font-weight: 400;
 }
 
-.am p {
-  line-height: 150%;
-}
-
 .am-hr {
   border: none;
   margin: 24px 0;
@@ -360,6 +356,7 @@
   color: #ffffff;
   background-color: dodgerblue;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--primary.am-button--main:hover {
   background-color: #006ad1;
@@ -416,6 +413,7 @@
   color: #ffffff;
   background-color: limegreen;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--success.am-button--main:hover {
   background-color: #239023;
@@ -472,6 +470,7 @@
   color: #ffffff;
   background-color: darkorange;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--warning.am-button--main:hover {
   background-color: #b36200;
@@ -528,6 +527,7 @@
   color: #ffffff;
   background-color: crimson;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--failure.am-button--main:hover {
   background-color: #960e29;
@@ -798,13 +798,13 @@
   border-width: 1px;
   border-radius: 3px;
 }
+.am-checkbox {
+  -webkit-tap-highlight-color: transparent;
+}
 .am-checkbox::before {
   background-color: white;
   background-size: 0px;
   border-color: #cccccc;
-}
-.am-checkbox:active {
-  -webkit-tap-highlight-color: transparent;
 }
 .am-checkbox:hover::before {
   border-color: #999999;
@@ -857,13 +857,13 @@
   border-width: 1px;
   border-radius: 10000px;
 }
+.am-radio {
+  -webkit-tap-highlight-color: transparent;
+}
 .am-radio::before {
   background-color: white;
   background-size: 0px;
   border-color: #cccccc;
-}
-.am-radio:active {
-  -webkit-tap-highlight-color: transparent;
 }
 .am-radio:hover::before {
   border-color: #999999;
@@ -906,6 +906,9 @@
   appearance: none;
   cursor: pointer;
 }
+.am-switch {
+  -webkit-tap-highlight-color: transparent;
+}
 .am-switch::before {
   content: " ";
   display: block;
@@ -924,9 +927,6 @@
   margin-top: -16px;
   margin-left: 4px;
   border-radius: 50%;
-}
-.am-switch:active {
-  -webkit-tap-highlight-color: transparent;
 }
 .am-switch:checked::after {
   margin-left: calc(100% - 14px);

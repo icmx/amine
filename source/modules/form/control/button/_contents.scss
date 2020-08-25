@@ -12,6 +12,8 @@
     color: #ffffff;
     background-color: $color;
     border-color: transparent;
+    
+    -webkit-tap-highlight-color: transparent;
 
     &:hover {
       background-color: darken($color, 15%);

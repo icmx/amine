@@ -32,18 +32,15 @@
   }
 
   & {
+    // This is for mobile webkit, on Android it's light blue
+    // by default and not needed here
+    -webkit-tap-highlight-color: transparent;
+
     & {
       &::before {
         background-color: lighten($am-color-black, 100%);
         background-size: 0px;
         border-color: lighten($am-color-black, 80%);
-      }
-
-      &:active {
-        // This is for mobile webkit, on Android it's light blue
-        // by default and not needed here
-
-        -webkit-tap-highlight-color: transparent;
       }
 
       &:hover::before {
@@ -132,18 +129,15 @@
   }
 
   & {
+    // This is for mobile webkit, on Android it's light blue
+    // by default and not needed here
+    -webkit-tap-highlight-color: transparent;
+
     & {
       &::before {
         background-color: lighten($am-color-black, 100%);
         background-size: 0px;
         border-color: lighten($am-color-black, 80%);
-      }
-
-      &:active {
-        // This is for mobile webkit, on Android it's light blue
-        // by default and not needed here
-
-        -webkit-tap-highlight-color: transparent;
       }
 
       &:hover::before {
@@ -218,6 +212,12 @@
 
     cursor: pointer;
 
+    & {
+      // This is for mobile webkit, on Android it's light blue
+      // by default and not needed here
+      -webkit-tap-highlight-color: transparent;
+    }
+
     &::before {
       content: ' ';
       display: block;
@@ -244,13 +244,6 @@
       margin-left: 4px;
 
       border-radius: 50%;
-    }
-
-    &:active {
-      // This is for mobile webkit, on Android it's light blue
-      // by default and not needed here
-
-      -webkit-tap-highlight-color: transparent;
     }
 
     &:checked {
