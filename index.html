@@ -160,13 +160,21 @@
               <button class="am-button am-button--text am-button--failure" disabled>Button</button>
             </p>
             <h2 class="am-h2">Boxed inputs</h2>
-            <p>Use <code class="am-code">.am-input</code> for all boxed inputs:</p>
+
+            <p>
+              Use <code class="am-code">.am-input</code> for all boxed inputs:
+            </p>
             <p><input class="am-input" type="text" placeholder="Text" /></p>
-            <p><input class="am-input" type="password" placeholder="Password" /></p>
+            <p>
+              <input class="am-input" type="password" placeholder="Password" />
+            </p>
             <p><input class="am-input" type="number" placeholder="Number" /></p>
             <p><input class="am-input" type="time" value="13:37" /></p>
             <p><input class="am-input" type="date" value="1970-01-01" /></p>
-            <p>For select element, use <code class="am-code">.am-select</code> instead:</p>
+            <p>
+              For select element, use
+              <code class="am-code">.am-select</code> instead:
+            </p>
             <p>
               <select class="am-select">
                 <option value="am-select-1">One</option>
@@ -175,16 +183,82 @@
                 <option value="am-select-4">Four</option>
               </select>
             </p>
-            <p>Also for textarea, use <code class="am-code">.am-textarea</code> please:</p>
+            <p>
+              Also for textarea, use
+              <code class="am-code">.am-textarea</code> please:
+            </p>
             <p>
               <textarea class="am-textarea" placeholder="Textarea"></textarea>
+            </p>
+            <h3 class="am-h3">Inline and block</h3>
+            <p>
+              All the input elements are inline by default, but able to be a
+              block by using
+              <code class="am-code">.am-(input|select|textarea)--block</code>:
+            </p>
+            <p>
+              <select class="am-select">
+                <option value="am-select-1">I am inline</option>
+              </select>
+            </p>
+            <p>
+              <select class="am-select am-select--block">
+                <option value="am-select-1">I am block</option>
+              </select>
+            </p>
+            <h3 class="am-h3">Validation</h3>
+            <p>
+              All the boxed inputs supports validation. There are
+              <em class="am-i">dynamic</em> validation (for
+              <code class="am-code">:valid</code> and
+              <code class="am-code">:invalid</code> element states) and
+              <em class="am-i">static</em> validation (for server-side or some
+              framework-oriented implementations).
+            </p>
+            <p>
+              For dynamic validation, one can use
+              <code class="am-code"
+                >.am-(input|select|textarea)--validable</code
+              >
+              and <code class="am-code">.am-...--invalidable</code> classes.
+            </p>
+            <p>
+              In turn, for static validation there are
+              <code class="am-code">.am-(input|select|textarea)--valid</code>
+              and <code class="am-code">.am-...--invalid</code> as well.
+            </p>
+            <p>
+              For instance, this one is dynamic, both validable and invalidable:
+            </p>
+            <p>
+              <input
+                class="am-input am-input--validable am-input--invalidable am-input--block"
+                type="text"
+                pattern="\d+"
+                placeholder="Try to write letters OR numbers here"
+              />
+            </p>
+            <p>Next, these ones is static:</p>
+            <p>
+              <input
+                class="am-input am-input--valid am-input--block"
+                type="text"
+                placeholder="Static valid state"
+              />
+            </p>
+            <p>
+              <input
+                class="am-input am-input--invalid am-input--block"
+                type="text"
+                placeholder="Static invalid state"
+              />
             </p>
             <h2 class="am-h2">Toggles</h2>
             <p>
               <input class="am-checkbox" type="checkbox" />
               <input class="am-checkbox" type="checkbox" checked />
-              <input class="am-checkbox" type="checkbox" disabled/>
-              <input class="am-checkbox" type="checkbox" checked disabled/>
+              <input class="am-checkbox" type="checkbox" disabled />
+              <input class="am-checkbox" type="checkbox" checked disabled />
             </p>
             <p>
               <input class="am-radio" type="radio" name="am-radio-1" />

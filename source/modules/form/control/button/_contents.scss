@@ -74,7 +74,11 @@
   @extend %-shared;
 
   & {
-    padding: 6px 12px;
+    min-width: 80px;
+    max-width: 100%;
+    min-height: 36px;
+
+    padding: 4px 12px;
 
     border: none;
     border-radius: 3px;
@@ -86,8 +90,6 @@
     font-weight: 600;
 
     white-space: nowrap;
-    min-width: 80px;
-    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
 

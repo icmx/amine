@@ -1,3 +1,5 @@
+// TODO: add `:indeterminate` support`
+
 .am-checkbox {
   @extend %-shared;
 
@@ -37,11 +39,19 @@
         border-color: lighten($am-color-black, 80%);
       }
 
+      &:active {
+        // This is for mobile webkit, on Android it's light blue
+        // by default and not needed here
+
+        -webkit-tap-highlight-color: transparent;
+      }
+
       &:hover::before {
         border-color: lighten($am-color-black, 60%);
       }
 
       &:focus::before {
+        border-color: $am-color-primary;
         box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
@@ -121,8 +131,6 @@
     }
   }
 
-  ///
-
   & {
     & {
       &::before {
@@ -131,11 +139,19 @@
         border-color: lighten($am-color-black, 80%);
       }
 
+      &:active {
+        // This is for mobile webkit, on Android it's light blue
+        // by default and not needed here
+
+        -webkit-tap-highlight-color: transparent;
+      }
+
       &:hover::before {
         border-color: lighten($am-color-black, 60%);
       }
 
       &:focus::before {
+        border-color: $am-color-primary;
         box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
@@ -213,6 +229,8 @@
       margin-left: 0px;
 
       border-radius: 1000px;
+
+      border: solid 1px transparent;
     }
 
     &::after {
@@ -222,15 +240,22 @@
       width: 12px;
       height: 12px;
 
-      margin-top: -15px;
-      margin-left: 3px;
+      margin-top: -16px;
+      margin-left: 4px;
 
       border-radius: 50%;
     }
 
+    &:active {
+      // This is for mobile webkit, on Android it's light blue
+      // by default and not needed here
+
+      -webkit-tap-highlight-color: transparent;
+    }
+
     &:checked {
       &::after {
-        margin-left: calc(100% - 15px);
+        margin-left: calc(100% - 14px);
       }
     }
   }
@@ -250,6 +275,7 @@
       }
 
       &:focus::before {
+        border-color: $am-color-primary;
         box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
@@ -282,6 +308,7 @@
 
       &:checked {
         &::before {
+          border-color: transparent;
           background-color: transparentize($am-color-primary, 0.5);
         }
       }

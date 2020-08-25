@@ -6,9 +6,9 @@
   & {
     & {
       min-width: 80px;
-      min-height: 34px;
+      min-height: 36px;
 
-      padding: 6px 8px;
+      padding: 4px 8px;
 
       font-family: 'Segoe UI', sans-serif;
       font-size: 12pt;
@@ -42,6 +42,7 @@
     &:focus {
       border-color: $am-color-primary;
       box-shadow: -shared-input-box-shadow($am-color-primary);
+
       z-index: 1;
 
       &::placeholder {
@@ -54,6 +55,7 @@
     }
   }
 
+  &--valid,
   &--validable:valid {
     & {
       border-color: $am-color-success;
@@ -64,10 +66,16 @@
     }
 
     &:focus {
+      border-color: darken($am-color-success, 15%);
       box-shadow: -shared-input-box-shadow($am-color-success);
+    }
+
+    &:focus:hover {
+      border-color: darken($am-color-success, 15%);
     }
   }
 
+  &--invalid,
   &--invalidable:invalid {
     & {
       border-color: $am-color-failure;
@@ -78,7 +86,12 @@
     }
 
     &:focus {
+      border-color: darken($am-color-failure, 15%);
       box-shadow: -shared-input-box-shadow($am-color-failure);
+    }
+
+    &:focus:hover {
+      border-color: darken($am-color-failure, 15%);
     }
   }
 
@@ -120,6 +133,8 @@
 .am-input[type='date'] {
   padding-top: 0;
   padding-bottom: 0;
+
+  line-height: 32px;
 }
 
 .am-input[type='search']::-webkit-search-cancel-button,
@@ -142,7 +157,7 @@
 .am-input[type='search'] {
   &::-webkit-search-cancel-button {
     background-image: url('../assets/icons/times.svg');
-    
+
     -webkit-appearance: none;
     opacity: 1;
   }
