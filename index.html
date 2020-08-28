@@ -66,34 +66,24 @@
               <span class="am-s">.am-s</span>
             </p>
             <p>
+              Subscript:
               <span class="am-subscript">.am-subscript</span> or
-              <span class="am-sub">.am-sub</span>, use it in C<span
-                class="am-sub"
-                >10</span
-              >H<span class="am-sub">12</span>N<span class="am-sub">2</span>O,
-              for example
+              <span class="am-sub">.am-sub</span>
             </p>
             <p>
+              Superscript:
               <span class="am-superscript">.am-superscript</span> or
-              <span class="am-sup">.am-sup</span>, use it in x<span
-                class="am-sup"
-                >2</span
-              >
-              + y<span class="am-sup">2</span> = z<span class="am-sup">2</span>,
-              for example
+              <span class="am-sup">.am-sup</span>
             </p>
             <p><span class="am-blockquote">.am-blockquote</span></p>
             <p><span class="am-code">.am-code</span></p>
             <p><span class="am-blockcode">.am-blockcode</span></p>
             <p><span class="am-key">.am-key</span></p>
             <p><span class="am-mark">.am-mark</span></p>
-            <p>
-              <span class="am-note">.am-note</span>, and also with modifiers:
-              <span class="am-note am-note--primary">*--primary</span>,
-              <span class="am-note am-note--success">*--success</span>,
-              <span class="am-note am-note--warning">*--warning</span>,
-              <span class="am-note am-note--failure">*--failure</span>
-            </p>
+            <h2 class="am-h2">Alignment</h2>
+            <p class="am-left">Left: Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur pariatur aperiam, dolorum ullam consectetur laboriosam quia eum voluptatum delectus. Iusto ducimus hic repellendus similique architecto beatae expedita accusantium doloribus earum?</p>
+            <p class="am-center">Center: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel odit iste corporis veniam soluta! Est perspiciatis alias amet enim quibusdam mollitia veniam harum ab accusantium magnam molestias, eos repellat nobis.</p>
+            <p class="am-right">Right: Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dicta molestiae laboriosam dignissimos. Quod dolores facilis, corporis error ipsum saepe iste quia incidunt provident, possimus maiores. Hic praesentium possimus earum?</p>
             <div class="am-h2">Coloring</div>
             <p><span class="am-main">.am-main</span></p>
             <p><span class="am-misc">.am-misc</span></p>
@@ -119,8 +109,7 @@
           <article>
             <h1 class="am-h1">Form</h1>
             <h2 class="am-h2">Buttons</h2>
-            <p>Amine's buttons built of three classes, <code class="am-code">.am-button</code> as a base, <code class="am-code">.am-button--(main|misc|text)</code> for type and <code class="am-code">.am-button--(primary|success|warning|failure)</code> for color.</p>
-            <p>Main type buttons (disabled variation in bottom row):</p>
+            <h3 class="am-h3">Main</h3>
             <p>
               <button class="am-button am-button--main am-button--primary">Button</button>
               <button class="am-button am-button--main am-button--success">Button</button>
@@ -133,7 +122,7 @@
               <button class="am-button am-button--main am-button--warning" disabled>Button</button>
               <button class="am-button am-button--main am-button--failure" disabled>Button</button>
             </p>
-            <p>Misc type buttons:</p>
+            <h3 class="am-h3">Misc</h3>
             <p>
               <button class="am-button am-button--misc am-button--primary">Button</button>
               <button class="am-button am-button--misc am-button--success">Button</button>
@@ -146,7 +135,7 @@
               <button class="am-button am-button--misc am-button--warning" disabled>Button</button>
               <button class="am-button am-button--misc am-button--failure" disabled>Button</button>
             </p>
-            <p>Text type buttons:</p>
+            <h3 class="am-h3">Text</h3>
             <p>
               <button class="am-button am-button--text am-button--primary">Button</button>
               <button class="am-button am-button--text am-button--success">Button</button>
@@ -160,10 +149,6 @@
               <button class="am-button am-button--text am-button--failure" disabled>Button</button>
             </p>
             <h2 class="am-h2">Boxed inputs</h2>
-
-            <p>
-              Use <code class="am-code">.am-input</code> for all boxed inputs:
-            </p>
             <p><input class="am-input" type="text" placeholder="Text" /></p>
             <p>
               <input class="am-input" type="password" placeholder="Password" />
@@ -172,11 +157,8 @@
             <p><input class="am-input" type="time" value="13:37" /></p>
             <p><input class="am-input" type="date" value="1970-01-01" /></p>
             <p>
-              For select element, use
-              <code class="am-code">.am-select</code> instead:
-            </p>
-            <p>
               <select class="am-select">
+                <option value="am-select-0">Select</option>
                 <option value="am-select-1">One</option>
                 <option value="am-select-2">Two</option>
                 <option value="am-select-3">Three</option>
@@ -184,18 +166,9 @@
               </select>
             </p>
             <p>
-              Also for textarea, use
-              <code class="am-code">.am-textarea</code> please:
-            </p>
-            <p>
               <textarea class="am-textarea" placeholder="Textarea"></textarea>
             </p>
             <h3 class="am-h3">Inline and block</h3>
-            <p>
-              All the input elements are inline by default, but able to be a
-              block by using
-              <code class="am-code">.am-(input|select|textarea)--block</code>:
-            </p>
             <p>
               <select class="am-select">
                 <option value="am-select-1">I am inline</option>
@@ -208,37 +181,14 @@
             </p>
             <h3 class="am-h3">Validation</h3>
             <p>
-              All the boxed inputs supports validation. There are
-              <em class="am-i">dynamic</em> validation (for
-              <code class="am-code">:valid</code> and
-              <code class="am-code">:invalid</code> element states) and
-              <em class="am-i">static</em> validation (for server-side or some
-              framework-oriented implementations).
-            </p>
-            <p>
-              For dynamic validation, one can use
-              <code class="am-code"
-                >.am-(input|select|textarea)--validable</code
-              >
-              and <code class="am-code">.am-...--invalidable</code> classes.
-            </p>
-            <p>
-              In turn, for static validation there are
-              <code class="am-code">.am-(input|select|textarea)--valid</code>
-              and <code class="am-code">.am-...--invalid</code> as well.
-            </p>
-            <p>
-              For instance, this one is dynamic, both validable and invalidable:
-            </p>
-            <p>
               <input
                 class="am-input am-input--validable am-input--invalidable am-input--block"
                 type="text"
                 pattern="\d+"
-                placeholder="Try to write letters OR numbers here"
+                placeholder="Dynamic: try to write letters OR numbers here"
               />
             </p>
-            <p>Next, these ones is static:</p>
+            <hr class="am-hr" />
             <p>
               <input
                 class="am-input am-input--valid am-input--block"
@@ -254,7 +204,6 @@
               />
             </p>
             <h2 class="am-h2">Grouping</h2>
-            <p>Boxed inputs are able to be grouped:</p>
             <p>
               <div class="am-group am-group--block">
                 <input class="am-input" type="text" placeholder="Type to search" />
@@ -269,7 +218,16 @@
               </div>
             </p>
             <p>
-              Button groups are supported as well:
+              <div class="am-group am-group--block">
+                <input class="am-input" type="text" placeholder="username" />
+                <div class="am-item">@</div>
+                <select class="am-select">
+                  <option value="inbox">inbox</option>
+                  <option value="mail">mail</option>
+                  <option value="noreply">noreply</option>
+                </select>
+                <div class="am-item">example.org</div>
+              </div>
             </p>
             <p>
               <div class="am-group am-group--block">
@@ -304,7 +262,7 @@
     <div class="am-section am-section--foot">
       <div class="am-content">
         <div class="am-item am-item--c4">
-          Amine v0.0.2
+          Amine v0.0.3
         </div>
       </div>
     </div>

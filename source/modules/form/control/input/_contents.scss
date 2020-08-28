@@ -8,7 +8,7 @@
       min-width: 80px;
       min-height: 36px;
 
-      padding: 4px 8px;
+      padding: 0px 8px;
 
       font-family: 'Segoe UI', sans-serif;
       font-size: 12pt;
@@ -131,6 +131,8 @@
 .am-input[type='search'],
 .am-input[type='time'],
 .am-input[type='date'] {
+  appearance: none;
+
   padding-top: 0;
   padding-bottom: 0;
 

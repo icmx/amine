@@ -33,20 +33,20 @@
 .am-blockquote {
   display: block;
   padding: 6px 12px;
-  
+
   border-left: solid 3px lighten($am-color-black, 60%);
   border-radius: 0 3px 3px 0;
-  
+
   background-color: lighten($am-color-black, 90%);
 }
 
 .am-code {
   padding: 0 0.1em;
-  
+
   font-family: monospace;
-  
+
   border-radius: 3px;
-  
+
   color: lighten($am-color-black, 20%);
   background-color: lighten($am-color-black, 90%);
 }
@@ -83,25 +83,4 @@
   color: lighten($am-color-black, 20%);
   background-color: lighten($am-color-warning, 45%);
   border-bottom: 1px solid transparentize($am-color-black, 0.9);
-}
-
-.am-note {
-  color: lighten($am-color-black, 40%);
-  font-size: 0.85em;
-
-  &--primary {
-    color: $am-color-primary;
-  }
-
-  &--success {
-    color: $am-color-success;
-  }
-
-  &--warning {
-    color: $am-color-warning;
-  }
-
-  &--failure {
-    color: $am-color-failure;
-  }
 }

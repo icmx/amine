@@ -372,6 +372,7 @@
   color: dodgerblue;
   background-color: transparent;
   border-color: dodgerblue;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--primary.am-button--misc:hover {
   color: #ffffff;
@@ -390,6 +391,7 @@
   color: dodgerblue;
   background-color: transparent;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--primary.am-button--text:hover {
   color: #ffffff;
@@ -429,6 +431,7 @@
   color: limegreen;
   background-color: transparent;
   border-color: limegreen;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--success.am-button--misc:hover {
   color: #ffffff;
@@ -447,6 +450,7 @@
   color: limegreen;
   background-color: transparent;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--success.am-button--text:hover {
   color: #ffffff;
@@ -486,6 +490,7 @@
   color: darkorange;
   background-color: transparent;
   border-color: darkorange;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--warning.am-button--misc:hover {
   color: #ffffff;
@@ -504,6 +509,7 @@
   color: darkorange;
   background-color: transparent;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--warning.am-button--text:hover {
   color: #ffffff;
@@ -543,6 +549,7 @@
   color: crimson;
   background-color: transparent;
   border-color: crimson;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--failure.am-button--misc:hover {
   color: #ffffff;
@@ -561,6 +568,7 @@
   color: crimson;
   background-color: transparent;
   border-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 .am-button--failure.am-button--text:hover {
   color: #ffffff;
@@ -588,7 +596,7 @@
 .am-textarea {
   min-width: 80px;
   min-height: 36px;
-  padding: 4px 8px;
+  padding: 0px 8px;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
@@ -726,6 +734,7 @@
 .am-input[type=search],
 .am-input[type=time],
 .am-input[type=date] {
+  appearance: none;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 32px;
@@ -945,7 +954,7 @@
   box-shadow: 0px 0px 0px 3px rgba(30, 144, 255, 0.35);
 }
 .am-switch:checked::before {
-  border-color: dodgerblue;
+  border-color: transparent;
   background-color: dodgerblue;
 }
 .am-switch:checked::after {
@@ -1395,21 +1404,16 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.am-note {
-  color: #666666;
-  font-size: 0.85em;
+.am-left {
+  text-align: left;
 }
-.am-note--primary {
-  color: dodgerblue;
+
+.am-center {
+  text-align: center;
 }
-.am-note--success {
-  color: limegreen;
-}
-.am-note--warning {
-  color: darkorange;
-}
-.am-note--failure {
-  color: crimson;
+
+.am-right {
+  text-align: right;
 }
 
 .am-main {

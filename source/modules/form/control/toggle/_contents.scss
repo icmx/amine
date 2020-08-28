@@ -275,7 +275,7 @@
 
     &:checked {
       &::before {
-        border-color: $am-color-primary;
+        border-color: transparent;
         background-color: $am-color-primary;
       }
 
