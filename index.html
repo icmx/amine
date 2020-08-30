@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amine — CSS library</title>
-    <link rel="stylesheet" href="output/amine.min.css" />
+    <link rel="stylesheet" href="output/amine.watch.css" />
   </head>
   <body class="am">
     <div class="am-section am-section--head">
@@ -25,7 +25,7 @@
           <div class="am-main">
             Nothing serious,
           </div>
-          <div class="am-note">
+          <div class="am-mute">
             Just trying to test all the Amine features!
           </div>
         </div>
@@ -203,6 +203,25 @@
                 placeholder="Static invalid state"
               />
             </p>
+            <h2 class="am-h2">Toggles</h2>
+            <p>
+              <input class="am-checkbox" type="checkbox" />
+              <input class="am-checkbox" type="checkbox" checked />
+              <input class="am-checkbox" type="checkbox" disabled />
+              <input class="am-checkbox" type="checkbox" checked disabled />
+            </p>
+            <p>
+              <input class="am-radio" type="radio" name="am-radio-1" />
+              <input class="am-radio" type="radio" name="am-radio-1" checked />
+              <input class="am-radio" type="radio" name="am-radio-2" disabled />
+              <input class="am-radio" type="radio" name="am-radio-2" disabled checked />
+            </p>
+            <p>
+              <input class="am-switch" type="checkbox" />
+              <input class="am-switch" type="checkbox" checked />
+              <input class="am-switch" type="checkbox" disabled />
+              <input class="am-switch" type="checkbox" checked disabled />
+            </p>
             <h2 class="am-h2">Grouping</h2>
             <p>
               <div class="am-group am-group--block">
@@ -226,7 +245,7 @@
                   <option value="mail">mail</option>
                   <option value="noreply">noreply</option>
                 </select>
-                <div class="am-item">example.org</div>
+                <div class="am-item">.example.org</div>
               </div>
             </p>
             <p>
@@ -236,24 +255,111 @@
                 <button class="am-button am-button--main am-button--success am-button--block">Three!</button>
               </div>
             </p>
-            <h2 class="am-h2">Toggles</h2>
             <p>
-              <input class="am-checkbox" type="checkbox" />
-              <input class="am-checkbox" type="checkbox" checked />
-              <input class="am-checkbox" type="checkbox" disabled />
-              <input class="am-checkbox" type="checkbox" checked disabled />
+              <div class="am-group am-group--block">
+                <div class="am-item">Textarea is also supported</div>
+                <textarea class="am-textarea"></textarea>
+              </div>
             </p>
             <p>
-              <input class="am-radio" type="radio" name="am-radio-1" />
-              <input class="am-radio" type="radio" name="am-radio-1" checked />
-              <input class="am-radio" type="radio" name="am-radio-2" disabled />
-              <input class="am-radio" type="radio" name="am-radio-2" disabled checked />
+              <div class="am-group am-group--block">
+                <input class="am-checkbox" type="checkbox" checked />
+                <select class="am-select">
+                  <option value="cs-1">Include one cutlery set</option>
+                  <option value="cs-2">Include two cutlery sets</option>
+                  <option value="cs-3">Include three cutlery sets</option>
+                  <option value="cs-4+">Include four or more cutlery sets</option>
+                </select>
+              </div>
             </p>
             <p>
-              <input class="am-switch" type="checkbox" />
-              <input class="am-switch" type="checkbox" checked />
-              <input class="am-switch" type="checkbox" disabled />
-              <input class="am-switch" type="checkbox" checked disabled />
+              <div class="am-group am-group--block">
+                <input class="am-switch" type="checkbox" />
+                <input class="am-input" type="text" placeholder="That's a strange group, right?" />
+                <button class="am-button am-button--main am-button--failure">No</button>
+                <div class="am-item">or</div>
+                <button class="am-button am-button--main am-button--success">Yes</button>
+                <div class="am-item">?</div>
+              </div>
+            </p>
+            <h2 class="am-h2">Field</h2>
+            <p>
+              <div class="am-field am-field--column">
+                <label class="am-field__label am-misc">Minimal example</label>
+                <input class="am-field__input am-input" type="text" placeholder="Just label and input, but this is extensible" />
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-field am-field--column">
+                <label class="am-field__label am-misc">Now with a validation</label>
+                <input class="am-field__input am-input am-input--invalid" type="text" value="PascalCaseNaming" />
+                <div class="am-field__tip am-small am-failure">Please use <em class="am-i">kebab-case-naming</em> in HTML and CSS</div>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-field am-field--column">
+                <div class="am-field__label">
+                  <label class="am-misc">Label</label>
+                </div>
+                <div class="am-field__input">
+                  <input class="am-input" type="text" />
+                  <div class="am-field__tip am-small am-misc">
+                    Full name
+                  </div>
+                </div>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-field am-field--column">
+                <label class="am-field__label am-misc">Select is also supported</label>
+                <select class="am-field__input am-select">
+                  <option value="true">Yep</option>
+                  <option value="false">Nope</option>
+                </select>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-field am-field--column">
+                <label class="am-field__label am-misc">As well as Textarea</label>
+                <textarea class="am-filed__input am-textarea">That's right pal!</textarea>
+                <div class="am-field__tip am-small am-misc">Wait, did you forget about tips?</div>
+                <div class="am-field__tip am-small am-misc">Here they are!</div>
+                <div class="am-field__tip am-small am-misc">And one more.</div>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-field am-field--row">
+                <label class="am-field__label am-misc">Same minimal, but in a row form</label>
+                <input class="am-field__input am-input" type="text" value="I have to make it responsive later" />
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-field am-field--row">
+                <label class="am-field__label am-misc">What about tips now?</label>
+                <div class="am-field__input">
+                  <select class="am-select">
+                    <option value="1">Yeah, what about them?</option>
+                  </select>
+                  <div class="am-field__tip am-small am-misc">They're all here, on input side</div>
+                </div>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-field am-field--row">
+                <label class="am-field__label am-misc">Even on textarea?</label>
+                <div class="am-field__input">
+                  <textarea class="am-textarea am-textarea--valid">Yes!</textarea>
+                <div class="am-field__tip am-small am-success">Sure, why not?</div>
+                <div class="am-field__tip am-small am-misc">By the way, tips may have different colors</div>
+                </div>
+              </div>
             </p>
           </article>
         </div>
