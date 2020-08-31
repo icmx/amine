@@ -8,7 +8,7 @@
   </head>
   <body class="am">
     <div class="am-section am-section--head">
-      <div class="am-content am-content--sides">
+      <div class="am-content am-content--sides am-content--narrow">
         <div class="am-item"><span class="am-b">Amine</span> — CSS library</div>
         <div class="am-item">
           <a class="am-link" href="https://github.com/icmx/amine">Github</a>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="am-section am-section--hero">
-      <div class="am-content">
+      <div class="am-content am-content--narrow">
         <div class="am-item am-item--c12">
           <div class="am-display-1">
             &gt;<span class="am-bold">That</span>
@@ -25,20 +25,15 @@
           <div class="am-main">
             Nothing serious,
           </div>
-          <div class="am-mute">
+          <div class="am-small am-mute">
             Just trying to test all the Amine features!
           </div>
         </div>
       </div>
     </div>
     <div class="am-section am-section--body">
-      <div class="am-content">
-        <div class="am-item am-item--c2@d am-item--c12@m">
-          <p><a href="#" class="am-link">Link test</a></p>
-          <p><a href="#" class="am-link">Suppose that's nav links</a></p>
-          <p><a href="#" class="am-link">And yet another one</a></p>
-        </div>
-        <div class="am-item am-item--c10@d am-item--c12@m">
+      <div class="am-content am-content--narrow">
+        <div class="am-item am-item--c12">
           <article>
             <h1 class="am-h1">Typography</h1>
             <h2 class="am-h2">Basic</h2>
@@ -229,6 +224,7 @@
                 <button class="am-button am-button--main am-button--primary">Let's go!</button>
               </div>
             </p>
+            <hr class="am-hr" />
             <p>
               <div class="am-group am-group--block">
                 <div class="am-item">Name your price</div>
@@ -236,6 +232,7 @@
                 <div class="am-item">$</div>
               </div>
             </p>
+            <hr class="am-hr" />
             <p>
               <div class="am-group am-group--block">
                 <input class="am-input" type="text" placeholder="username" />
@@ -248,6 +245,7 @@
                 <div class="am-item">.example.org</div>
               </div>
             </p>
+            <hr class="am-hr" />
             <p>
               <div class="am-group am-group--block">
                 <button class="am-button am-button--main am-button--failure am-button--block">One</button>
@@ -255,12 +253,24 @@
                 <button class="am-button am-button--main am-button--success am-button--block">Three!</button>
               </div>
             </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-group am-group--block">
+                <button class="am-button am-button--misc am-button--primary am-button--block">Here</button>
+                <button class="am-button am-button--misc am-button--primary am-button--block">We</button>
+                <button class="am-button am-button--misc am-button--primary am-button--block">Go</button>
+                <button class="am-button am-button--main am-button--primary am-button--block">Again</button>
+                <button class="am-button am-button--misc am-button--primary am-button--block">Yeah!</button>
+              </div>
+            </p>
+            <hr class="am-hr" />
             <p>
               <div class="am-group am-group--block">
                 <div class="am-item">Textarea is also supported</div>
                 <textarea class="am-textarea"></textarea>
               </div>
             </p>
+            <hr class="am-hr" />
             <p>
               <div class="am-group am-group--block">
                 <input class="am-checkbox" type="checkbox" checked />
@@ -272,6 +282,7 @@
                 </select>
               </div>
             </p>
+            <hr class="am-hr" />
             <p>
               <div class="am-group am-group--block">
                 <input class="am-switch" type="checkbox" />
@@ -280,6 +291,14 @@
                 <div class="am-item">or</div>
                 <button class="am-button am-button--main am-button--success">Yes</button>
                 <div class="am-item">?</div>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-group am-group--block">
+                <textarea class="am-textarea">Total edge case</textarea>
+                <input class="am-checkbox" type="checkbox" />
+                <input class="am-switch" type="checkbox" />
               </div>
             </p>
             <h2 class="am-h2">Field</h2>
@@ -301,12 +320,12 @@
             <p>
               <div class="am-field am-field--column">
                 <div class="am-field__label">
-                  <label class="am-misc">Label</label>
+                  <label class="am-misc">This one is extended, but looks like previous</label>
                 </div>
                 <div class="am-field__input">
-                  <input class="am-input" type="text" />
+                  <input class="am-input" type="text" placeholder="John Unknown Doe" />
                   <div class="am-field__tip am-small am-misc">
-                    Full name
+                    Full name please
                   </div>
                 </div>
               </div>
@@ -328,7 +347,6 @@
                 <textarea class="am-filed__input am-textarea">That's right pal!</textarea>
                 <div class="am-field__tip am-small am-misc">Wait, did you forget about tips?</div>
                 <div class="am-field__tip am-small am-misc">Here they are!</div>
-                <div class="am-field__tip am-small am-misc">And one more.</div>
               </div>
             </p>
             <hr class="am-hr" />
@@ -362,13 +380,47 @@
               </div>
             </p>
           </article>
+          <article>
+            <h1 class="am-h1">Cards</h1>
+            <p>Currently experimental, just for tests</p>
+            <div class="am-card">
+              <div class="am-card__head"><strong class="am-b">Minimal example</strong></div>
+              <div class="am-card__body">Card with head and body only.</div>
+            </div>
+            <hr class="am-hr" />
+            <div class="am-card">
+              <div class="am-card__call am-card__call--primary">Important message</div>
+              <div class="am-card__head"><strong class="am-b">Card with call</strong></div>
+              <div class="am-card__body">Which text I can place here?</div>
+            </div>
+            <hr class="am-hr" />
+            <div class="am-card">
+              <img class="am-card__hero" src="assets/placeholders/p16x10.svg" />
+              <div class="am-card__head"><strong class="am-b">Card with an image</strong></div>
+              <div class="am-card__body">What about this?</div>
+            </div>
+            <hr class="am-hr" />
+            <div class="am-card">
+              <div class="am-card__call am-card__call--failure">Bad message or status</div>
+              <img class="am-card__hero" src="assets/placeholders/p16x10.svg" />
+              <div class="am-card__head"><strong class="am-b">This can do even more</strong></div>
+              <div class="am-card__body">Call, hero, head, body and footer at one place. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi consequuntur in distinctio explicabo voluptatum iusto pariatur nam alias, suscipit voluptatibus deserunt, dolorum laudantium? Quis nemo deleniti recusandae dolor culpa.</div>
+              <div class="am-card__foot">
+                <button class="am-button am-button--main am-button--primary">Okay</button>
+                <button class="am-button am-button--text am-button--primary">What?</button>
+              </div>
+            </div>
+            <hr class="am-hr" />
+          </article>
         </div>
       </div>
     </div>
     <div class="am-section am-section--foot">
-      <div class="am-content">
+      <div class="am-content am-content--narrow">
         <div class="am-item am-item--c4">
-          Amine v0.0.3
+          <p class="am-small am-misc">
+            Amine v0.0.4 <span class="am-mute">· by icmx</span>
+          </p>
         </div>
       </div>
     </div>

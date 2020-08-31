@@ -22,6 +22,7 @@
 
   & > .am-checkbox,
   & > .am-radio {
+    min-width: 36px;
     width: 36px;
 
     background-color: lighten($am-color-black, 90%);
@@ -30,6 +31,7 @@
   }
 
   & > .am-switch {
+    min-width: 36px;
     width: 48px;
 
     padding: 0 6px;

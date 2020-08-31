@@ -1,8 +1,51 @@
 .am {
   margin: 0;
+  color: #333333;
   font-family: "Segoe UI", sans-serif;
   font-size: 12pt;
   font-weight: 400;
+}
+
+.am-card {
+  box-sizing: border-box;
+  border-radius: 3px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.05);
+}
+.am-card__call {
+  padding: 18px;
+  color: #ffffff;
+}
+.am-card__call--primary {
+  background-color: #4169e1;
+}
+.am-card__call--success {
+  background-color: #92c906;
+}
+.am-card__call--warning {
+  background-color: #f4a507;
+}
+.am-card__call--failure {
+  background-color: #ff3f35;
+}
+.am-card__head {
+  padding: 18px;
+}
+.am-card__hero {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.am-card__body {
+  padding: 0 18px 18px;
+}
+.am-card__foot {
+  padding: 0 18px 18px;
+}
+.am-card__call:first-child, .am-card__hero:first-child {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
 .am-hr {
@@ -341,7 +384,7 @@
   border-style: solid;
   font-family: "Segoe UI";
   font-size: 12pt;
-  font-weight: 600;
+  font-weight: 400;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -362,10 +405,10 @@
   border-color: transparent;
 }
 .am-button--primary.am-button--main:hover {
-  background-color: #1d44b8;
+  background-color: #2b58de;
 }
 .am-button--primary.am-button--main:active {
-  background-color: #839deb;
+  background-color: #577ae4;
 }
 .am-button--primary.am-button--main:disabled {
   color: #999999;
@@ -378,11 +421,11 @@
 }
 .am-button--primary.am-button--misc:hover {
   color: #ffffff;
-  background-color: #1d44b8;
+  background-color: #2b58de;
   border-color: transparent;
 }
 .am-button--primary.am-button--misc:active {
-  background-color: #839deb;
+  background-color: #577ae4;
 }
 .am-button--primary.am-button--misc:disabled {
   color: #999999;
@@ -396,10 +439,10 @@
 }
 .am-button--primary.am-button--text:hover {
   color: #ffffff;
-  background-color: #1d44b8;
+  background-color: #2b58de;
 }
 .am-button--primary.am-button--text:active {
-  background-color: #839deb;
+  background-color: #577ae4;
 }
 .am-button--primary.am-button--text:disabled {
   color: #999999;
@@ -418,10 +461,10 @@
   border-color: transparent;
 }
 .am-button--success.am-button--main:hover {
-  background-color: #5c7f04;
+  background-color: #80b005;
 }
 .am-button--success.am-button--main:active {
-  background-color: #bcf823;
+  background-color: #a4e207;
 }
 .am-button--success.am-button--main:disabled {
   color: #999999;
@@ -434,11 +477,11 @@
 }
 .am-button--success.am-button--misc:hover {
   color: #ffffff;
-  background-color: #5c7f04;
+  background-color: #80b005;
   border-color: transparent;
 }
 .am-button--success.am-button--misc:active {
-  background-color: #bcf823;
+  background-color: #a4e207;
 }
 .am-button--success.am-button--misc:disabled {
   color: #999999;
@@ -452,10 +495,10 @@
 }
 .am-button--success.am-button--text:hover {
   color: #ffffff;
-  background-color: #5c7f04;
+  background-color: #80b005;
 }
 .am-button--success.am-button--text:active {
-  background-color: #bcf823;
+  background-color: #a4e207;
 }
 .am-button--success.am-button--text:disabled {
   color: #999999;
@@ -474,10 +517,10 @@
   border-color: transparent;
 }
 .am-button--warning.am-button--main:hover {
-  background-color: #aa7305;
+  background-color: #db9406;
 }
 .am-button--warning.am-button--main:active {
-  background-color: #fac04e;
+  background-color: #f8af1c;
 }
 .am-button--warning.am-button--main:disabled {
   color: #999999;
@@ -490,11 +533,11 @@
 }
 .am-button--warning.am-button--misc:hover {
   color: #ffffff;
-  background-color: #aa7305;
+  background-color: #db9406;
   border-color: transparent;
 }
 .am-button--warning.am-button--misc:active {
-  background-color: #fac04e;
+  background-color: #f8af1c;
 }
 .am-button--warning.am-button--misc:disabled {
   color: #999999;
@@ -508,10 +551,10 @@
 }
 .am-button--warning.am-button--text:hover {
   color: #ffffff;
-  background-color: #aa7305;
+  background-color: #db9406;
 }
 .am-button--warning.am-button--text:active {
-  background-color: #fac04e;
+  background-color: #f8af1c;
 }
 .am-button--warning.am-button--text:disabled {
   color: #999999;
@@ -530,10 +573,10 @@
   border-color: transparent;
 }
 .am-button--failure.am-button--main:hover {
-  background-color: #e80b00;
+  background-color: #ff271c;
 }
 .am-button--failure.am-button--main:active {
-  background-color: #ff8882;
+  background-color: #ff574f;
 }
 .am-button--failure.am-button--main:disabled {
   color: #999999;
@@ -546,11 +589,11 @@
 }
 .am-button--failure.am-button--misc:hover {
   color: #ffffff;
-  background-color: #e80b00;
+  background-color: #ff271c;
   border-color: transparent;
 }
 .am-button--failure.am-button--misc:active {
-  background-color: #ff8882;
+  background-color: #ff574f;
 }
 .am-button--failure.am-button--misc:disabled {
   color: #999999;
@@ -564,10 +607,10 @@
 }
 .am-button--failure.am-button--text:hover {
   color: #ffffff;
-  background-color: #e80b00;
+  background-color: #ff271c;
 }
 .am-button--failure.am-button--text:active {
-  background-color: #ff8882;
+  background-color: #ff574f;
 }
 .am-button--failure.am-button--text:disabled {
   color: #999999;
@@ -648,14 +691,14 @@
 .am-select--validable:valid:hover,
 .am-textarea--valid:hover,
 .am-textarea--validable:valid:hover {
-  border-color: #5c7f04;
+  border-color: #80b005;
 }
 .am-input--valid:focus, .am-input--validable:valid:focus,
 .am-select--valid:focus,
 .am-select--validable:valid:focus,
 .am-textarea--valid:focus,
 .am-textarea--validable:valid:focus {
-  border-color: #5c7f04;
+  border-color: #80b005;
   box-shadow: 0px 0px 0px 3px rgba(146, 201, 6, 0.35);
 }
 .am-input--valid:focus:hover, .am-input--validable:valid:focus:hover,
@@ -663,7 +706,7 @@
 .am-select--validable:valid:focus:hover,
 .am-textarea--valid:focus:hover,
 .am-textarea--validable:valid:focus:hover {
-  border-color: #5c7f04;
+  border-color: #80b005;
 }
 .am-input--invalid, .am-input--invalidable:invalid,
 .am-select--invalid,
@@ -677,14 +720,14 @@
 .am-select--invalidable:invalid:hover,
 .am-textarea--invalid:hover,
 .am-textarea--invalidable:invalid:hover {
-  border-color: #e80b00;
+  border-color: #ff271c;
 }
 .am-input--invalid:focus, .am-input--invalidable:invalid:focus,
 .am-select--invalid:focus,
 .am-select--invalidable:invalid:focus,
 .am-textarea--invalid:focus,
 .am-textarea--invalidable:invalid:focus {
-  border-color: #e80b00;
+  border-color: #ff271c;
   box-shadow: 0px 0px 0px 3px rgba(255, 63, 53, 0.35);
 }
 .am-input--invalid:focus:hover, .am-input--invalidable:invalid:focus:hover,
@@ -692,7 +735,7 @@
 .am-select--invalidable:invalid:focus:hover,
 .am-textarea--invalid:focus:hover,
 .am-textarea--invalidable:invalid:focus:hover {
-  border-color: #e80b00;
+  border-color: #ff271c;
 }
 .am-input--ghost,
 .am-select--ghost,
@@ -785,7 +828,6 @@
   min-width: 18px;
   min-height: 36px;
   width: 18px;
-  height: 36px;
   cursor: pointer;
 }
 .am-radio::before, .am-checkbox::before {
@@ -889,7 +931,6 @@
   min-width: 36px;
   min-height: 36px;
   width: 36px;
-  height: 36px;
   cursor: pointer;
 }
 .am-switch::before {
@@ -898,7 +939,7 @@
   width: calc(100% - 2px);
   height: 18px;
   margin-left: 0px;
-  margin-top: 8px;
+  margin-top: 7px;
   border-radius: 1000px;
   border: solid 1px transparent;
 }
@@ -973,7 +1014,7 @@
   flex-wrap: nowrap;
 }
 .am-field--row > .am-field__label {
-  margin-top: 5px;
+  margin-top: 8px;
   margin-right: 12px;
   min-width: 40%;
   flex-basis: 40%;
@@ -1019,12 +1060,14 @@
   border-right: none;
 }
 .am-group > .am-checkbox, .am-group > .am-radio {
+  min-width: 36px;
   width: 36px;
   background-color: #e6e6e6;
   border: solid #cccccc 1px;
   border-right: none;
 }
 .am-group > .am-switch {
+  min-width: 36px;
   width: 48px;
   padding: 0 6px;
   background-color: #e6e6e6;
@@ -1277,7 +1320,6 @@
   flex-wrap: wrap;
   margin: 0 auto;
   height: 100%;
-  max-width: 1400px;
 }
 .am-content--left {
   justify-content: flex-start;
@@ -1290,6 +1332,15 @@
 }
 .am-content--right {
   justify-content: flex-end;
+}
+.am-content--full {
+  max-width: 100%;
+}
+.am-content--wide {
+  max-width: 1400px;
+}
+.am-content--narrow {
+  max-width: 800px;
 }
 
 .am-section {
@@ -1434,19 +1485,19 @@
 .am-display-1,
 .am-d1 {
   font-size: 6em;
-  font-weight: 200;
+  font-weight: 700;
 }
 
 .am-display-2,
 .am-d2 {
   font-size: 5em;
-  font-weight: 200;
+  font-weight: 700;
 }
 
 .am-display-3,
 .am-d3 {
   font-size: 4em;
-  font-weight: 200;
+  font-weight: 700;
 }
 
 .am-heading-1,

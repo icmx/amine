@@ -20,11 +20,11 @@
     border-color: transparent;
 
     &:hover {
-      background-color: darken($color, 15%);
+      background-color: darken($color, 5%);
     }
 
     &:active {
-      background-color: lighten($color, 15%);
+      background-color: lighten($color, 5%);
     }
 
     &:disabled {
@@ -40,12 +40,12 @@
 
     &:hover {
       color: $am-color-white;
-      background-color: darken($color, 15%);
+      background-color: darken($color, 5%);
       border-color: transparent;
     }
 
     &:active {
-      background-color: lighten($color, 15%);
+      background-color: lighten($color, 5%);
     }
 
     &:disabled {
@@ -62,11 +62,11 @@
 
     &:hover {
       color: $am-color-white;
-      background-color: darken($color, 15%);
+      background-color: darken($color, 5%);
     }
 
     &:active {
-      background-color: lighten($color, 15%);
+      background-color: lighten($color, 5%);
     }
 
     &:disabled {
@@ -94,7 +94,7 @@
 
     font-family: 'Segoe UI';
     font-size: 12pt;
-    font-weight: 600;
+    font-weight: 400;
 
     white-space: nowrap;
     overflow: hidden;

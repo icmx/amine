@@ -64,16 +64,16 @@
     }
 
     &:hover {
-      border-color: darken($am-color-success, 15%);
+      border-color: darken($am-color-success, 5%);
     }
 
     &:focus {
-      border-color: darken($am-color-success, 15%);
+      border-color: darken($am-color-success, 5%);
       box-shadow: -shared-input-box-shadow($am-color-success);
     }
 
     &:focus:hover {
-      border-color: darken($am-color-success, 15%);
+      border-color: darken($am-color-success, 5%);
     }
   }
 
@@ -84,16 +84,16 @@
     }
 
     &:hover {
-      border-color: darken($am-color-failure, 15%);
+      border-color: darken($am-color-failure, 5%);
     }
 
     &:focus {
-      border-color: darken($am-color-failure, 15%);
+      border-color: darken($am-color-failure, 5%);
       box-shadow: -shared-input-box-shadow($am-color-failure);
     }
 
     &:focus:hover {
-      border-color: darken($am-color-failure, 15%);
+      border-color: darken($am-color-failure, 5%);
     }
   }
 

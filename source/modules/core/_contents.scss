@@ -1,6 +1,8 @@
 .am {
   margin: 0;
 
+  color: lighten($am-color-black, 20%);
+
   font-family: 'Segoe UI', sans-serif;
   font-size: 12pt;
   font-weight: 400;
