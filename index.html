@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amine — CSS library</title>
-    <link rel="stylesheet" href="output/amine.min.css" />
+    <link rel="stylesheet" href="output/amine.watch.css" />
   </head>
   <body class="am">
     <div class="am-section am-section--head">
@@ -380,7 +380,48 @@
             </p>
           </article>
           <article>
-            <h1 class="am-h1">Cards</h1>
+            <h1 class="am-h1">Layout</h1>
+            <h2 class="am-h2">Navbar</h2>
+            <p>
+              <div class="am-navbar">
+                <div class="am-item am-item--max">
+                  <span>Great news everyone!</span>
+                  <span class="am-mute">one hour ago</span>
+                </div>
+                <div class="am-item am-item--min">
+                  <button class="am-button am-button--text am-button--primary">Cancel</button>
+                </div>
+                <div class="am-item am-item--min">
+                  <button class="am-button am-button--misc am-button--primary">Read</button>
+                </div>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-navbar">
+                <div class="am-item am-item--min">
+                  <button class="am-button am-button--main am-button--primary">Done</button>
+                </div>
+                <div class="am-item am-item--max">
+                  <button class="am-button am-button--text am-button--primary">Cancel</button>
+                </div>
+                <div class="am-item am-item--min">
+                  <button class="am-button am-button--text am-button--failure">Remove</button>
+                </div>
+              </div>
+            </p>
+            <hr class="am-hr" />
+            <p>
+              <div class="am-navbar am-navbar--right">
+                <button class="am-item am-button am-button--misc am-button--primary">Back</button>
+                <button class="am-item am-button am-button--misc am-button--primary">Select</button>
+                <button class="am-item am-button am-button--main am-button--primary">Confirm</button>
+              </div>
+            </p>
+          </article>
+          <article>
+            <h1 class="am-h1">Components</h1>
+            <h2 class="am-h2">Cards</h2>
             <p>Currently experimental, just for tests</p>
             <div class="am-card">
               <div class="am-card__head"><strong class="am-b">Minimal example</strong></div>
@@ -402,21 +443,23 @@
             <div class="am-card">
               <div class="am-card__call am-card__call--failure">Bad message or status</div>
               <img class="am-card__hero" src="assets/placeholders/p16x10.svg" />
-              <div class="am-card__head"><strong class="am-b">This can do even more</strong></div>
+              <div class="am-card__head am-navbar am-navbar--sides">
+                <span class="am-item am-b">This can do even more</span>
+                <span class="am-item am-small am-mute">no jokes dude</span>
+              </div>
               <div class="am-card__body">Call, hero, head, body and footer at one place. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi consequuntur in distinctio explicabo voluptatum iusto pariatur nam alias, suscipit voluptatibus deserunt, dolorum laudantium? Quis nemo deleniti recusandae dolor culpa.</div>
-              <div class="am-card__foot">
-                <button class="am-button am-button--main am-button--primary">Okay</button>
-                <button class="am-button am-button--text am-button--primary">What?</button>
+              <div class="am-card__foot am-navbar">
+                <button class="am-item am-button am-button--main am-button--primary">Okay</button>
+                <button class="am-item am-button am-button--text am-button--primary">What?</button>
               </div>
             </div>
-            <hr class="am-hr" />
           </article>
         </div>
       </div>
     </div>
     <div class="am-section am-section--foot">
       <div class="am-content am-content--narrow">
-        <div class="am-item am-item--c4">
+        <div class="am-item am-item--c12">
           <p class="am-small am-misc">
             Amine v0.0.4 <span class="am-mute">· by icmx</span>
           </p>

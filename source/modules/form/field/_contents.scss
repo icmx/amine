@@ -37,9 +37,11 @@
     display: flex;
     flex-direction: column;
 
-    & > textarea.am-field {
+    & > .am-textarea {
       flex-grow: 1;
       flex-shrink: 1;
+
+      resize: vertical;
     }
   }
 

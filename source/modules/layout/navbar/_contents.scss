@@ -1,0 +1,34 @@
+.am-navbar {
+  display: flex;
+  gap: 18px;
+
+  align-items: center;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--sides {
+    justify-content: space-between;
+  }
+
+  & > .am-item {
+    &--max {
+      flex-grow: 1;
+
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &--min {
+      flex-grow: 0;
+
+      white-space: nowrap;
+    }
+  }
+}
