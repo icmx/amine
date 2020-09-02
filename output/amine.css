@@ -1357,15 +1357,18 @@
 .am-navbar--sides {
   justify-content: space-between;
 }
-.am-navbar > .am-item--max {
-  flex-grow: 1;
+.am-navbar > .am-item {
   white-space: nowrap;
+}
+.am-navbar > .am-item--trunk {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.am-navbar > .am-item--max {
+  flex-grow: 1;
+}
 .am-navbar > .am-item--min {
   flex-grow: 0;
-  white-space: nowrap;
 }
 
 .am-section {
@@ -1507,76 +1510,71 @@
   color: #ff3f35;
 }
 
-.am-heading-6,
-.am-h6, .am-heading-5,
-.am-h5, .am-heading-4,
-.am-h4, .am-heading-3,
-.am-h3, .am-heading-2,
-.am-h2, .am-heading-1,
-.am-h1, .am-display-3,
-.am-d3, .am-display-2,
-.am-d2, .am-display-1,
-.am-d1 {
-  font-weight: 700;
-}
-
-.am-small, .am-regular, .am-large {
-  font-weight: 400;
-}
-
 .am-display-1,
 .am-d1 {
+  font-weight: 700;
   font-size: 6em;
 }
 
 .am-display-2,
 .am-d2 {
+  font-weight: 700;
   font-size: 5em;
 }
 
 .am-display-3,
 .am-d3 {
+  font-weight: 700;
   font-size: 4em;
 }
 
 .am-heading-1,
 .am-h1 {
+  font-weight: 700;
   font-size: 3em;
 }
 
 .am-heading-2,
 .am-h2 {
+  font-weight: 700;
   font-size: 2.6em;
 }
 
 .am-heading-3,
 .am-h3 {
+  font-weight: 700;
   font-size: 2.2em;
 }
 
 .am-heading-4,
 .am-h4 {
+  font-weight: 700;
   font-size: 1.8em;
 }
 
 .am-heading-5,
 .am-h5 {
+  font-weight: 700;
   font-size: 1.4em;
 }
 
 .am-heading-6,
 .am-h6 {
+  font-weight: 700;
   font-size: 1em;
 }
 
 .am-large {
+  font-weight: 400;
   font-size: 1.4em;
 }
 
 .am-regular {
+  font-weight: 400;
   font-size: 1em;
 }
 
 .am-small {
+  font-weight: 400;
   font-size: 0.85em;
 }
