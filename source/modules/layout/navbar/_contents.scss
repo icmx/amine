@@ -17,19 +17,23 @@
   }
 
   & > .am-item {
-    white-space: nowrap;
-
     &--trunk {
       overflow: hidden;
       text-overflow: ellipsis;
     }
 
     &--max {
+      white-space: nowrap;
       flex-grow: 1;
     }
 
     &--min {
+      white-space: nowrap;
       flex-grow: 0;
+    }
+
+    &--wrap {
+      white-space: normal;
     }
   }
 }
