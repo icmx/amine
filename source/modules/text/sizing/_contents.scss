@@ -1,88 +1,68 @@
-%-shared-text-sizing-font-weight-700 {
-  font-weight: 700;
-}
-
-%-shared-text-sizing-font-weight-400 {
-  font-weight: 400;
-}
-
 .am-display-1,
 .am-d1 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 6em;
 }
 
 .am-display-2,
 .am-d2 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 5em;
 }
 
 .am-display-3,
 .am-d3 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 4em;
 }
 
 .am-heading-1,
 .am-h1 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 3em;
 }
 
 .am-heading-2,
 .am-h2 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 2.6em;
 }
 
 .am-heading-3,
 .am-h3 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 2.2em;
 }
 
 .am-heading-4,
 .am-h4 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 1.8em;
 }
 
 .am-heading-5,
 .am-h5 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 1.4em;
 }
 
 .am-heading-6,
 .am-h6 {
-  @extend %-shared-text-sizing-font-weight-700;
-
+  font-weight: 700;
   font-size: 1em;
 }
 
 .am-large {
-  @extend %-shared-text-sizing-font-weight-400;
-
+  font-weight: 400;
   font-size: 1.4em;
 }
 
 .am-regular {
-  @extend %-shared-text-sizing-font-weight-400;
-
+  font-weight: 400;
   font-size: 1em;
 }
 
 .am-small {
-  @extend %-shared-text-sizing-font-weight-400;
-
+  font-weight: 400;
   font-size: 0.85em;
 }
