@@ -100,6 +100,36 @@
   border-radius: 3px;
 }
 
+.am-badge {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 240px;
+  padding: 4px 8px;
+  margin: 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 0.75em;
+  font-weight: 400;
+  border-radius: 3px;
+}
+.am-badge--primary {
+  color: #4169e1;
+  background-color: rgba(65, 105, 225, 0.05);
+}
+.am-badge--success {
+  color: #92c906;
+  background-color: rgba(146, 201, 6, 0.05);
+}
+.am-badge--warning {
+  color: #f4a507;
+  background-color: rgba(244, 165, 7, 0.05);
+}
+.am-badge--failure {
+  color: #ff3f35;
+  background-color: rgba(255, 63, 53, 0.05);
+}
+
 .am-hr {
   border: none;
   margin: 24px 0;

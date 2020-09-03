@@ -6,7 +6,7 @@
 
 @mixin -coloring($color) {
   &:focus {
-    box-shadow: 0px 0px 0px 3px transparentize($color, 0.65);
+    box-shadow: -shared-input-box-shadow($color);
     z-index: 1;
   }
 
