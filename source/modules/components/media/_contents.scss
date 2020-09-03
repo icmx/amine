@@ -1,20 +1,5 @@
 // TODO: media should have vertical orientation too
-
-.am-media {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-
-  gap: 18px;
-
-  &__hero {
-    flex-grow: 0;
-  }
-
-  &__body {
-    flex-grow: 1;
-  }
-}
+// TODO: also, it should have center modifiers
 
 @mixin -square-size($size) {
   min-width: $size;
@@ -25,6 +10,26 @@
 
   max-width: $size;
   max-height: $size;
+}
+
+.am-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  gap: 18px;
+
+  &__hero {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &__body {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 0;
+  }
 }
 
 .am-media-image {

@@ -4,6 +4,10 @@
 
   align-items: center;
 
+  &--top {
+    align-items: flex-start;
+  }
+
   &--left {
     justify-content: flex-start;
   }
@@ -17,23 +21,28 @@
   }
 
   & > .am-item {
-    &--trunk {
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
     &--max {
-      white-space: nowrap;
       flex-grow: 1;
+      flex-shrink: 1;
+
+      min-width: 0;
     }
 
     &--min {
-      white-space: nowrap;
       flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    &--trunk {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
     }
 
     &--wrap {
+      overflow: visible;
       white-space: normal;
+      text-overflow: unset;
     }
   }
 }

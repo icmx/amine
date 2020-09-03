@@ -388,7 +388,7 @@
                   Great news everyone!
                   <span class="am-mute">one hour ago</span>
                 </div>
-                <button class="am-item am-item--min am-button am-button--misc am-button--primary">Read</button>
+                <button class="am-item am-button am-button--misc am-button--primary">Read</button>
               </div>
             </p>
             <hr class="am-hr" />
@@ -397,7 +397,7 @@
                 <div class="am-item am-item--max am-item--trunk">
                   That's a pretty long text, which will be trunkated on any screen. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium minima pariatur id, odit voluptate. Cumque, laboriosam pariatur exercitationem in sed maiores cupiditate temporibus rerum ad molestiae nesciunt dolorem natus?
                 </div>
-                <div class="am-item am-item--min">
+                <div class="am-item">
                   <button class="am-button am-button--main am-button--failure">Button text must be short!</button>
                 </div>
               </div>
@@ -405,13 +405,13 @@
             <hr class="am-hr" />
             <p>
               <div class="am-navbar">
-                <div class="am-item am-item--min">
+                <div class="am-item">
                   <button class="am-button am-button--main am-button--primary">Done</button>
                 </div>
                 <div class="am-item am-item--max">
                   <button class="am-button am-button--text am-button--primary">Cancel</button>
                 </div>
-                <div class="am-item am-item--min">
+                <div class="am-item">
                   <button class="am-button am-button--text am-button--failure">Remove</button>
                 </div>
               </div>
@@ -447,23 +447,35 @@
             <hr class="am-hr" />
             <div class="am-media">
               <div class="am-media__hero">
-                <img class="am-media-image am-media-image--circle am-media-image--small" src="assets/placeholders/p1x1.svg" />
+                <img class="am-media-image am-media-image--square am-media-image--small" src="assets/placeholders/p1x1.svg" />
               </div>
               <div class="am-media__body">
                 <div class="am-navbar am-navbar--sides">
-                  <div class="am-item">
+                  <div class="am-item am-item--trunk">
                     <span class="am-b">file-attachments.zip</span>
                   </div>
                   <div class="am-item">
                     <a href="#" class="am-link">Download</a>
                   </div>
                 </div>
-                <p class="am-small am-mute">
-                  756.28 MB · from icmx
-                </p>
-                <p>
-                  Usually I don't recommend users to download files from unknown sources, but right now it's just a demo. Besides, Download button not working since — well — that's demo, as it said.
-                </p>
+                <p class="am-small am-mute">10.0 KB · from icmx</p>
+              </div>
+            </div>
+            <hr class="am-hr" />
+            <div class="am-media">
+              <div class="am-media__hero">
+                <img class="am-media-image am-media-image--square am-media-image--small" src="assets/placeholders/p1x1.svg" />
+              </div>
+              <div class="am-media__body">
+                <div class="am-navbar am-navbar--sides">
+                  <div class="am-item am-item--trunk">
+                    <span class="am-b">Very long file name which will obviously trunkated on narrow screens like phones or even small laptops LATEST (2).rar</span>
+                  </div>
+                  <div class="am-item">
+                    <a href="#" class="am-link">Download</a>
+                  </div>
+                </div>
+                <p class="am-small am-mute">756.28 MB · from JaneBrownDoe11</p>
               </div>
             </div>
             <hr class="am-hr" />
@@ -472,16 +484,12 @@
                 <img class="am-media-image am-media-image--circle am-media-image--regular" src="assets/placeholders/p1x1.svg" />
               </div>
               <div class="am-media__body">
-                <div class="am-navbar">
-                  <div class="am-item am-item--max">
-                    <span class="am-b">John Doe</span>
-                    <span class="am-mute">May 24, 2018</span>
-                  </div>
+                <div class="am-regular">
+                  <span class="am-bold">John Doe</span>
+                  <span class="am-mute">May 24, 2018</span>
                 </div>
-                <div class="am-navbar">
-                  <div class="am-item">
-                    <span class="am-mute am-small">@johndoe14</span>
-                  </div>
+                <div class="am-small">
+                  <div class="am-mute">@johndoe</div>
                 </div>
                 <p>
                   <textarea class="am-textarea am-textarea--block">Hey look, it can be even reply form!</textarea>
@@ -531,31 +539,29 @@
             <hr class="am-hr" />
             <div class="am-card">
               <img class="am-card__hero" src="assets/placeholders/p16x10.svg" />
-              <div class="am-card__body">
+              <div class="am-card__head">
                 <div class="am-media">
                   <div class="am-media__hero">
                     <img class="am-media-image am-media-image--circle am-media-image--small" src="assets/placeholders/p1x1.svg" />
                   </div>
                   <div class="am-media__body">
-                    <div class="am-navbar am-navbar--sides">
-                      <div class="am-item am-item--max">
-                        <span class="am-b">John Doe</span>
+                    <div class="am-navbar">
+                      <div class="am-item am-item--max am-item--trunk">
+                        <span class="am-bold">
+                          John the Long Name User Which Should be Trunkated
+                        </span>
                       </div>
-                      <div class="am-item am-small">
-                        <span class="am-mute">2h ago</span>
-                      </div>
-                      <div class="am-item am-small">
-                        <a href="#" class="am-link">Edit</a>
+                      <div class="am-item am-item--min">
+                        <span class="am-mute">
+                          2h ago
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quae assumenda fuga facilis modi quis dolorum pariatur laudantium nam ex tenetur, neque eveniet recusandae soluta cupiditate, dolore exercitationem dolor nemo!
-                </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe totam nobis sapiente officia distinctio illum non quidem consequatur, deleniti numquam, dolor dolorum ratione rem dignissimos voluptate ipsum ut, nisi fugiat.
-                </p>
+              </div>
+              <div class="am-card__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quae assumenda fuga facilis modi quis dolorum pariatur laudantium nam ex tenetur, neque eveniet recusandae soluta cupiditate, dolore exercitationem dolor nemo!
               </div>
             </div>
           </article>
