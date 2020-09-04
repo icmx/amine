@@ -189,3 +189,9 @@
     width: 1%;
   }
 }
+
+.am-table-scroller-x {
+  //This is not recommended.
+  
+  overflow-x: auto;
+}

@@ -440,6 +440,10 @@
   width: 1%;
 }
 
+.am-table-scroller-x {
+  overflow-x: auto;
+}
+
 .am-switch, .am-radio, .am-checkbox, .am-input,
 .am-select,
 .am-textarea, .am-button {
