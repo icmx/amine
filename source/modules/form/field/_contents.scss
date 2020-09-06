@@ -1,3 +1,5 @@
+// TODO: add desktop and mobile options
+
 .am-field {
   width: 100%;
 
@@ -13,6 +15,8 @@
   }
 
   &--column > &__input {
+    width: 100%;
+
     & > * {
       width: 100%;
     }
@@ -37,6 +41,10 @@
     display: flex;
     flex-direction: column;
 
+    & > * {
+      width: 100%;
+    }
+
     & > .am-textarea {
       flex-grow: 1;
       flex-shrink: 1;
@@ -49,12 +57,16 @@
     flex-direction: row-reverse;
   }
 
-  &--box > &__input {
+  &--box > &__input:first-child {
+    margin-left: 12px;
+  }
+
+  &--box > &__input:last-child {
     margin-right: 12px;
   }
 
   &--box > &__label {
-    margin-top: 5px;
+    margin-top: 6px;
 
     flex-grow: 1;
   }

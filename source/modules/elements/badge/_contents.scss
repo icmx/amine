@@ -19,10 +19,14 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  font-size: 0.75em;
+  font-size: 0.85em;
   font-weight: 400;
 
   border-radius: 3px;
+
+  &--default {
+    @include -coloring(lighten($am-color-black, 20%));
+  }
 
   &--primary {
     @include -coloring($am-color-primary);
