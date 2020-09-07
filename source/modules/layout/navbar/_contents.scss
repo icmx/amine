@@ -1,0 +1,48 @@
+.am-navbar {
+  display: flex;
+  gap: 18px;
+
+  align-items: center;
+
+  &--top {
+    align-items: flex-start;
+  }
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--sides {
+    justify-content: space-between;
+  }
+
+  & > .am-item {
+    &--max {
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      min-width: 0;
+    }
+
+    &--min {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+
+    &--trunk {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &--wrap {
+      overflow: visible;
+      white-space: normal;
+      text-overflow: unset;
+    }
+  }
+}

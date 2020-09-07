@@ -1,6 +1,6 @@
 {
   "name": "amine",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "CSS library",
   "main": "source/amine.scss",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "keywords": [
     "css",
-    "css-framework"
+    "css-library"
   ],
   "author": "icmx",
   "license": "MIT",

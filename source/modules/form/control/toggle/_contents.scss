@@ -1,16 +1,11 @@
-.am-check {
-  @extend %-shared;
+// TODO: add `:indeterminate` support`
 
+%-shared-toggle-checkbox-radio {
   & {
-    min-height: 32px;
     min-width: 18px;
+    min-height: 36px;
 
     width: 18px;
-
-    // TODO: Remove when `appearance` will be supported
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
 
     cursor: pointer;
 
@@ -21,12 +16,37 @@
       width: 16px;
       height: 16px;
 
-      margin-top: 7px;
+      margin-left: calc(50% - 9px);
+      margin-top: 8px;
 
       border-style: solid;
       border-width: 1px;
-      border-radius: 3px;
     }
+  }
+}
+
+%-shared-toggle-browsersfix {
+  & {
+    // Browser-specific fixes
+
+    // For Firefox
+    // TODO: Remove when `appearance` will be supported
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    // For mobile Webkit, on Android it's light blue
+    // by default and not needed here
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.am-checkbox {
+  @extend %-shared;
+  @extend %-shared-toggle-checkbox-radio;
+  @extend %-shared-toggle-browsersfix;
+
+  &::before {
+    border-radius: 3px;
   }
 
   & {
@@ -42,7 +62,8 @@
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow($am-color-primary);
+        border-color: $am-color-primary;
+        box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
 
@@ -92,36 +113,12 @@
 
 .am-radio {
   @extend %-shared;
+  @extend %-shared-toggle-checkbox-radio;
+  @extend %-shared-toggle-browsersfix;
 
-  & {
-    min-height: 32px;
-    min-width: 18px;
-
-    width: 18px;
-
-    // TODO: Remove when `appearance` will be supported
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-
-    cursor: pointer;
-
-    &::before {
-      content: ' ';
-      display: block;
-
-      width: 16px;
-      height: 16px;
-
-      margin-top: 7px;
-
-      border-style: solid;
-      border-width: 1px;
-      border-radius: 10000px;
-    }
+  &::before {
+    border-radius: 10000px;
   }
-
-  ///
 
   & {
     & {
@@ -136,7 +133,8 @@
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow($am-color-primary);
+        border-color: $am-color-primary;
+        box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
 
@@ -148,7 +146,7 @@
         background-image: url('../assets/icons/radio.svg');
         background-size: 24px;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center center;
       }
 
       &:hover::before {
@@ -186,21 +184,15 @@
   }
 }
 
-/////////////////////
-
-.am-toggle {
+.am-switch {
   @extend %-shared;
+  @extend %-shared-toggle-browsersfix;
 
   & {
-    min-height: 32px;
-    min-width: 34px;
+    min-width: 36px;
+    min-height: 36px;
 
-    width: 34px;
-
-    // TODO: Remove when `appearance` will be supported
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
+    width: 36px;
 
     cursor: pointer;
 
@@ -208,13 +200,15 @@
       content: ' ';
       display: block;
 
-      width: 100%;
+      width: calc(100% - 2px);
       height: 18px;
 
-      margin-top: 7px;
       margin-left: 0px;
+      margin-top: 7px;
 
       border-radius: 1000px;
+
+      border: solid 1px transparent;
     }
 
     &::after {
@@ -224,15 +218,15 @@
       width: 12px;
       height: 12px;
 
-      margin-top: -15px;
-      margin-left: 3px;
+      margin-left: 4px;
+      margin-top: -16px;
 
       border-radius: 50%;
     }
 
     &:checked {
       &::after {
-        margin-left: calc(100% - 15px);
+        margin-left: calc(100% - 16px);
       }
     }
   }
@@ -252,13 +246,14 @@
       }
 
       &:focus::before {
-        box-shadow: __shared-input-box-shadow($am-color-primary);
+        border-color: $am-color-primary;
+        box-shadow: -shared-input-box-shadow($am-color-primary);
       }
     }
 
     &:checked {
       &::before {
-        border-color: $am-color-primary;
+        border-color: transparent;
         background-color: $am-color-primary;
       }
 
@@ -284,6 +279,7 @@
 
       &:checked {
         &::before {
+          border-color: transparent;
           background-color: transparentize($am-color-primary, 0.5);
         }
       }

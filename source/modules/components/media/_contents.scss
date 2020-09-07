@@ -1,0 +1,59 @@
+// TODO: media should have vertical orientation too
+// TODO: also, it should have center modifiers
+
+@mixin -square-size($size) {
+  min-width: $size;
+  min-height: $size;
+
+  width: $size;
+  height: $size;
+
+  max-width: $size;
+  max-height: $size;
+}
+
+.am-media {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  gap: 18px;
+
+  &__hero {
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &__body {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-width: 0;
+  }
+}
+
+.am-media-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  &--small {
+    @include -square-size(22px);
+  }
+
+  &--regular {
+    @include -square-size(42px);
+  }
+
+  &--large {
+    @include -square-size(56px);
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+
+  &--square {
+    border-radius: 3px;
+  }
+}

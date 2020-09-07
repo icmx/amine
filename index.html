@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html translate="no">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amine — CSS library</title>
-    <link rel="stylesheet" href="output/amine.css" />
+    <link rel="stylesheet" href="output/amine.min.css" />
   </head>
   <body class="am">
     <div class="am-section am-section--head">
-      <div class="am-content am-content--sides">
+      <div class="am-content am-content--sides am-content--narrow">
         <div class="am-item"><span class="am-b">Amine</span> — CSS library</div>
         <div class="am-item">
           <a class="am-link" href="https://github.com/icmx/amine">Github</a>
@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="am-section am-section--hero">
-      <div class="am-content">
+      <div class="am-content am-content--narrow">
         <div class="am-item am-item--c12">
           <div class="am-display-1">
             &gt;<span class="am-bold">That</span>
@@ -25,76 +25,803 @@
           <div class="am-main">
             Nothing serious,
           </div>
-          <div class="am-note">
+          <div class="am-small am-mute">
             Just trying to test all the Amine features!
           </div>
         </div>
       </div>
     </div>
     <div class="am-section am-section--body">
-      <div class="am-content">
-        <div class="am-item am-item--c12 am-item@m">
-          <span class="am-typo--monospace">@m</span> — only visible at mobile
-          device
+      <div class="am-content am-content--narrow">
+        <div class="am-item am-item--c12">
+          <h1 class="am-h1">Typography</h1>
+          <h2 class="am-h2">Basic</h2>
+          <p>No style — just the text.</p>
+          <p><span class="am-bold">Bold</span> and also <span class="am-b">bold</span> shortcut.</p>
+          <p><span class="am-italic">Italic</span> and also <span class="am-i">italic</span> shortcut.</p>
+          <p><span class="am-underline">Underline</span> and also <span class="am-u">underline</span> shortcut.</p>
+          <p><span class="am-strikethrough">Strikethrough</span> and also <span class="am-s">strikethrough</span> shortcut.</p>
+          <p>Special <span class="am-subscript">subscript</span> and also <span class="am-sub">subscript</span> shortcut.</p>
+          <p>Special <span class="am-superscript">superscript</span> and also <span class="am-sup">superscript</span> shortcut.</p>
+          <p><span class="am-mark">Marked text</span>.</p>
+          <p><span class="am-key">Key text</span>.</p>
+          <p><span class="am-code">Code text</span>.</p>
+          <p class="am-blockcode">// Block code text.<br /><br />let a = 2;</p>
+          <p class="am-blockquote">Blockquote text.</p>
+          <h2 class="am-h2">Alignment</h2>
+          <p class="am-left">Left text align.</p>
+          <p class="am-center">Center text align.</p>
+          <p class="am-right">Right text align.</p>
+          <h2 class="am-h2">Coloring</h2>
+          <p><span class="am-main">Main color.</span></p>
+          <p><span class="am-misc">Misc color.</span></p>
+          <p><span class="am-mute">Mute color.</span></p>
+          <p><span class="am-primary">Primary color.</span></p>
+          <p><span class="am-success">Success color.</span></p>
+          <p><span class="am-warning">Warning color.</span></p>
+          <p><span class="am-failure">Failure color.</span></p>
+          <h2 class="am-h2">Sizing</h2>
+          <p><span class="am-display-1">Display 1</span></p>
+          <p><span class="am-display-2">Display 2</span></p>
+          <p><span class="am-display-3">Display 3</span></p>
+          <p><span class="am-heading-1">Heading 1</span></p>
+          <p><span class="am-heading-2">Heading 2</span></p>
+          <p><span class="am-heading-3">Heading 3</span></p>
+          <p><span class="am-heading-4">Heading 4</span></p>
+          <p><span class="am-heading-5">Heading 5</span></p>
+          <p><span class="am-heading-6">Heading 6</span></p>
+          <p><span class="am-large">Large text</span></p>
+          <p><span class="am-regular">Regular text</span></p>
+          <p><span class="am-small">Small text</span></p>
         </div>
-        <div class="am-item am-item--c12 am-item@d">
-          <span class="am-typo--monospace">@d</span> — only visible at desktop
-          device
-        </div>
-        <div class="am-item am-item--c2@d am-item--c12@m">
-          <p><a href="#" class="am-link">Link test</a></p>
-          <p><a href="#" class="am-link">Suppose that's nav links</a></p>
-          <p><a href="#" class="am-link">And yet another one</a></p>
-        </div>
-        <div class="am-item am-item--c10@d am-item--c12@m">
-          <p>No style</p>
-          <p><span class="am-bold">.am-bold</span></p>
-          <p><span class="am-italic">.am-italic</span></p>
-          <p><span class="am-underline">.am-underline</span></p>
-          <p><span class="am-strikethrough">.am-strikethrough</span></p>
-          <p><span class="am-subscript">.am-subscript</span></p>
-          <p><span class="am-superscript">.am-superscript</span></p>
-          <p><span class="am-blockquote">.am-blockquote</span></p>
-          <p><span class="am-code">.am-code</span></p>
-          <p><span class="am-blockcode">.am-blockcode</span></p>
-          <p><span class="am-code">.am-code</span></p>
-          <p><span class="am-key">.am-key</span></p>
-          <p><span class="am-mark">.am-mark</span></p>
+        <div class="am-item am-item--c12">
+          <h1 class="am-h1">Form</h1>
+          <h2 class="am-h2">Button</h2>
+          <h3 class="am-h3">Main buttons</h3>
           <p>
-            <span class="am-note">.am-note</span>, and also with modifiers:
-            <span class="am-note am-note--primary">*--primary</span>,
-            <span class="am-note am-note--success">*--success</span>,
-            <span class="am-note am-note--warning">*--warning</span>,
-            <span class="am-note am-note--failure">*--failure</span>
+            <button class="am-button am-button--main am-button--default">Default</button>
+            <button class="am-button am-button--main am-button--primary">Primary</button>
+            <button class="am-button am-button--main am-button--success">Success</button>
+            <button class="am-button am-button--main am-button--warning">Warning</button>
+            <button class="am-button am-button--main am-button--failure">Failure</button>
           </p>
-          <div class="am-hr"></div>
-          <p><span class="am-main">.am-main</span></p>
-          <p><span class="am-misc">.am-misc</span></p>
-          <p><span class="am-mute">.am-mute</span></p>
-          <p><span class="am-primary">.am-primary</span></p>
-          <p><span class="am-success">.am-success</span></p>
-          <p><span class="am-warning">.am-warning</span></p>
-          <p><span class="am-failure">.am-failure</span></p>
-          <div class="am-hr"></div>
-          <p><span class="am-display-1">.am-display-1</span></p>
-          <p><span class="am-display-2">.am-display-2</span></p>
-          <p><span class="am-display-3">.am-display-3</span></p>
-          <p><span class="am-heading-1">.am-heading-1</span></p>
-          <p><span class="am-heading-2">.am-heading-2</span></p>
-          <p><span class="am-heading-3">.am-heading-3</span></p>
-          <p><span class="am-heading-4">.am-heading-4</span></p>
-          <p><span class="am-heading-5">.am-heading-5</span></p>
-          <p><span class="am-heading-6">.am-heading-6</span></p>
-          <p><span class="am-large">.am-leading</span></p>
-          <p><span class="am-regular">.am-regular</span></p>
-          <p><span class="am-small">.am-small</span></p>
+          <p>
+            <button class="am-button am-button--main am-button--default" disabled>Default</button>
+            <button class="am-button am-button--main am-button--primary" disabled>Primary</button>
+            <button class="am-button am-button--main am-button--success" disabled>Success</button>
+            <button class="am-button am-button--main am-button--warning" disabled>Warning</button>
+            <button class="am-button am-button--main am-button--failure" disabled>Failure</button>
+          </p>
+          <h3 class="am-h3">Misc buttons</h3>
+          <p>
+            <button class="am-button am-button--misc am-button--default">Default</button>
+            <button class="am-button am-button--misc am-button--primary">Primary</button>
+            <button class="am-button am-button--misc am-button--success">Success</button>
+            <button class="am-button am-button--misc am-button--warning">Warning</button>
+            <button class="am-button am-button--misc am-button--failure">Failure</button>
+          </p>
+          <p>
+            <button class="am-button am-button--misc am-button--primary" disabled>Default</button>
+            <button class="am-button am-button--misc am-button--primary" disabled>Primary</button>
+            <button class="am-button am-button--misc am-button--success" disabled>Success</button>
+            <button class="am-button am-button--misc am-button--warning" disabled>Warning</button>
+            <button class="am-button am-button--misc am-button--failure" disabled>Failure</button>
+          </p>
+          <h3 class="am-h3">Text buttons</h3>
+          <p>
+            <button class="am-button am-button--text am-button--default">Default</button>
+            <button class="am-button am-button--text am-button--primary">Primary</button>
+            <button class="am-button am-button--text am-button--success">Success</button>
+            <button class="am-button am-button--text am-button--warning">Warning</button>
+            <button class="am-button am-button--text am-button--failure">Failure</button>
+          </p>
+          <p>
+            <button class="am-button am-button--text am-button--default" disabled>Default</button>
+            <button class="am-button am-button--text am-button--primary" disabled>Primary</button>
+            <button class="am-button am-button--text am-button--success" disabled>Success</button>
+            <button class="am-button am-button--text am-button--warning" disabled>Warning</button>
+            <button class="am-button am-button--text am-button--failure" disabled>Failure</button>
+          </p>
+          <h2 class="am-h2">Boxed inputs</h2>
+          <p><input class="am-input" type="text" placeholder="Text" /></p>
+          <p><input class="am-input" type="text" value="With value" /></p>
+          <p><input class="am-input" type="text" placeholder="Disabled" disabled /></p>
+          <p><input class="am-input" type="text" value="Disabled with value" disabled /></p>
+          <p><input class="am-input" type="password" placeholder="Password" /></p>
+          <p><input class="am-input" type="number" placeholder="Number" /></p>
+          <p><input class="am-input" type="time" value="13:37" /></p>
+          <p><input class="am-input" type="date" value="1970-01-01" /></p>
+          <p>
+            <select class="am-select">
+              <option value="am-select-0">Select</option>
+              <option value="am-select-1">One</option>
+              <option value="am-select-2">Two</option>
+              <option value="am-select-3">Three</option>
+              <option value="am-select-4" disabled>Four</option>
+            </select>
+          </p>
+          <p>
+            <textarea class="am-textarea" placeholder="Textarea"></textarea>
+          </p>
+          <p>
+            <textarea class="am-textarea" placeholder="Textarea">With value</textarea>
+          </p>
+          <h3 class="am-h3">Inline and block</h3>
+          <p>
+            <select class="am-select">
+              <option value="am-select-1">I am inline</option>
+            </select>
+          </p>
+          <p>
+            <select class="am-select am-select--block">
+              <option value="am-select-1">I am block</option>
+            </select>
+          </p>
+          <p><button class="am-button am-button--misc am-button--default">Inline button</button></p>
+          <p><button class="am-button am-button--misc am-button--default am-button--block">Block button</button></p>
+          <h3 class="am-h3">Validation</h3>
+          <p><input class="am-input am-input--validable am-input--invalidable am-input--block" type="text" pattern="\d+" placeholder="Dynamic: try to type letters or numbers" /></p>
+          <hr class="am-hr" />
+          <p><input class="am-input am-input--valid am-input--block" type="text" value="Static valid state" /></p>
+          <p><input class="am-input am-input--invalid am-input--block" type="text" value="Static invalid state" /></p>
+          <h2 class="am-h2">Toggles</h2>
+          <p>
+            <input class="am-checkbox" type="checkbox" />
+            <input class="am-checkbox" type="checkbox" checked />
+            <input class="am-checkbox" type="checkbox" disabled />
+            <input class="am-checkbox" type="checkbox" checked disabled />
+          </p>
+          <p>
+            <input class="am-radio" type="radio" name="am-radio-1" />
+            <input class="am-radio" type="radio" name="am-radio-1" checked />
+            <input class="am-radio" type="radio" name="am-radio-2" disabled />
+            <input class="am-radio" type="radio" name="am-radio-2" disabled checked />
+          </p>
+          <p>
+            <input class="am-switch" type="checkbox" />
+            <input class="am-switch" type="checkbox" checked />
+            <input class="am-switch" type="checkbox" disabled />
+            <input class="am-switch" type="checkbox" checked disabled />
+          </p>
+          <h2 class="am-h2">Grouping</h2>
+          <p>
+            <div class="am-group am-group--block">
+              <input class="am-input" type="text" placeholder="Type to search" />
+              <button class="am-button am-button--main am-button--primary">Let's go!</button>
+            </div>
+          </p>
+          <p>
+            <div class="am-group am-group--block">
+              <div class="am-item">Name your price</div>
+              <input class="am-input am-right" type="number" placeholder="120.00" />
+              <div class="am-item">$</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-group am-group--block">
+              <input class="am-input" type="text" placeholder="login" />
+              <div class="am-item">@</div>
+              <select class="am-select">
+                <option value="inbox">inbox</option>
+                <option value="mail">mail</option>
+                <option value="noreply" disabled>noreply</option>
+              </select>
+              <div class="am-item">.example.org</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-group am-group--block">
+              <button class="am-button am-button--main am-button--failure am-button--block">One</button>
+              <button class="am-button am-button--main am-button--warning am-button--block">Two</button>
+              <button class="am-button am-button--main am-button--success am-button--block">Three!</button>
+            </div>
+          </p>
+          <p>
+            <div class="am-group am-group--block">
+              <button class="am-button am-button--misc am-button--primary am-button--block">Here</button>
+              <button class="am-button am-button--misc am-button--primary am-button--block">We</button>
+              <button class="am-button am-button--main am-button--primary am-button--block">Go</button>
+              <button class="am-button am-button--misc am-button--primary am-button--block">Again</button>
+            </div>
+          </p>
+          <p>
+            <div class="am-group am-group--block">
+              <div class="am-item">Textarea is also supported</div>
+              <textarea class="am-textarea" placeholder="Yes it is!"></textarea>
+            </div>
+          </p>
+          <p>
+            <div class="am-group am-group--block">
+              <input class="am-checkbox" type="checkbox" checked />
+              <select class="am-select">
+                <option value="cs-1">Include one cutlery set</option>
+                <option value="cs-2">Include two cutlery sets</option>
+                <option value="cs-3">Include three cutlery sets</option>
+                <option value="cs-4+">Include four or more cutlery sets</option>
+              </select>
+            </div>
+          </p>
+          <p>
+            <div class="am-group am-group--block">
+              <input class="am-switch" type="checkbox" />
+              <input class="am-input" type="text" placeholder="Strange group, right?" />
+              <button class="am-button am-button--main am-button--failure">No</button>
+              <div class="am-item">or</div>
+              <button class="am-button am-button--main am-button--success">Yes</button>
+              <div class="am-item">?</div>
+            </div>
+          </p>
+          <h2 class="am-h2">Fields</h2>
+          <h3 class="am-h3">Column-oriented</h3>
+          <p>
+            <div class="am-field am-field--column">
+              <label class="am-field__label am-misc" for="field-1">Minimal example</label>
+              <input class="am-field__input am-input" id="field-1" type="text" placeholder="Just label and input" />
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--column">
+              <label class="am-field__label am-misc" for="field-2">Now with a validation</label>
+              <input class="am-field__input am-input am-input--invalid" id="field-2" type="text" value="PascalCaseNaming" />
+              <div class="am-field__tip am-small am-failure">Please use <em class="am-i am-u">kebab-case-naming</em> in HTML and CSS</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--column">
+              <label class="am-field__label am-misc">Sometimes there should be a button with long, really lo-o-ong label text for it, because it's a really important action, like accepting the terms of service use.</label>
+              <button class="am-field__input am-button am-button--main am-button--success">Accept &amp; proceed</button>
+              <div class="am-field__tip am-small am-misc">Even more, there can be an additional tip, like this.</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--column">
+              <div class="am-field__label">
+                <label class="am-misc" for="field-3">This one is extended, but looks like previous</label>
+              </div>
+              <div class="am-field__input">
+                <input class="am-input" id="field-3" type="text" placeholder="John Unknown Doe" />
+                <div class="am-field__tip am-small am-misc">
+                  Provide a full name please, not a short one
+                </div>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--column">
+              <label class="am-field__label am-misc" for="field-4">Select is also supported</label>
+              <select class="am-field__input am-select" id="field-4">
+                <option value="true">That's right!</option>
+              </select>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--column">
+              <label class="am-field__label am-misc" for="field-5">As well as Textarea</label>
+              <textarea class="am-field__input am-textarea" id="field-5">Absolutely correct.</textarea>
+              <div class="am-field__tip am-small am-misc">Wait, did you forget about tips?</div>
+              <div class="am-field__tip am-small am-misc">Here they are!</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--column">
+              <label class="am-field__label am-misc">Groups fits here too</label>
+              <div class="am-group">
+                <label class="am-item" for="field-6-1">From</label>
+                <input class="am-input" id="field-6-1" type="text" value="Alice" />
+                <label class="am-item" for="field-6-2">To</label>
+                <input class="am-input" id="field-6-2" type="text" value="Bob" />
+              </div>
+              <div class="am-field__tip am-small am-misc">Yes, with validation tips.</div>
+            </div>
+          </p>
+          <h3 class="am-h3">Row-oriented</h3>
+          <p>
+            <div class="am-field am-field--row">
+              <label class="am-field__label am-misc" for="field-7">Minimal in a row form</label>
+              <input class="am-field__input am-input" id="field-7" type="text" value="Like column, but row" />
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--row">
+              <label class="am-field__label am-misc" for="field-8">What about tips now?</label>
+              <div class="am-field__input">
+                <select class="am-select" id="field-8">
+                  <option value="yeah">Yeah, what about them?</option>
+                  <option value="just">Just look down!</option>
+                </select>
+                <div class="am-field__tip am-small am-misc">They're all here, on input side</div>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--row">
+              <label class="am-field__label am-misc" for="field-9">Even on textarea?</label>
+              <div class="am-field__input">
+                <textarea class="am-textarea am-textarea--valid" id="field-9">Yes!</textarea>
+                <div class="am-field__tip am-small am-success">Sure, why not?</div>
+                <div class="am-field__tip am-small am-misc">By the way, tips may have different colors</div>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--row">
+              <label class="am-field__label am-misc" for="field-10">Uhm... Groups, maybe?</label>
+              <div class="am-field__input">
+                <div class="am-group">
+                  <div class="am-item">Works</div>
+                  <select class="am-select" id="field-10">
+                    <option value="a">excellent!</option>
+                    <option value="b">great!</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </p>
+          <h3 class="am-h3">For toggleable inputs</h3>
+          <p>
+            <div class="am-field am-field--box">
+              <label class="am-field__label am-misc" for="field-11">Minimal checkbox example.</label>
+              <input class="am-field__input am-checkbox" id="field-11" type="checkbox" checked />
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--box">
+              <label class="am-field__label am-misc" for="field-12">Minimal switch example.</label>
+              <input class="am-field__input am-switch" id="field-12" type="checkbox" checked />
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--box">
+              <label class="am-field__label am-misc" for="field-13-1">Minimal radio example — option one.</label>
+              <input class="am-field__input am-radio" id="field-13-1" name="field-13" type="radio" />
+            </div>
+            <div class="am-field am-field--box">
+              <div class="am-field__label am-misc">
+                <label for="field-13-2">Minimal radio example — option two.</label>
+                <div class="am-field__tip am-small">Box-oriented fields can have tips too!</div>
+              </div>
+              <input class="am-field__input am-radio" id="field-13-2" name="field-13" type="radio" checked />
+            </div>
+            <div class="am-field am-field--box">
+              <label class="am-field__label am-misc" for="field-13-3">Disabled radio.</label>
+              <input class="am-field__input am-radio" id="field-13-3" name="field-13" type="radio" disabled />
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--column">
+              <div class="am-field__label am-main">Now, let's combine them in a column — that's looks like a single field now.</div>
+              <div class="am-field__input">
+                <div class="am-field am-field--box">
+                  <label class="am-field__label am-misc" for="field-14-1">Combined option one</label>
+                  <input class="am-field__input am-checkbox" id="field-14-1" type="checkbox" />
+                </div>
+                <div class="am-field am-field--box">
+                  <label class="am-field__label am-misc" for="field-14-2">Combined option two</label>
+                  <input class="am-field__input am-checkbox" id="field-14-2" type="checkbox" checked />
+                </div>
+                <div class="am-field am-field--box">
+                  <label class="am-field__label am-misc" for="field-14-3">Disabled option</label>
+                  <input class="am-field__input am-checkbox" id="field-14-3" type="checkbox" disabled />
+                </div>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-field am-field--row">
+              <div class="am-field__label am-main">Okay, now make them row-oriented, and turn checkboxes into switches.</div>
+              <div class="am-field__input">
+                <div class="am-field am-field--box">
+                  <input class="am-field__input am-switch" id="field-15-1" type="checkbox" />
+                  <label class="am-field__label am-misc" for="field-15-1">Yeah, that's a feature — when you swap input and label, it will look like this. Useful for mobile interfaces e.g.</label>
+                </div>
+                <div class="am-field am-field--box">
+                  <input class="am-field__input am-switch" id="field-15-2"  type="checkbox" checked />
+                  <div class="am-field__label am-misc">
+                    <label for="field-15-2">Minimal radio example — option two.</label>
+                    <div class="am-field__tip am-small">Suppose there should be a tip, why not.</div>
+                  </div>
+                </div>
+                <div class="am-field am-field--box">
+                  <input class="am-field__input am-switch" id="field-15-3" type="checkbox" disabled />
+                  <label class="am-field__label am-misc" for="field-15-3">Disabled option</label>
+                </div>
+              </div>
+            </div>
+          </p>
+        </div>
+        <div class="am-item am-item--c12">
+          <h1 class="am-h1">Layout</h1>
+          <h2 class="am-h2">Navbar</h2>
+          <p>
+            <div class="am-navbar">
+              <div class="am-item am-item--max am-item--trunk">
+                Great news everyone! <span class="am-mute">one hour ago</span>
+              </div>
+              <button class="am-item am-button am-button--misc am-button--primary">Read</button>
+            </div>
+          </p>
+          <p>
+            <div class="am-navbar">
+              <div class="am-item am-item--max am-item--trunk">
+                That's a pretty long text, which will be trunkated on any screen. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium minima pariatur id, odit voluptate. Cumque, laboriosam pariatur exercitationem in sed maiores cupiditate temporibus rerum ad molestiae nesciunt dolorem natus?
+              </div>
+              <div class="am-item">
+                <button class="am-button am-button--main am-button--failure">Button text must be short!</button>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-navbar">
+              <div class="am-item">
+                <button class="am-button am-button--main am-button--primary">Done</button>
+              </div>
+              <div class="am-item am-item--max">
+                <button class="am-button am-button--text am-button--primary">Cancel</button>
+              </div>
+              <div class="am-item">
+                <button class="am-button am-button--text am-button--failure">Remove</button>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-navbar am-navbar--left">
+              <button class="am-button am-button--main am-button--primary">Confirm</button>
+              <button class="am-button am-button--misc am-button--primary">Select</button>
+              <button class="am-button am-button--misc am-button--primary">Back</button>
+            </div>
+          </p>
+          <p>
+            <div class="am-navbar am-navbar--right">
+              <button class="am-button am-button--misc am-button--primary">Back</button>
+              <button class="am-button am-button--misc am-button--primary">Select</button>
+              <button class="am-button am-button--main am-button--primary">Confirm</button>
+            </div>
+          </p>
+        </div>
+        <div class="am-item am-item--c12">
+          <h1 class="am-h1">Elements</h1>
+          <h2 class="am-h2">Table</h2>
+          <h3 class="am-h3">Comfy form</h3>
+          <div class="am-table-scroller-x">
+            <table class="am-table am-table--comfy">
+              <thead>
+                <tr>
+                  <th class="am-table--thin">#</th>
+                  <th>Name</th>
+                  <th>Creator</th>
+                  <th class="am-table--nowrap">Public Release</th>
+                  <th>License</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>GNU/Linux</td>
+                  <td>Richard Stallman for GNU, Linus Torvalds for Linux, Community</td>
+                  <td>1991</td>
+                  <td>GNU GPLv2</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Windows</td>
+                  <td>Microsoft</td>
+                  <td>1993</td>
+                  <td>Proprietary</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>iOS</td>
+                  <td>Apple Inc.</td>
+                  <td>2007</td>
+                  <td>Proprietary</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Android</td>
+                  <td>Android, Inc., Google</td>
+                  <td>2008</td>
+                  <td>Apache 2.0, GNU GPLv2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 class="am-h3">Compact form</h3>
+          <div class="am-table-scroller-x">
+            <table class="am-table am-table--compact">
+              <thead>
+                <tr>
+                  <th class="am-table--thin">#</th>
+                  <th>Name</th>
+                  <th>Creator</th>
+                  <th class="am-table--nowrap">Public Release</th>
+                  <th>License</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>GNU/Linux</td>
+                  <td>Richard Stallman for GNU, Linus Torvalds for Linux, Community</td>
+                  <td>1991</td>
+                  <td>GNU GPLv2</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Windows</td>
+                  <td>Microsoft</td>
+                  <td>1993</td>
+                  <td>Proprietary</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>iOS</td>
+                  <td>Apple Inc.</td>
+                  <td>2007</td>
+                  <td>Proprietary</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Android</td>
+                  <td>Android, Inc., Google</td>
+                  <td>2008</td>
+                  <td>Apache 2.0, GNU GPLv2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h3 class="am-h3">Features</h3>
+          <div class="am-table-scroller-x">
+            <table class="am-table am-table--comfy am-table--interactive">
+              <thead>
+                <tr>
+                  <th class="am-table--thin">#</th>
+                  <th>Name</th>
+                  <th>Creator</th>
+                  <th class="am-table--nowrap am-table--selection-trl am-table--selection-primary">Public Release</th>
+                  <th>License</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>GNU/Linux</td>
+                  <td>Richard Stallman for GNU, Linus Torvalds for Linux, Community</td>
+                  <td class="am-table--selection-rl am-table--selection-primary">1991</td>
+                  <td>GNU GPLv2</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Windows</td>
+                  <td>Microsoft</td>
+                  <td class="am-table--selection-rl am-table--selection-primary">1993</td>
+                  <td>Proprietary</td>
+                </tr>
+                <tr class="am-table--mark-primary">
+                  <td>3</td>
+                  <td>iOS</td>
+                  <td>Apple Inc.</td>
+                  <td class="am-table--selection-rl am-table--selection-primary">2007</td>
+                  <td>Proprietary</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Android</td>
+                  <td>Android, Inc., Google</td>
+                  <td class="am-table--selection-rbl am-table--selection-primary">2008</td>
+                  <td>Apache 2.0, GNU GPLv2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <h2 class="am-h2">Badges</h2>
+          <p>
+            <div class="am-badge am-badge--default">default</div>
+            <div class="am-badge am-badge--default">miscellaneous</div>
+            <div class="am-badge am-badge--default">background</div>
+            <div class="am-badge am-badge--default">non-special</div>
+            <div class="am-badge am-badge--default">stateless</div>
+            <div class="am-badge am-badge--default">oblique</div>
+          </p>
+          <p>
+            <div class="am-badge am-badge--primary">primary</div>
+            <div class="am-badge am-badge--primary">regular</div>
+            <div class="am-badge am-badge--primary">operational</div>
+            <div class="am-badge am-badge--primary">works</div>
+            <div class="am-badge am-badge--primary">acceptable</div>
+            <div class="am-badge am-badge--primary">improved</div>
+            <div class="am-badge am-badge--primary">generic</div>
+            <div class="am-badge am-badge--primary">typical</div>
+          </p>
+          <p>
+            <div class="am-badge am-badge--success">success</div>
+            <div class="am-badge am-badge--success">great</div>
+            <div class="am-badge am-badge--success">super</div>
+            <div class="am-badge am-badge--success">outstanding</div>
+            <div class="am-badge am-badge--success">marvelous</div>
+            <div class="am-badge am-badge--success">perfect</div>
+            <div class="am-badge am-badge--success">stable</div>
+            <div class="am-badge am-badge--success">new</div>
+            <div class="am-badge am-badge--success">special</div>
+            <div class="am-badge am-badge--success">ideal</div>
+            <div class="am-badge am-badge--success">cool</div>
+          </p>
+          <p>
+            <div class="am-badge am-badge--warning">warning</div>
+            <div class="am-badge am-badge--warning">strange</div>
+            <div class="am-badge am-badge--warning">incomplete</div>
+            <div class="am-badge am-badge--warning">non-standard</div>
+            <div class="am-badge am-badge--warning">deprecated</div>
+            <div class="am-badge am-badge--warning">misused</div>
+            <div class="am-badge am-badge--warning">paused</div>
+            <div class="am-badge am-badge--warning">waiting</div>
+          </p>
+          <p>
+            <div class="am-badge am-badge--failure">failure</div>
+            <div class="am-badge am-badge--failure">bad</div>
+            <div class="am-badge am-badge--failure">wrong</div>
+            <div class="am-badge am-badge--failure">invalid</div>
+            <div class="am-badge am-badge--failure">closed</div>
+            <div class="am-badge am-badge--failure">unstable</div>
+            <div class="am-badge am-badge--failure">dangerous</div>
+          </p>
+        </div>
+        <div class="am-item am-item--c12">
+          <h1 class="am-h1">Components</h1>
+          <h2 class="am-h2">Media</h2>
+          <p>
+            <div class="am-media">
+              <div class="am-media__hero">
+                <img class="am-media-image am-media-image--square am-media-image--large" src="assets/placeholders/p1x1.svg" />
+              </div>
+              <div class="am-media__body">
+                That's a good thing to place some content, like post comments, file attachments and more. However I'm not really sure how image from left should be changed.
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-media">
+              <div class="am-media__hero">
+                <img class="am-media-image am-media-image--square am-media-image--small" src="assets/placeholders/p1x1.svg" />
+              </div>
+              <div class="am-media__body">
+                <div class="am-navbar am-navbar--sides">
+                  <div class="am-item am-item--trunk">
+                    <span class="am-b">file-attachments.zip</span>
+                  </div>
+                  <div class="am-item">
+                    <a href="#" class="am-link">Download</a>
+                  </div>
+                </div>
+                <div class="am-small am-mute">10.0 KB · from icmx</div>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-media">
+              <div class="am-media__hero">
+                <img class="am-media-image am-media-image--square am-media-image--small" src="assets/placeholders/p1x1.svg" />
+              </div>
+              <div class="am-media__body">
+                <div class="am-navbar am-navbar--sides">
+                  <div class="am-item am-item--trunk">
+                    <span class="am-b">Very long file name which will obviously trunkated on narrow screens like phones or even small laptops LATEST (2).rar</span>
+                  </div>
+                  <div class="am-item">
+                    <a href="#" class="am-link">Download</a>
+                  </div>
+                </div>
+                <div class="am-small am-mute">756.28 MB · from JaneBrownDoe11</div>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-media">
+              <div class="am-media__hero">
+                <img class="am-media-image am-media-image--circle am-media-image--regular" src="assets/placeholders/p1x1.svg" />
+              </div>
+              <div class="am-media__body">
+                <div class="am-regular">
+                  <span class="am-bold">John Doe</span>
+                  <span class="am-mute">May 24, 2018</span>
+                </div>
+                <div class="am-small">
+                  <div class="am-mute">@johndoe</div>
+                </div>
+                <br />
+                <textarea class="am-textarea am-textarea--block">Hey look, it can be even reply form!</textarea>
+                <br />
+                <div class="am-navbar am-navbar--right">
+                  <button class="am-button am-button--main am-button--primary">Reply</button>
+                </div>
+              </div>
+            </div>
+          </p>
+          <h2 class="am-h2">Card</h2>
+          <p>
+            <div class="am-card">
+              <div class="am-card__body">
+                <strong class="am-b">Minimal example</strong> — card body is the only required element, all others are optional.
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-card">
+              <div class="am-card__head"><strong class="am-b">Now with a head element</strong></div>
+              <div class="am-card__body">Like previous example, but with a head.</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-card">
+              <div class="am-card__call am-card__call--primary">Important message here</div>
+              <div class="am-card__head"><strong class="am-b">Card with call</strong></div>
+              <div class="am-card__body">Which text I can place here?</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-card">
+              <img class="am-card__hero" src="assets/placeholders/p16x10.svg" />
+              <div class="am-card__head"><strong class="am-b">Card with an image</strong></div>
+              <div class="am-card__body">What about this?</div>
+            </div>
+          </p>
+          <p>
+            <div class="am-card">
+              <div class="am-card__call am-card__call--failure">Bad message or status</div>
+              <img class="am-card__hero" src="assets/placeholders/p16x10.svg" />
+              <div class="am-card__head am-navbar am-navbar--sides">
+                <span class="am-item am-b">This can do even more</span>
+                <span class="am-item am-small am-mute">no jokes dude</span>
+              </div>
+              <div class="am-card__body">Call, hero, head, body and footer at one place. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores animi consequuntur in distinctio explicabo voluptatum iusto pariatur nam alias, suscipit voluptatibus deserunt, dolorum laudantium? Quis nemo deleniti recusandae dolor culpa.</div>
+              <div class="am-card__foot am-navbar">
+                <button class="am-item am-button am-button--main am-button--primary">Okay</button>
+                <button class="am-item am-button am-button--text am-button--primary">What?</button>
+              </div>
+            </div>
+          </p>
+          <p>
+            <div class="am-card">
+              <img class="am-card__hero" src="assets/placeholders/p16x10.svg" />
+              <div class="am-card__head">
+                <div class="am-media">
+                  <div class="am-media__hero">
+                    <img class="am-media-image am-media-image--circle am-media-image--small" src="assets/placeholders/p1x1.svg" />
+                  </div>
+                  <div class="am-media__body">
+                    <div class="am-navbar">
+                      <div class="am-item am-item--max am-item--trunk">
+                        <span class="am-bold">
+                          John the Long Name User Which Should be Trunkated
+                        </span>
+                      </div>
+                      <div class="am-item am-item--min">
+                        <span class="am-mute">
+                          2h ago
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="am-card__body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quae assumenda fuga facilis modi quis dolorum pariatur laudantium nam ex tenetur, neque eveniet recusandae soluta cupiditate, dolore exercitationem dolor nemo!
+              </div>
+            </div>
+          </p>
         </div>
       </div>
     </div>
     <div class="am-section am-section--foot">
-      <div class="am-content">
-        <div class="am-item am-item--c4">
-          Amine v0.0.2
+      <div class="am-content am-content--narrow">
+        <div class="am-item am-item--c6">
+          <p class="am-small am-misc">
+            Amine v0.0.5 <span class="am-mute">· by icmx</span>
+          </p>
+        </div>
+        <div class="am-item am-item--c6">
+          <p class="am-small am-mute am-right">
+            MIT
+          </p>
         </div>
       </div>
     </div>

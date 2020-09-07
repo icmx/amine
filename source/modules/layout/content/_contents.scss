@@ -5,7 +5,6 @@
   margin: 0 auto;
 
   height: 100%;
-  max-width: 1400px;
 
   &--left {
     justify-content: flex-start;
@@ -21,5 +20,17 @@
 
   &--right {
     justify-content: flex-end;
+  }
+
+  &--full {
+    max-width: 100%;
+  }
+
+  &--wide {
+    max-width: 1400px;
+  }
+
+  &--narrow {
+    max-width: 800px;
   }
 }

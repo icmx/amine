@@ -20,6 +20,27 @@
     border-right: none;
   }
 
+  & > .am-checkbox,
+  & > .am-radio {
+    min-width: 36px;
+    width: 36px;
+
+    background-color: lighten($am-color-black, 90%);
+    border: solid lighten($am-color-black, 80%) 1px;
+    border-right: none;
+  }
+
+  & > .am-switch {
+    min-width: 48px;
+    width: 48px;
+
+    padding: 0 6px;
+
+    background-color: lighten($am-color-black, 90%);
+    border: solid lighten($am-color-black, 80%) 1px;
+    border-right: none;
+  }
+
   & > .am-input,
   & > .am-select,
   & > .am-textarea {
@@ -47,6 +68,9 @@
   & > .am-input:first-child,
   & > .am-select:first-child,
   & > .am-textarea:first-child,
+  & > .am-checkbox:first-child,
+  & > .am-radio:first-child,
+  & > .am-switch:first-child,
   & > .am-button:first-child {
     border-radius: 3px 0 0 3px;
   }
@@ -59,11 +83,17 @@
   & > .am-input:last-child,
   & > .am-select:last-child,
   & > .am-textarea:last-child,
+  & > .am-checkbox:last-child,
+  & > .am-radio:last-child,
+  & > .am-switch:last-child,
   & > .am-button:last-child {
     border-radius: 0 3px 3px 0;
     margin-right: 0px;
   }
 
+  & > .am-checkbox:last-child,
+  & > .am-radio:last-child,
+  & > .am-switch:last-child,
   & > .am-item:last-child {
     border-right: solid 1px lighten($am-color-black, 80%);
   }
