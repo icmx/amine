@@ -1,3 +1,40 @@
+.am-content {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 auto;
+
+  height: 100%;
+
+  &--left {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--sides {
+    justify-content: space-between;
+  }
+
+  &--right {
+    justify-content: flex-end;
+  }
+
+  &--full {
+    max-width: 100%;
+  }
+
+  &--wide {
+    max-width: 1400px;
+  }
+
+  &--narrow {
+    max-width: 800px;
+  }
+}
+
 @mixin -exact-width($width) {
   min-width: $width;
   max-width: $width;

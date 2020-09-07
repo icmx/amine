@@ -1,3 +1,17 @@
-@import './contents-colors';
-@import './contents-debug';
-@import './contents';
+@import './colors';
+@import './debug';
+
+.am {
+  margin: 0;
+
+  color: lighten($am-color-black, 20%);
+
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 12pt;
+  font-weight: 400;
+}
+
+.am p {
+  // I'm sorry, but i have to do this for now.
+  margin: 36px 0;
+}
