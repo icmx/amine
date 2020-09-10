@@ -85,7 +85,7 @@
     }
   }
 
-  $_colors: (
+  $-colors: (
     primary: $am-color-primary,
     neutral: $am-color-neutral,
     success: $am-color-success,
@@ -93,7 +93,7 @@
     failure: $am-color-failure,
   );
 
-  @each $key, $value in $_colors {
+  @each $key, $value in $-colors {
     &--mark-#{$key} {
       background-color: mix($value, $am-color-white, 20%);
     }

@@ -1,0 +1,62 @@
+// TODO: I probably should move pulse to animations/interactions special
+// class later, because it can be applied to many elements, I suppose.
+
+// TODO: there should be special overlapping version of bulbs maybe
+// like on avatars to indicate online status e.g.
+
+$-colors: (
+  default: $am-color-default,
+  primary: $am-color-primary,
+  success: $am-color-success,
+  warning: $am-color-warning,
+  failure: $am-color-failure,
+);
+
+.am-bulb {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  line-height: 20px;
+  min-width: 12px;
+  min-height: 12px;
+
+  font-size: 0.75em;
+  font-weight: 700;
+
+  border-radius: 1000px;
+
+  padding: 2px 6px;
+
+  text-align: center;
+  white-space: nowrap;
+
+  & {
+    color: $am-color-white;
+  }
+
+  @each $key, $value in $-colors {
+    &--#{$key} {
+      background-color: $value;
+    }
+
+    &--animated-#{$key} {
+      background-color: $value;
+      animation: pulse-#{$key} 2s infinite;
+    }
+
+    @keyframes pulse-#{$key} {
+      0% {
+        box-shadow: 0 0 0 0 transparentize($value, 0.6);
+      }
+
+      75% {
+        box-shadow: 0 0 0 12px transparent;
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 transparent;
+      }
+    }
+  }
+}

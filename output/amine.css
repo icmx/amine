@@ -14,7 +14,7 @@
   box-sizing: border-box;
   border-radius: 3px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
 }
 .am-card__call {
   padding: 18px;
@@ -118,8 +118,8 @@
   border-radius: 3px;
 }
 .am-badge--default {
-  color: #333333;
-  background-color: rgba(51, 51, 51, 0.05);
+  color: #262626;
+  background-color: rgba(38, 38, 38, 0.05);
 }
 .am-badge--primary {
   color: #4169e1;
@@ -136,6 +136,114 @@
 .am-badge--failure {
   color: #ff3f35;
   background-color: rgba(255, 63, 53, 0.05);
+}
+
+.am-bulb {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  line-height: 20px;
+  min-width: 12px;
+  min-height: 12px;
+  font-size: 0.75em;
+  font-weight: 700;
+  border-radius: 1000px;
+  padding: 2px 6px;
+  text-align: center;
+  white-space: nowrap;
+}
+.am-bulb {
+  color: #ffffff;
+}
+.am-bulb--default {
+  background-color: #262626;
+}
+.am-bulb--animated-default {
+  background-color: #262626;
+  animation: pulse-default 2s infinite;
+}
+@keyframes pulse-default {
+  0% {
+    box-shadow: 0 0 0 0 rgba(38, 38, 38, 0.4);
+  }
+  75% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+.am-bulb--primary {
+  background-color: #4169e1;
+}
+.am-bulb--animated-primary {
+  background-color: #4169e1;
+  animation: pulse-primary 2s infinite;
+}
+@keyframes pulse-primary {
+  0% {
+    box-shadow: 0 0 0 0 rgba(65, 105, 225, 0.4);
+  }
+  75% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+.am-bulb--success {
+  background-color: #92c906;
+}
+.am-bulb--animated-success {
+  background-color: #92c906;
+  animation: pulse-success 2s infinite;
+}
+@keyframes pulse-success {
+  0% {
+    box-shadow: 0 0 0 0 rgba(146, 201, 6, 0.4);
+  }
+  75% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+.am-bulb--warning {
+  background-color: #f4a507;
+}
+.am-bulb--animated-warning {
+  background-color: #f4a507;
+  animation: pulse-warning 2s infinite;
+}
+@keyframes pulse-warning {
+  0% {
+    box-shadow: 0 0 0 0 rgba(244, 165, 7, 0.4);
+  }
+  75% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+.am-bulb--failure {
+  background-color: #ff3f35;
+}
+.am-bulb--animated-failure {
+  background-color: #ff3f35;
+  animation: pulse-failure 2s infinite;
+}
+@keyframes pulse-failure {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 63, 53, 0.4);
+  }
+  75% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
 }
 
 .am-hr {
@@ -487,7 +595,7 @@
   transition: color 0.15s, background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
 }
 .am-button--default:focus {
-  box-shadow: 0px 0px 0px 3px rgba(51, 51, 51, 0.35);
+  box-shadow: 0px 0px 0px 3px rgba(38, 38, 38, 0.35);
   z-index: 1;
 }
 .am-button--default:disabled {
@@ -495,31 +603,31 @@
 }
 .am-button--default.am-button--main {
   color: #ffffff;
-  background-color: #333333;
+  background-color: #262626;
   border-color: transparent;
 }
 .am-button--default.am-button--main:hover {
-  background-color: #262626;
+  background-color: #191919;
 }
 .am-button--default.am-button--main:active {
-  background-color: #404040;
+  background-color: #333333;
 }
 .am-button--default.am-button--main:disabled {
   color: #999999;
   background-color: #cccccc;
 }
 .am-button--default.am-button--misc {
-  color: #333333;
+  color: #262626;
   background-color: transparent;
-  border-color: #333333;
+  border-color: #262626;
 }
 .am-button--default.am-button--misc:hover {
   color: #ffffff;
-  background-color: #262626;
+  background-color: #191919;
   border-color: transparent;
 }
 .am-button--default.am-button--misc:active {
-  background-color: #404040;
+  background-color: #333333;
 }
 .am-button--default.am-button--misc:disabled {
   color: #999999;
@@ -527,16 +635,16 @@
   border-color: #cccccc;
 }
 .am-button--default.am-button--text {
-  color: #333333;
+  color: #262626;
   background-color: transparent;
   border-color: transparent;
 }
 .am-button--default.am-button--text:hover {
   color: #ffffff;
-  background-color: #262626;
+  background-color: #191919;
 }
 .am-button--default.am-button--text:active {
-  background-color: #404040;
+  background-color: #333333;
 }
 .am-button--default.am-button--text:disabled {
   color: #999999;
@@ -1195,7 +1303,7 @@
   margin-right: 12px;
 }
 .am-field--box > .am-field__label {
-  margin-top: 6px;
+  margin-top: 7px;
   flex-grow: 1;
 }
 .am-field__tip {
@@ -1600,7 +1708,7 @@
 
 .am-blockquote {
   display: block;
-  padding: 6px 12px;
+  padding: 8px 12px;
   border-left: solid 3px #999999;
   border-radius: 0 3px 3px 0;
   background-color: #e6e6e6;
@@ -1616,7 +1724,7 @@
 
 .am-blockcode {
   display: block;
-  padding: 6px 12px !important;
+  padding: 8px 12px !important;
   font-family: monospace;
   border-radius: 3px;
   background-color: #e6e6e6 !important;

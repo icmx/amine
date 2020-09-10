@@ -25,7 +25,7 @@
   border-radius: 3px;
 
   &--default {
-    @include -coloring(lighten($am-color-black, 20%));
+    @include -coloring($am-color-default);
   }
 
   &--primary {
