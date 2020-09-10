@@ -1,0 +1,40 @@
+.am-blob {
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  padding: 4px 8px;
+  min-width: 25px;
+
+  border-radius: 1000px;
+  
+  font-size: 0.8em;
+  font-weight: 400;
+
+  text-align: center;
+  white-space: nowrap;
+
+  & {
+    color: $am-color-white;
+  }
+
+  &--default {
+    background-color: $am-color-default;
+  }
+
+  &--primary {
+    background-color: $am-color-primary;
+  }
+
+  &--success {
+    background-color: $am-color-success;
+  }
+
+  &--warning {
+    background-color: $am-color-warning;
+  }
+
+  &--failure {
+    background-color: $am-color-failure;
+  }
+}

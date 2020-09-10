@@ -2,6 +2,9 @@
 <html translate="no">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amine — CSS library</title>
     <link rel="stylesheet" href="output/amine.min.css" />
@@ -664,41 +667,84 @@
             <span class="am-badge am-badge--failure">unstable</span>
             <span class="am-badge am-badge--failure">dangerous</span>
           </p>
-          <h2 class="am-h2">Bulbs</h2>
           <p>
-            <span class="am-bulb am-bulb--default">default</span>
-            <span class="am-bulb am-bulb--default">99+</span>
-            <span class="am-bulb am-bulb--default"></span>
+            <span class="am-badge am-badge--default am-pulsing--default">pulsing</span>
             <span class="am-mute">—</span>
-            <span class="am-bulb am-bulb--animated-default"></span>
+            <span class="am-badge am-badge--primary am-pulsing--primary">pulsing</span>
+            <span class="am-mute">—</span>
+            <span class="am-badge am-badge--success am-pulsing--success">pulsing</span>
+            <span class="am-mute">—</span>
+            <span class="am-badge am-badge--warning am-pulsing--warning">pulsing</span>
+            <span class="am-mute">—</span>
+            <span class="am-badge am-badge--failure am-pulsing--failure">pulsing</span>
+          </p>
+          <h2 class="am-h2">Bulbs &amp; Dots</h2>
+          <p>
+            <span class="am-blob am-blob--default">default</span>
+            <span class="am-blob am-blob--default">99+</span>
+            <span class="am-blob am-blob--default">4</span>
+            <span class="am-mute">—</span>
+            <span class="am-dot am-dot--default"></span>
           </p>
           <p>
-            <span class="am-bulb am-bulb--primary">primary</span>
-            <span class="am-bulb am-bulb--primary">99+</span>
-            <span class="am-bulb am-bulb--primary"></span>
+            <span class="am-blob am-blob--primary">primary</span>
+            <span class="am-blob am-blob--primary">99+</span>
+            <span class="am-blob am-blob--primary">4</span>
             <span class="am-mute">—</span>
-            <span class="am-bulb am-bulb--animated-primary"></span>
+            <span class="am-dot am-dot--primary"></span>
           </p>
           <p>
-            <span class="am-bulb am-bulb--success">success</span>
-            <span class="am-bulb am-bulb--success">99+</span>
-            <span class="am-bulb am-bulb--success"></span>
+            <span class="am-blob am-blob--success">success</span>
+            <span class="am-blob am-blob--success">99+</span>
+            <span class="am-blob am-blob--success">4</span>
             <span class="am-mute">—</span>
-            <span class="am-bulb am-bulb--animated-success"></span>
+            <span class="am-dot am-dot--success"></span>
           </p>
           <p>
-            <span class="am-bulb am-bulb--warning">warning</span>
-            <span class="am-bulb am-bulb--warning">99+</span>
-            <span class="am-bulb am-bulb--warning"></span>
+            <span class="am-blob am-blob--warning">warning</span>
+            <span class="am-blob am-blob--warning">99+</span>
+            <span class="am-blob am-blob--warning">4</span>
             <span class="am-mute">—</span>
-            <span class="am-bulb am-bulb--animated-warning"></span>
+            <span class="am-dot am-dot--warning"></span>
           </p>
           <p>
-            <span class="am-bulb am-bulb--failure">failure</span>
-            <span class="am-bulb am-bulb--failure">99+</span>
-            <span class="am-bulb am-bulb--failure"></span>
+            <span class="am-blob am-blob--failure">failure</span>
+            <span class="am-blob am-blob--failure">99+</span>
+            <span class="am-blob am-blob--failure">4</span>
             <span class="am-mute">—</span>
-            <span class="am-bulb am-bulb--animated-failure"></span>
+            <span class="am-dot am-dot--failure"></span>
+          </p>
+          <hr class="am-hr" />
+          <p>
+            <span class="am-blob am-blob--default am-pulsing--default">δ</span>
+            <span class="am-mute">—</span>
+            <span class="am-blob am-blob--primary am-pulsing--primary">ρ</span>
+            <span class="am-mute">—</span>
+            <span class="am-blob am-blob--success am-pulsing--success">σ</span>
+            <span class="am-mute">—</span>
+            <span class="am-blob am-blob--warning am-pulsing--warning">ω</span>
+            <span class="am-mute">—</span>
+            <span class="am-blob am-blob--failure am-pulsing--failure">φ</span>
+          </p>
+          <p>
+            <span class="am-dot am-dot--default am-pulsing--default"></span>
+            <span class="am-mute">—</span>
+            <span class="am-dot am-dot--primary am-pulsing--primary"></span>
+            <span class="am-mute">—</span>
+            <span class="am-dot am-dot--success am-pulsing--success"></span>
+            <span class="am-mute">—</span>
+            <span class="am-dot am-dot--warning am-pulsing--warning"></span>
+            <span class="am-mute">—</span>
+            <span class="am-dot am-dot--failure am-pulsing--failure"></span>
+          </p>
+          <p>
+            <button class="am-button am-button--main am-button--default am-overdot am-overdot--failure am-overdot--top-left">&nwarr;</button>
+            <span class="am-mute">—</span>
+            <button class="am-button am-button--main am-button--default am-overdot am-overdot--failure am-overdot--top-right">&nearr;</button>
+            <span class="am-mute">—</span>
+            <button class="am-button am-button--main am-button--default am-overdot am-overdot--failure am-overdot--bottom-left">&swarr;</button>
+            <span class="am-mute">—</span>
+            <button class="am-button am-button--main am-button--default am-overdot am-overdot--failure am-overdot--bottom-right">&searr;</button>
           </p>
         </div>
         <div class="am-item am-item--c12">
