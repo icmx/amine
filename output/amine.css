@@ -1735,7 +1735,7 @@
   flex-grow: 0;
   flex-shrink: 0;
 }
-.am-navbar > .am-item--trunk {
+.am-navbar > .am-item--trunc {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
