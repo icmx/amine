@@ -11,11 +11,11 @@
       width: 180px;
       height: 36px;
 
-      padding: 6px 8px;
+      padding: 8px 8px;
 
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 12pt;
-      font-weight: 400;
+      font-family: $am-font-family-regular;
+      font-size: $am-font-size-6;
+      font-weight: $am-font-weight-normal;
 
       border-style: solid;
       border-width: 1px;
@@ -194,8 +194,6 @@
 }
 
 .am-textarea {
-  height: 74px;
-  line-height: 145%;
 
   max-width: 100%;
 

@@ -85,16 +85,16 @@
     max-width: 100%;
     min-height: 36px;
 
-    padding: 4px 12px;
+    padding: 8px 18px;
 
     border: none;
     border-radius: 3px;
     border-width: 1px;
     border-style: solid;
 
-    font-family: 'Segoe UI';
-    font-size: 12pt;
-    font-weight: 400;
+    font-family: $am-font-family-regular;
+    font-size: $am-font-size-6;
+    font-weight: $am-font-weight-normal;
 
     white-space: nowrap;
     overflow: hidden;

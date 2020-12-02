@@ -1,0 +1,201 @@
+@mixin -block($size: $am-size-3) {
+  & {
+    margin: 0 0 $size 0;
+  }
+
+  &:last-child {
+    margin: 0 0 0 0;
+  }
+}
+
+.am-display,
+.am-d {
+  @include -block($am-space-1);
+  display: block;
+
+  font-size: $am-font-size-0;
+  font-weight: 700;
+
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+}
+
+.am-heading-1,
+.am-h1 {
+  @include -block($am-space-2);
+  display: block;
+
+  font-size: $am-font-size-1;
+  font-weight: 700;
+
+  letter-spacing: -0.02rem;
+  line-height: 1.2;
+}
+
+.am-heading-2,
+.am-h2 {
+  @include -block($am-space-3);
+  display: block;
+
+  font-size: $am-font-size-2;
+  font-weight: 700;
+
+  letter-spacing: -0.02rem;
+  line-height: 1.25;
+}
+
+.am-heading-3,
+.am-h3 {
+  @include -block($am-space-3);
+  display: block;
+
+  font-size: $am-font-size-3;
+  font-weight: 700;
+
+  letter-spacing: -0.02rem;
+  line-height: 1.25;
+}
+
+.am-heading-4,
+.am-h4 {
+  @include -block($am-space-3);
+  display: block;
+
+  font-size: $am-font-size-4;
+  font-weight: 700;
+
+  letter-spacing: -0.01rem;
+  line-height: 1.5;
+}
+
+.am-heading-5,
+.am-h5 {
+  @include -block($am-space-3);
+  display: block;
+
+  font-size: $am-font-size-5;
+  font-weight: 700;
+
+  letter-spacing: -0.01rem;
+  line-height: 1.5;
+}
+
+.am-heading-6,
+.am-h6 {
+  @include -block($am-space-3);
+  display: block;
+
+  font-size: $am-font-size-6;
+  font-weight: 700;
+
+  letter-spacing: -0.01rem;
+  line-height: 1.5;
+}
+
+.am-regular {
+  font-size: $am-font-size-6;
+}
+
+.am-small {
+  font-size: $am-font-size-7;
+}
+
+.am-bold,
+.am-b {
+  font-weight: 700;
+}
+
+.am-italic,
+.am-i {
+  font-style: italic;
+}
+
+.am-underline,
+.am-u {
+  text-decoration: solid underline;
+}
+
+.am-strikethrough,
+.am-s {
+  text-decoration: solid line-through;
+}
+
+.am-subscript,
+.am-sub {
+  font-size: $am-font-size-7;
+  vertical-align: sub;
+}
+
+.am-superscript,
+.am-sup {
+  font-size: $am-font-size-7;
+  vertical-align: super;
+}
+
+.am-paragraph,
+.am-p {
+  @include -block($am-space-3);
+  display: block;
+
+  line-height: 1.5;
+}
+
+.am-blockquote {
+  @include -block($am-space-3);
+  display: block;
+
+  padding: $am-space-9 $am-space-8 $am-space-9 $am-space-8 - 4;
+
+  border-left: solid 4px lighten($am-color-black, 60%);
+  border-radius: $am-radius-none $am-radius-regular $am-radius-regular
+  $am-radius-none;
+
+  background-color: lighten($am-color-black, 96%);
+}
+
+.am-code {
+  padding: 0 0.2em;
+
+  font-family: $am-font-family-sources;
+
+  border-radius: $am-radius-regular;
+
+  color: lighten($am-color-black, 20%);
+  background-color: lighten($am-color-black, 96%);
+}
+
+.am-blockcode {
+  @include -block($am-space-3);
+  display: block;
+
+  padding: $am-space-9 $am-space-8;
+
+  font-family: $am-font-family-sources;
+
+  border-radius: $am-radius-regular;
+
+  background-color: lighten($am-color-black, 96%) !important;
+
+  white-space: break-spaces;
+}
+
+.am-key {
+  padding: 0 0.2em;
+
+  font-family: $am-font-family-sources;
+
+  border-radius: $am-radius-regular;
+
+  color: lighten($am-color-black, 80%);
+  background-color: lighten($am-color-black, 20%);
+}
+
+.am-mark {
+  padding: 0 0.2em;
+
+  border-radius: $am-radius-regular;
+
+  color: lighten($am-color-black, 20%);
+  background-color: lighten($am-color-warning, 45%);
+  border-bottom: 1px solid transparentize($am-color-black, 0.9);
+}

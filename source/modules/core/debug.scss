@@ -27,3 +27,47 @@
     background-color: transparentize($am-color-debug, 0.6) !important;
   }
 }
+
+// for debug/demo purposes
+
+@mixin -square($size, $color) {
+  width: $size;
+  height: $size;
+
+  background-color: $color;
+
+  display: inline-block;
+}
+
+@mixin -square-size($size) {
+  @include -square($size, $am-color-primary);
+}
+
+@mixin -square-space($size) {
+  @include -square($size, transparentize($am-color-primary, 0.5));
+
+  border-left: solid 2px $am-color-primary;
+  border-right: solid 2px $am-color-primary;
+}
+
+.am-demo-size-0 { @include -square-size($am-size-0); }
+.am-demo-size-1 { @include -square-size($am-size-1); }
+.am-demo-size-2 { @include -square-size($am-size-2); }
+.am-demo-size-3 { @include -square-size($am-size-3); }
+.am-demo-size-4 { @include -square-size($am-size-4); }
+.am-demo-size-5 { @include -square-size($am-size-5); }
+.am-demo-size-6 { @include -square-size($am-size-6); }
+.am-demo-size-7 { @include -square-size($am-size-7); }
+.am-demo-size-8 { @include -square-size($am-size-8); }
+.am-demo-size-9 { @include -square-size($am-size-9); }
+
+.am-demo-space-0 { @include -square-space($am-space-0); }
+.am-demo-space-1 { @include -square-space($am-space-1); }
+.am-demo-space-2 { @include -square-space($am-space-2); }
+.am-demo-space-3 { @include -square-space($am-space-3); }
+.am-demo-space-4 { @include -square-space($am-space-4); }
+.am-demo-space-5 { @include -square-space($am-space-5); }
+.am-demo-space-6 { @include -square-space($am-space-6); }
+.am-demo-space-7 { @include -square-space($am-space-7); }
+.am-demo-space-8 { @include -square-space($am-space-8); }
+.am-demo-space-9 { @include -square-space($am-space-9); }

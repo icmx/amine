@@ -1,80 +1,31 @@
-.am-display-1,
-.am-d1 {
-  font-weight: 200;
-  font-size: 6em;
+.am-font-size-0 {
+  font-size: $am-font-size-0;
 }
 
-.am-display-2,
-.am-d2 {
-  font-weight: 200;
-  font-size: 5em;
+.am-font-size-1 {
+  font-size: $am-font-size-1;
 }
 
-.am-display-3,
-.am-d3 {
-  font-weight: 200;
-  font-size: 4em;
+.am-font-size-2 {
+  font-size: $am-font-size-2;
 }
 
-.am-heading-1,
-.am-h1 {
-  font-weight: 400;
-  font-size: 3.6em;
-
-  margin: 18px 0 18px 0;
+.am-font-size-3 {
+  font-size: $am-font-size-3;
 }
 
-.am-heading-2,
-.am-h2 {
-  font-weight: 400;
-  font-size: 2.8em;
-
-  margin: 18px 0 18px 0;
+.am-font-size-4 {
+  font-size: $am-font-size-4;
 }
 
-.am-heading-3,
-.am-h3 {
-  font-weight: 400;
-  font-size: 2.2em;
-
-  margin: 18px 0 18px 0;
+.am-font-size-5 {
+  font-size: $am-font-size-5;
 }
 
-.am-heading-4,
-.am-h4 {
-  font-weight: 400;
-  font-size: 1.8em;
-
-  margin: 18px 0 18px 0;
+.am-font-size-6 {
+  font-size: $am-font-size-6;
 }
 
-.am-heading-5,
-.am-h5 {
-  font-weight: 400;
-  font-size: 1.6em;
-
-  margin: 18px 0 12px 0;
-}
-
-.am-heading-6,
-.am-h6 {
-  font-weight: 400;
-  font-size: 1em;
-
-  margin: 18px 0 12px 0;
-}
-
-.am-large {
-  font-weight: 400;
-  font-size: 1.4em;
-}
-
-.am-regular {
-  font-weight: 400;
-  font-size: 1em;
-}
-
-.am-small {
-  font-weight: 400;
-  font-size: 0.8em;
+.am-font-size-7 {
+  font-size: $am-font-size-7;
 }

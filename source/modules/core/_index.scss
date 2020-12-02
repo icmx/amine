@@ -1,4 +1,8 @@
 @import './colors';
+@import './fonts';
+@import './sizes';
+@import './spaces';
+@import './radiuses.scss';
 @import './debug';
 
 .am {
@@ -6,12 +10,7 @@
 
   color: lighten($am-color-black, 20%);
 
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 12pt;
-  font-weight: 400;
-}
-
-.am p {
-  // I'm sorry, but i have to do this for now.
-  margin: 36px 0;
+  font-family: $am-font-family-regular;
+  font-size: $am-font-size-6;
+  font-weight: $am-font-weight-normal;
 }
