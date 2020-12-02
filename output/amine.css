@@ -837,8 +837,9 @@
 .am-button {
   min-width: 80px;
   max-width: 100%;
-  min-height: 36px;
-  padding: 8px 18px;
+  min-height: 38px;
+  height: 38px;
+  padding: 0px 18px;
   border: none;
   border-radius: 3px;
   border-width: 1px;
@@ -1147,10 +1148,10 @@
 .am-select,
 .am-textarea {
   min-width: 80px;
-  min-height: 36px;
+  min-height: 38px;
   width: 180px;
-  height: 36px;
-  padding: 8px 8px;
+  height: 38px;
+  padding: 0px 8px;
   font-family: "Segoe UI", "Roboto", "Arial", "Noto Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -1335,6 +1336,8 @@
 
 .am-textarea {
   max-width: 100%;
+  height: 76px;
+  padding: 8px 8px;
 }
 .am-textarea--block {
   resize: vertical;
@@ -1342,7 +1345,7 @@
 
 .am-radio, .am-checkbox {
   min-width: 18px;
-  min-height: 36px;
+  min-height: 38px;
   width: 18px;
   cursor: pointer;
 }
@@ -1351,8 +1354,8 @@
   display: block;
   width: 16px;
   height: 16px;
-  margin-left: calc(50% - 9px);
-  margin-top: 8px;
+  margin-left: calc(50% - 8px);
+  margin-top: 9px;
   border-style: solid;
   border-width: 1px;
 }
@@ -1444,9 +1447,9 @@
 }
 
 .am-switch {
-  min-width: 36px;
-  min-height: 36px;
-  width: 36px;
+  min-width: 38px;
+  min-height: 38px;
+  width: 38px;
   cursor: pointer;
 }
 .am-switch::before {
@@ -1455,7 +1458,7 @@
   width: calc(100% - 2px);
   height: 18px;
   margin-left: 0px;
-  margin-top: 7px;
+  margin-top: 8px;
   border-radius: 1000px;
   border: solid 1px transparent;
 }
@@ -1662,7 +1665,7 @@
 
 .am-content > .am-item {
   box-sizing: border-box;
-  padding: 18px;
+  padding: 16px;
   height: 100%;
 }
 @media screen and (max-width: 768px) {
