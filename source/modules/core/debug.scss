@@ -46,8 +46,8 @@
 @mixin -square-space($size) {
   @include -square($size, transparentize($am-color-primary, 0.5));
 
-  border-left: solid 2px $am-color-primary;
-  border-right: solid 2px $am-color-primary;
+  border-top: solid 2px $am-color-primary;
+  border-bottom: solid 2px $am-color-primary;
 }
 
 .am-demo-size-0 { @include -square-size($am-size-0); }
