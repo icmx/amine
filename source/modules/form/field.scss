@@ -11,7 +11,7 @@
   }
 
   &--column > &__label {
-    margin-bottom: 8px;
+    margin-bottom: $am-space-9;
   }
 
   &--column > &__input {
@@ -28,8 +28,8 @@
   }
 
   &--row > &__label {
-    margin-top: 8px;
-    margin-right: 12px;
+    margin-top: $am-space-9;
+    margin-right: $am-space-8;
 
     // TODO: This width must be set from outside blocks too
     width: 40%;
@@ -58,20 +58,20 @@
   }
 
   &--box > &__input:first-child {
-    margin-left: 12px;
+    margin-left: $am-space-8;
   }
 
   &--box > &__input:last-child {
-    margin-right: 12px;
+    margin-right: $am-space-8;
   }
 
   &--box > &__label {
-    margin-top: 7px;
+    margin-top: $am-space-9 - rem(1px);
 
     flex-grow: 1;
   }
 
   &__tip {
-    margin-top: 8px;
+    margin-top: $am-space-9;
   }
 }

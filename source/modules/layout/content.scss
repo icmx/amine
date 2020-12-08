@@ -27,11 +27,11 @@
   }
 
   &--wide {
-    max-width: 1400px;
+    max-width: rem(1400px);
   }
 
   &--narrow {
-    max-width: 800px;
+    max-width: rem(800px);
   }
 }
 

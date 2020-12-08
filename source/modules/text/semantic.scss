@@ -145,8 +145,8 @@
 
   padding: $am-space-4 $am-space-2;
 
-  padding-left: $am-space-2 - 0.125rem;
-  border-left: solid 0.125rem lighten($am-color-black, 80%);
+  padding-left: $am-space-2 - rem(2px);
+  border-left: solid rem(2px) lighten($am-color-black, 80%);
 
   border-top-right-radius: $am-radius-regular;
   border-bottom-right-radius: $am-radius-regular;
@@ -155,8 +155,8 @@
 }
 
 .am-code {
-  padding: 0.0625em 0.125em;
-  margin: 0 -0.125em;
+  padding: em(1px) em(2px);
+  margin: 0 em(-2px);
 
   font-family: $am-font-family-monospace;
 
@@ -181,8 +181,8 @@
 }
 
 .am-key {
-  padding: 0.0625em 0.125em;
-  margin: 0 -0.125em;
+  padding: em(1px) em(2px);
+  margin: 0 em(-2px);
 
   font-family: $am-font-family-monospace;
 
@@ -193,8 +193,8 @@
 }
 
 .am-mark {
-  padding: 0.0625em 0.125em;
-  margin: 0 -0.125em;
+  padding: em(1px) em(2px);
+  margin: 0 em(-2px);
 
   border-radius: $am-radius-regular;
 

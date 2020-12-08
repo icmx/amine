@@ -1,13 +1,13 @@
 .am-card {
   box-sizing: border-box;
 
-  border-radius: 3px;
+  border-radius: $am-radius-regular;
   background-color: $am-color-white;
 
   box-shadow: 0px 1px 3px 0px transparentize($am-color-black, 0.85);
 
   &__call {
-    padding: 18px;
+    padding: $am-space-5;
 
     color: $am-color-white;
 
@@ -29,7 +29,7 @@
   }
 
   &__head {
-    padding: 18px 18px 0;
+    padding:  $am-space-5  $am-space-5 0;
   }
 
   &__hero {
@@ -41,16 +41,16 @@
   }
 
   &__body {
-    padding: 18px;
+    padding:  $am-space-5;
   }
 
   &__foot {
-    padding: 0 18px 18px;
+    padding: 0  $am-space-5  $am-space-5;
   }
 
   &__call:first-child,
   &__hero:first-child {
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    border-top-left-radius: $am-radius-regular;
+    border-top-right-radius: $am-radius-regular;
   }
 }

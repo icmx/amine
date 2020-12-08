@@ -12,6 +12,6 @@ You can see the demo at [icmx.github.io/amine](https://icmx.github.io/amine)
   - **Isolated**: does not affect on other styles and frameworks due to namespace isolation
   - **Adaptive**: allows to create mobile and desktop-friendly interfaces
   - **Flex**: mostly based on easy to use CSS Flex specifications
-  - **Simple and small**: structured and clean code, up to 10kb gzipped (about 5kb currently)
-  - **Good forms styling**: rich style options for all standard form widgets like buttons, inputs, checkboxes, radios etc. (currently not implemented)
-  - **Rems**: uses `rem` as main scale unit (currently not implemented)
+  - **Simple and small**: structured and clean code, up to 10kb gzipped (about 6kb currently)
+  - **Good forms styling**: rich style options for all standard form widgets like buttons, inputs, checkboxes, radios etc. (mostly implemented)
+  - **Rems**: uses `rem` as main scale unit (mostly implemented)

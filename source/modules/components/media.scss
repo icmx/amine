@@ -17,7 +17,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 
-  gap: 18px;
+  gap: $am-space-5;
 
   &__hero {
     flex-grow: 0;
@@ -38,15 +38,15 @@
   height: 100%;
 
   &--small {
-    @include -square-size(22px);
+    @include -square-size($am-size-3);
   }
 
   &--regular {
-    @include -square-size(42px);
+    @include -square-size($am-size-2);
   }
 
   &--large {
-    @include -square-size(56px);
+    @include -square-size($am-size-1);
   }
 
   &--circle {
@@ -54,6 +54,6 @@
   }
 
   &--square {
-    border-radius: 3px;
+    border-radius: $am-radius-regular;
   }
 }

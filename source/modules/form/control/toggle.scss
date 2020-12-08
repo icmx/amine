@@ -2,10 +2,8 @@
 
 %-shared-toggle-checkbox-radio {
   & {
-    min-width: 18px;
-    min-height: 38px;
-
-    width: 18px;
+    min-width: $am-size-5;
+    min-height: $am-size-2;
 
     cursor: pointer;
 
@@ -13,14 +11,14 @@
       content: ' ';
       display: block;
 
-      width: 16px;
-      height: 16px;
+      width: $am-size-6;
+      height: $am-size-6;
 
-      margin-left: calc(50% - 8px);
-      margin-top: 9px;
+      margin-left: calc(50% - #{rem(9px)});
+      margin-top: rem(10px);
 
       border-style: solid;
-      border-width: 1px;
+      border-width: rem(1px);
     }
   }
 }
@@ -46,14 +44,14 @@
   @extend %-shared-toggle-browsersfix;
 
   &::before {
-    border-radius: 3px;
+    border-radius: $am-radius-regular;
   }
 
   & {
     & {
       &::before {
         background-color: lighten($am-color-black, 100%);
-        background-size: 0px;
+        background-size: 0;
         border-color: lighten($am-color-black, 80%);
       }
 
@@ -73,7 +71,7 @@
         background-color: $am-color-primary;
 
         background-image: url('../assets/icons/check.svg');
-        background-size: 24px;
+        background-size: rem(24px);
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -117,14 +115,14 @@
   @extend %-shared-toggle-browsersfix;
 
   &::before {
-    border-radius: 10000px;
+    border-radius: $am-radius-circle;
   }
 
   & {
     & {
       &::before {
         background-color: lighten($am-color-black, 100%);
-        background-size: 0px;
+        background-size: 0;
         border-color: lighten($am-color-black, 80%);
       }
 
@@ -144,7 +142,7 @@
         background-color: $am-color-primary;
 
         background-image: url('../assets/icons/radio.svg');
-        background-size: 24px;
+        background-size: rem(24px);
         background-repeat: no-repeat;
         background-position: center center;
       }
@@ -189,10 +187,8 @@
   @extend %-shared-toggle-browsersfix;
 
   & {
-    min-width: 38px;
-    min-height: 38px;
-
-    width: 38px;
+    min-width: $am-size-2;
+    min-height: $am-size-2;
 
     cursor: pointer;
 
@@ -200,33 +196,32 @@
       content: ' ';
       display: block;
 
-      width: calc(100% - 2px);
-      height: 18px;
+      width: calc(100% - #{rem(2px)});
+      height: $am-size-5;
 
-      margin-left: 0px;
-      margin-top: 8px;
+      margin-top: rem(9px);
 
-      border-radius: 1000px;
+      border-radius: $am-radius-pill;
 
-      border: solid 1px transparent;
+      border: solid rem(1px) transparent;
     }
 
     &::after {
       content: ' ';
       display: block;
 
-      width: 12px;
-      height: 12px;
+      width: $am-size-8;
+      height: $am-size-8;
 
-      margin-left: 4px;
-      margin-top: -16px;
+      margin-left: rem(4px);
+      margin-top: rem(-16px);
 
-      border-radius: 50%;
+      border-radius: $am-radius-circle;
     }
 
     &:checked {
       &::after {
-        margin-left: calc(100% - 16px);
+        margin-left: calc(100% - #{rem(16px)});
       }
     }
   }

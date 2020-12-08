@@ -81,18 +81,15 @@
   @extend %-shared-browsersfix;
 
   & {
-    min-width: 80px;
+    min-width: $am-size-0;
     max-width: 100%;
 
-    min-height: 38px;
+    height: $am-size-2;
 
-    height: 38px;
+    padding: 0 $am-space-5;
 
-    padding: 0px 18px;
-
-    border: none;
-    border-radius: 3px;
-    border-width: 1px;
+    border-radius: $am-radius-regular;
+    border-width: rem(1px);
     border-style: solid;
 
     font-family: $am-font-family-regular;

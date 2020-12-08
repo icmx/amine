@@ -11,33 +11,35 @@
     justify-content: center;
     white-space: nowrap;
 
-    padding: 6px 8px;
+    padding: 0 $am-space-9;
 
     color: lighten($am-color-black, 40%);
     background-color: lighten($am-color-black, 90%);
 
-    border: solid lighten($am-color-black, 80%) 1px;
+    border: solid lighten($am-color-black, 80%) rem(1px);
     border-right: none;
   }
 
   & > .am-checkbox,
   & > .am-radio {
-    min-width: 36px;
-    width: 36px;
+    min-width: $am-size-2 - rem(2px);
+    // width: $am-size-2 - rem(2px);
 
     background-color: lighten($am-color-black, 90%);
-    border: solid lighten($am-color-black, 80%) 1px;
+
+    border: solid lighten($am-color-black, 80%) rem(1px);
     border-right: none;
   }
 
   & > .am-switch {
-    min-width: 48px;
-    width: 48px;
+    min-width: $am-size-1 + $am-space-9;
+    width: $am-size-1 + $am-space-9;
 
-    padding: 0 6px;
+    padding: 0 $am-space-9;
 
     background-color: lighten($am-color-black, 90%);
-    border: solid lighten($am-color-black, 80%) 1px;
+
+    border: solid rem(1px) lighten($am-color-black, 80%);
     border-right: none;
   }
 
@@ -60,7 +62,7 @@
   & > .am-button {
     box-sizing: border-box;
 
-    margin-right: -1px;
+    margin-right: rem(-1px);
     border-radius: 0;
   }
 
@@ -72,7 +74,7 @@
   & > .am-radio:first-child,
   & > .am-switch:first-child,
   & > .am-button:first-child {
-    border-radius: 3px 0 0 3px;
+    border-radius: $am-radius-regular 0 0 $am-radius-regular;
   }
 
   & > .am-item:first-child {
@@ -87,15 +89,15 @@
   & > .am-radio:last-child,
   & > .am-switch:last-child,
   & > .am-button:last-child {
-    border-radius: 0 3px 3px 0;
-    margin-right: 0px;
+    border-radius: 0 $am-radius-regular $am-radius-regular 0;
+    margin-right: 0;
   }
 
   & > .am-checkbox:last-child,
   & > .am-radio:last-child,
   & > .am-switch:last-child,
   & > .am-item:last-child {
-    border-right: solid 1px lighten($am-color-black, 80%);
+    border-right: solid rem(1px) lighten($am-color-black, 80%);
   }
 
   & > .am-item:only-child,
@@ -103,8 +105,8 @@
   & > .am-select:only-child,
   & > .am-textarea:only-child,
   & > .am-button:only-child {
-    border-radius: 3px 3px 3px 3px;
-    margin-right: 0px;
+    border-radius: $am-radius-regular;
+    margin-right: 0;
   }
 
   &--block {

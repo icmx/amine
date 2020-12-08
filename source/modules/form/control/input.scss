@@ -5,21 +5,20 @@
 
   & {
     & {
-      min-width: 80px;
-      min-height: 38px;
+      min-width: $am-size-0;
 
-      width: 180px;
-      height: 38px;
+      width: rem(192px);
+      height: $am-size-2;
 
-      padding: 0px 8px;
+      padding: 0 $am-space-9;
 
       font-family: $am-font-family-regular;
       font-size: $am-font-size-6;
       font-weight: $am-font-weight-normal;
 
       border-style: solid;
-      border-width: 1px;
-      border-radius: 3px;
+      border-width: rem(1px);
+      border-radius: $am-radius-regular;
     }
 
     &::placeholder {
@@ -138,25 +137,23 @@
 
   padding-top: 0;
   padding-bottom: 0;
-
-  line-height: 32px;
 }
 
 .am-input[type='search']::-webkit-search-cancel-button,
 .am-input[type='time']::-webkit-calendar-picker-indicator,
 .am-input[type='date']::-webkit-calendar-picker-indicator {
-  margin: 0 -8px 0 0;
+  margin: 0 rem(-8px) 0 0;
   padding: 0;
-  height: 30px;
-  width: 30px;
-
-  background: none;
+  height: rem(30px);
+  width: rem(30px);
 
   background-repeat: no-repeat;
-  background-position: center right 4px;
-  background-size: 24px;
+  background-position: center right rem(4px);
+  background-size: rem(24px);
 
   cursor: pointer;
+
+  outline: none;
 }
 
 .am-input[type='search'] {
@@ -185,20 +182,21 @@
   -moz-appearance: none;
 
   max-width: 100%;
-  padding-right: 34px;
+  padding-right: rem(34px);
 
   background-image: url('../assets/icons/chevron-down.svg');
   background-repeat: no-repeat;
-  background-position: center right 4px;
-  background-size: 24px;
+  background-position: center right rem(4px);
+  background-size: rem(24px);
 }
 
 .am-textarea {
   max-width: 100%;
 
-  height: 76px;
+  min-height: $am-size-2;
+  height: ($am-size-2 * 2) + $am-space-9;
 
-  padding: 8px 8px;
+  padding: $am-space-9 $am-space-9;
 
   &--block {
     resize: vertical;
