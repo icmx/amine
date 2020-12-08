@@ -1,0 +1,296 @@
+// TODO: add `:indeterminate` support`
+
+%-shared-toggle-checkbox-radio {
+  & {
+    min-width: $am-size-5;
+    min-height: $am-size-2;
+
+    cursor: pointer;
+
+    &::before {
+      content: ' ';
+      display: block;
+
+      width: $am-size-6;
+      height: $am-size-6;
+
+      margin-left: calc(50% - #{rem(9px)});
+      margin-top: rem(10px);
+
+      border-style: solid;
+      border-width: rem(1px);
+    }
+  }
+}
+
+%-shared-toggle-browsersfix {
+  & {
+    // Browser-specific fixes
+
+    // For Firefox
+    // TODO: Remove when `appearance` will be supported
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    // For mobile Webkit, on Android it's light blue
+    // by default and not needed here
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.am-checkbox {
+  @extend %-shared;
+  @extend %-shared-toggle-checkbox-radio;
+  @extend %-shared-toggle-browsersfix;
+
+  &::before {
+    border-radius: $am-radius-regular;
+  }
+
+  & {
+    & {
+      &::before {
+        background-color: lighten($am-color-black, 100%);
+        background-size: 0;
+        border-color: lighten($am-color-black, 80%);
+      }
+
+      &:hover::before {
+        border-color: lighten($am-color-black, 60%);
+      }
+
+      &:focus::before {
+        border-color: $am-color-primary;
+        box-shadow: -shared-input-box-shadow($am-color-primary);
+      }
+    }
+
+    &:checked {
+      &::before {
+        border-color: transparent;
+        background-color: $am-color-primary;
+
+        background-image: url('../assets/icons/check.svg');
+        background-size: rem(24px);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      &:hover::before {
+        background-color: darken($am-color-primary, 15%);
+      }
+    }
+  }
+
+  & {
+    &:disabled {
+      cursor: not-allowed;
+
+      & {
+        &::before {
+          border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+        }
+      }
+
+      &:checked {
+        &::before {
+          border-color: transparent;
+          background-color: transparentize($am-color-primary, 0.5);
+        }
+      }
+    }
+  }
+
+  & {
+    &::before {
+      transition: background-color 0.15s, background-size 0.15s,
+        border-color 0.15s, box-shadow 0.15s;
+    }
+  }
+}
+
+.am-radio {
+  @extend %-shared;
+  @extend %-shared-toggle-checkbox-radio;
+  @extend %-shared-toggle-browsersfix;
+
+  &::before {
+    border-radius: $am-radius-circle;
+  }
+
+  & {
+    & {
+      &::before {
+        background-color: lighten($am-color-black, 100%);
+        background-size: 0;
+        border-color: lighten($am-color-black, 80%);
+      }
+
+      &:hover::before {
+        border-color: lighten($am-color-black, 60%);
+      }
+
+      &:focus::before {
+        border-color: $am-color-primary;
+        box-shadow: -shared-input-box-shadow($am-color-primary);
+      }
+    }
+
+    &:checked {
+      &::before {
+        border-color: transparent;
+        background-color: $am-color-primary;
+
+        background-image: url('../assets/icons/radio.svg');
+        background-size: rem(24px);
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+
+      &:hover::before {
+        background-color: darken($am-color-primary, 15%);
+      }
+    }
+  }
+
+  & {
+    &:disabled {
+      cursor: not-allowed;
+
+      & {
+        &::before {
+          border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+        }
+      }
+
+      &:checked {
+        &::before {
+          border-color: transparent;
+          background-color: transparentize($am-color-primary, 0.5);
+        }
+      }
+    }
+  }
+
+  & {
+    & {
+      &::before {
+        transition: background-color 0.15s, background-size 0.15s,
+          border-color 0.15s, box-shadow 0.15s;
+      }
+    }
+  }
+}
+
+.am-switch {
+  @extend %-shared;
+  @extend %-shared-toggle-browsersfix;
+
+  & {
+    min-width: $am-size-2;
+    min-height: $am-size-2;
+
+    cursor: pointer;
+
+    &::before {
+      content: ' ';
+      display: block;
+
+      width: calc(100% - #{rem(2px)});
+      height: $am-size-5;
+
+      margin-top: rem(9px);
+
+      border-radius: $am-radius-pill;
+
+      border: solid rem(1px) transparent;
+    }
+
+    &::after {
+      content: ' ';
+      display: block;
+
+      width: $am-size-8;
+      height: $am-size-8;
+
+      margin-left: rem(4px);
+      margin-top: rem(-16px);
+
+      border-radius: $am-radius-circle;
+    }
+
+    &:checked {
+      &::after {
+        margin-left: calc(100% - #{rem(16px)});
+      }
+    }
+  }
+
+  & {
+    & {
+      &::before {
+        background-color: lighten($am-color-black, 80%);
+      }
+
+      &::after {
+        background-color: lighten($am-color-black, 95%);
+      }
+
+      &:hover::before {
+        background-color: lighten($am-color-black, 60%);
+      }
+
+      &:focus::before {
+        border-color: $am-color-primary;
+        box-shadow: -shared-input-box-shadow($am-color-primary);
+      }
+    }
+
+    &:checked {
+      &::before {
+        border-color: transparent;
+        background-color: $am-color-primary;
+      }
+
+      &::after {
+        background-color: lighten($am-color-black, 95%);
+      }
+
+      &:hover::before {
+        background-color: darken($am-color-primary, 15%);
+      }
+    }
+  }
+
+  & {
+    &:disabled {
+      & {
+        cursor: not-allowed;
+
+        &::before {
+          background-color: transparentize(lighten($am-color-black, 80%), 0.5);
+        }
+      }
+
+      &:checked {
+        &::before {
+          border-color: transparent;
+          background-color: transparentize($am-color-primary, 0.5);
+        }
+      }
+    }
+  }
+
+  & {
+    & {
+      &::before {
+        transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+      }
+
+      &::after {
+        transition: background-color 0.15s, border-color 0.15s,
+          margin-left 0.15s;
+      }
+    }
+  }
+}

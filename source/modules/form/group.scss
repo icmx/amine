@@ -1,0 +1,115 @@
+.am-group {
+  display: inline-flex;
+  vertical-align: middle;
+  box-sizing: border-box;
+
+  max-width: 100%;
+
+  & > .am-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    padding: 0 $am-space-9;
+
+    color: lighten($am-color-black, 40%);
+    background-color: lighten($am-color-black, 90%);
+
+    border: solid lighten($am-color-black, 80%) rem(1px);
+    border-right: none;
+  }
+
+  & > .am-checkbox,
+  & > .am-radio {
+    min-width: $am-size-2 - rem(2px);
+    // width: $am-size-2 - rem(2px);
+
+    background-color: lighten($am-color-black, 90%);
+
+    border: solid lighten($am-color-black, 80%) rem(1px);
+    border-right: none;
+  }
+
+  & > .am-switch {
+    min-width: $am-size-1 + $am-space-9;
+    width: $am-size-1 + $am-space-9;
+
+    padding: 0 $am-space-9;
+
+    background-color: lighten($am-color-black, 90%);
+
+    border: solid rem(1px) lighten($am-color-black, 80%);
+    border-right: none;
+  }
+
+  & > .am-input,
+  & > .am-select,
+  & > .am-textarea {
+    flex-grow: 1;
+
+    width: 1%;
+  }
+
+  & > .am-button {
+    flex-shrink: 1;
+  }
+
+  & > .am-item,
+  & > .am-input,
+  & > .am-select,
+  & > .am-textarea,
+  & > .am-button {
+    box-sizing: border-box;
+
+    margin-right: rem(-1px);
+    border-radius: 0;
+  }
+
+  & > .am-item:first-child,
+  & > .am-input:first-child,
+  & > .am-select:first-child,
+  & > .am-textarea:first-child,
+  & > .am-checkbox:first-child,
+  & > .am-radio:first-child,
+  & > .am-switch:first-child,
+  & > .am-button:first-child {
+    border-radius: $am-radius-regular 0 0 $am-radius-regular;
+  }
+
+  & > .am-item:first-child {
+    border-left: solid 1px lighten($am-color-black, 80%);
+  }
+
+  & > .am-item:last-child,
+  & > .am-input:last-child,
+  & > .am-select:last-child,
+  & > .am-textarea:last-child,
+  & > .am-checkbox:last-child,
+  & > .am-radio:last-child,
+  & > .am-switch:last-child,
+  & > .am-button:last-child {
+    border-radius: 0 $am-radius-regular $am-radius-regular 0;
+    margin-right: 0;
+  }
+
+  & > .am-checkbox:last-child,
+  & > .am-radio:last-child,
+  & > .am-switch:last-child,
+  & > .am-item:last-child {
+    border-right: solid rem(1px) lighten($am-color-black, 80%);
+  }
+
+  & > .am-item:only-child,
+  & > .am-input:only-child,
+  & > .am-select:only-child,
+  & > .am-textarea:only-child,
+  & > .am-button:only-child {
+    border-radius: $am-radius-regular;
+    margin-right: 0;
+  }
+
+  &--block {
+    width: 100%;
+  }
+}

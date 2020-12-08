@@ -1,0 +1,36 @@
+// TODO: add modal, make head and body sections dublicateable
+
+.am-section {
+  box-sizing: border-box;
+
+  &--call {
+    background-color: lighten($am-color-failure, 36%);
+    border-bottom: solid rem(1px) lighten($am-color-black, 90%);
+  }
+
+  &--head {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    background-color: darken($am-color-white, 0%);
+    border-bottom: solid rem(1px) lighten($am-color-black, 90%);
+  }
+
+  &--hero {
+    background-color: lighten($am-color-primary, 36%);
+  }
+
+  &--body {
+    min-height: 50vh;
+
+    background-color: darken($am-color-white, 0%);
+  }
+
+  &--foot {
+    min-height: 20vh;
+
+    background-color: darken($am-color-white, 0%);
+    border-top: solid rem(1px) lighten($am-color-black, 90%);
+  }
+}

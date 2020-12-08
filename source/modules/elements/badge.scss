@@ -1,0 +1,48 @@
+// TODO: make it interactive
+// TODO: make it able to handle left and right action buttons
+// TODO: size modifiers
+
+@mixin -coloring($color) {
+  color: $color;
+  background-color: transparentize($color, 0.95);
+}
+
+.am-badge {
+  display: inline-block;
+  vertical-align: middle;
+
+  max-width: 240px;
+  min-height: 26px;
+  line-height: 26px;
+  padding: 0px 8px;
+  margin: 2px 0;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-size: 0.8em;
+  font-weight: 400;
+
+  border-radius: 3px;
+
+  &--default {
+    @include -coloring($am-color-default);
+  }
+
+  &--primary {
+    @include -coloring($am-color-primary);
+  }
+
+  &--success {
+    @include -coloring($am-color-success);
+  }
+
+  &--warning {
+    @include -coloring($am-color-warning);
+  }
+
+  &--failure {
+    @include -coloring($am-color-failure);
+  }
+}

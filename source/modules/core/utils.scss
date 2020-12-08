@@ -1,0 +1,33 @@
+$base: 16px;
+
+@function m($value) {
+  @return $value / $base;
+}
+
+/**
+* Convert px value to em
+*
+* @param $value: value in pixel to convert, e.g. 24px
+*
+* @example
+* padding-top: em(24px);
+* // will be padding-top: 1.5em;
+*
+*/
+@function em($value) {
+  @return m($value) * 1em;
+}
+
+/**
+* Convert px value to rem
+*
+* @param $value: value in pixel to convert, e.g. 24px
+*
+* @example
+* padding-top: rem(24px);
+* // will be padding-top: 1.5rem;
+*
+*/
+@function rem($value) {
+  @return m($value) * 1rem;
+}

@@ -1,0 +1,27 @@
+.am-text-main {
+  color: lighten($am-color-black, 20%);
+}
+
+.am-text-misc {
+  color: lighten($am-color-black, 40%);
+}
+
+.am-text-mute {
+  color: lighten($am-color-black, 60%);
+}
+
+.am-text-primary {
+  color: $am-color-primary;
+}
+
+.am-text-success {
+  color: $am-color-success;
+}
+
+.am-text-warning {
+  color: $am-color-warning;
+}
+
+.am-text-failure {
+  color: $am-color-failure;
+}

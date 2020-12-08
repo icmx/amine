@@ -1,3 +1,16 @@
-@import './contents-colors';
-@import './contents-debug';
-@import './contents';
+@import './colors';
+@import './fonts';
+@import './utils';
+@import './units';
+
+@import './debug';
+
+.am {
+  margin: 0;
+
+  color: lighten($am-color-black, 20%);
+
+  font-family: $am-font-family-regular;
+  font-size: $am-font-size-6;
+  font-weight: $am-font-weight-normal;
+}

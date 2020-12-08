@@ -1,0 +1,77 @@
+// TODO: add desktop and mobile options
+
+.am-field {
+  width: 100%;
+
+  display: inline-flex;
+  vertical-align: middle;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--column > &__label {
+    margin-bottom: $am-space-9;
+  }
+
+  &--column > &__input {
+    width: 100%;
+
+    & > * {
+      width: 100%;
+    }
+  }
+
+  &--row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &--row > &__label {
+    margin-top: $am-space-9;
+    margin-right: $am-space-8;
+
+    // TODO: This width must be set from outside blocks too
+    width: 40%;
+  }
+
+  &--row > &__input {
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      width: 100%;
+    }
+
+    & > .am-textarea {
+      flex-grow: 1;
+      flex-shrink: 1;
+
+      resize: vertical;
+    }
+  }
+
+  &--box {
+    flex-direction: row-reverse;
+  }
+
+  &--box > &__input:first-child {
+    margin-left: $am-space-8;
+  }
+
+  &--box > &__input:last-child {
+    margin-right: $am-space-8;
+  }
+
+  &--box > &__label {
+    margin-top: $am-space-9 - rem(1px);
+
+    flex-grow: 1;
+  }
+
+  &__tip {
+    margin-top: $am-space-9;
+  }
+}
