@@ -135,8 +135,8 @@
 .am-input[type='date'] {
   appearance: none;
 
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: rem(8px);
+  padding-bottom: rem(8px);
 }
 
 .am-input[type='search']::-webkit-search-cancel-button,

@@ -134,6 +134,8 @@
   @extend .am-block;
   @include am-blockspace($am-space-3, $am-space-3);
 
+  box-sizing: border-box;
+
   padding: $am-space-4 $am-space-2;
 
   padding-left: $am-space-2 - rem(2px);
@@ -145,17 +147,19 @@
   background-color: lighten($am-color-black, 98%);
 }
 
-
-
 .am-blockcode {
   @extend .am-block;
   @include am-blockspace($am-space-3, $am-space-3);
+
+  box-sizing: border-box;
 
   padding: $am-space-4 $am-space-2;
 
   font-family: $am-font-family-monospace;
   line-height: $am-line-height-1;
+
   white-space: break-spaces;
+  word-break: break-all;
 
   border-radius: $am-radius-regular;
 
