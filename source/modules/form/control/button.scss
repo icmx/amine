@@ -128,7 +128,7 @@
   }
 
   &--block {
-    display: block;
-    width: 100%;
+    @extend .am-block;
+    @include am-blockspace($am-space-3, $am-space-3);
   }
 }

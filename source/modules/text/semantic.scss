@@ -1,24 +1,7 @@
-@mixin -block($space-top: $am-space-3, $space-bottom: $am-space-3) {
-  & {
-    display: block;
-    margin: 0;
-
-    margin-top: $space-top;
-    margin-bottom: $space-bottom;
-  }
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
 .am-display,
 .am-d {
-  @include -block($am-space-1, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-1, $am-space-3);
 
   font-size: $am-font-size-0;
   font-weight: $am-font-weight-bold;
@@ -29,7 +12,8 @@
 
 .am-heading-1,
 .am-h1 {
-  @include -block($am-space-2, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-2, $am-space-3);
 
   font-size: $am-font-size-1;
   font-weight: $am-font-weight-bold;
@@ -40,7 +24,8 @@
 
 .am-heading-2,
 .am-h2 {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   font-size: $am-font-size-2;
   font-weight: $am-font-weight-bold;
@@ -51,7 +36,8 @@
 
 .am-heading-3,
 .am-h3 {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   font-size: $am-font-size-3;
   font-weight: $am-font-weight-bold;
@@ -62,7 +48,8 @@
 
 .am-heading-4,
 .am-h4 {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   font-size: $am-font-size-4;
   font-weight: $am-font-weight-bold;
@@ -73,7 +60,8 @@
 
 .am-heading-5,
 .am-h5 {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   font-size: $am-font-size-5;
   font-weight: $am-font-weight-bold;
@@ -84,7 +72,8 @@
 
 .am-heading-6,
 .am-h6 {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   font-size: $am-font-size-6;
   font-weight: $am-font-weight-bold;
@@ -135,13 +124,15 @@
 
 .am-paragraph,
 .am-p {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   line-height: $am-line-height-1;
 }
 
 .am-blockquote {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   padding: $am-space-4 $am-space-2;
 
@@ -154,20 +145,11 @@
   background-color: lighten($am-color-black, 98%);
 }
 
-.am-code {
-  padding: em(1px) em(2px);
-  margin: 0 em(-2px);
 
-  font-family: $am-font-family-monospace;
-
-  border-radius: $am-radius-regular;
-
-  color: lighten($am-color-black, 20%);
-  background-color: lighten($am-color-black, 98%);
-}
 
 .am-blockcode {
-  @include -block($am-space-3, $am-space-3);
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
   padding: $am-space-4 $am-space-2;
 
@@ -178,6 +160,18 @@
   border-radius: $am-radius-regular;
 
   background-color: lighten($am-color-black, 98%) !important;
+}
+
+.am-code {
+  padding: em(1px) em(2px);
+  margin: 0 em(-2px);
+
+  font-family: $am-font-family-monospace;
+
+  border-radius: $am-radius-regular;
+
+  color: lighten($am-color-black, 20%);
+  background-color: lighten($am-color-black, 98%);
 }
 
 .am-key {

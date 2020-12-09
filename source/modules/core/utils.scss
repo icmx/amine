@@ -1,5 +1,12 @@
 $base: 16px;
 
+@mixin am-blockspace($space-top: $am-space-3, $space-bottom: $am-space-3) {
+  & {
+    margin-top: $space-top !important;
+    margin-bottom: $space-bottom !important;
+  }
+}
+
 @function m($value) {
   @return $value / $base;
 }

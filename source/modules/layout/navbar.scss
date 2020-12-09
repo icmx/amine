@@ -1,4 +1,7 @@
 .am-navbar {
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
+
   display: flex;
   gap: $am-space-5;
 

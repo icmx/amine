@@ -1,0 +1,29 @@
+.am-block {
+  & {
+    display: block;
+    margin: 0;
+    width: 100%;
+
+    &:first-child {
+      margin-top: 0 !important;
+    }
+
+    &:last-child {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+.am-block {
+  &--s {
+    @include am-blockspace($am-space-9, $am-space-9);
+  }
+
+  &--m {
+    @include am-blockspace($am-space-3, $am-space-3);
+  }
+
+  &--l {
+    @include am-blockspace($am-space-1, $am-space-1);
+  }
+}
