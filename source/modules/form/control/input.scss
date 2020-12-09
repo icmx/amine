@@ -116,11 +116,11 @@
     border-color: transparentize(lighten($am-color-black, 80%), 0.5);
   }
 
-  transition: color 0.15s, background-color 0.15s, border-color 0.15s,
-    box-shadow 0.15s;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s,
+    box-shadow 0.2s;
 
   &::placeholder {
-    transition: color 0.15s;
+    transition: color 0.2s;
   }
 }
 
