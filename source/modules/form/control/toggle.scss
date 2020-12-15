@@ -103,8 +103,8 @@
 
   & {
     &::before {
-      transition: background-color 0.15s, background-size 0.15s,
-        border-color 0.15s, box-shadow 0.15s;
+      transition: background-color 0.2s, background-size 0.2s,
+        border-color 0.2s, box-shadow 0.2s;
     }
   }
 }
@@ -175,8 +175,8 @@
   & {
     & {
       &::before {
-        transition: background-color 0.15s, background-size 0.15s,
-          border-color 0.15s, box-shadow 0.15s;
+        transition: background-color 0.2s, background-size 0.2s,
+          border-color 0.2s, box-shadow 0.2s;
       }
     }
   }
@@ -284,12 +284,12 @@
   & {
     & {
       &::before {
-        transition: background-color 0.15s, border-color 0.15s, box-shadow 0.15s;
+        transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
       }
 
       &::after {
-        transition: background-color 0.15s, border-color 0.15s,
-          margin-left 0.15s;
+        transition: background-color 0.2s, border-color 0.2s,
+          margin-left 0.2s;
       }
     }
   }

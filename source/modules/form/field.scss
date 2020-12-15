@@ -1,10 +1,15 @@
 // TODO: add desktop and mobile options
 
 .am-field {
-  width: 100%;
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
 
-  display: inline-flex;
-  vertical-align: middle;
+  display: flex !important;
+
+  &__input & {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 
   &--column {
     flex-direction: column;

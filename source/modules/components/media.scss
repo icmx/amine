@@ -13,7 +13,10 @@
 }
 
 .am-media {
-  display: flex;
+  @extend .am-block;
+  @include am-blockspace($am-space-3, $am-space-3);
+
+  display: flex !important;
   align-items: flex-start;
   justify-content: flex-start;
 
@@ -50,7 +53,7 @@
   }
 
   &--circle {
-    border-radius: 50%;
+    border-radius: $am-radius-circle;
   }
 
   &--square {

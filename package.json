@@ -1,6 +1,6 @@
 {
   "name": "amine",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "CSS library",
   "main": "source/amine.scss",
   "scripts": {

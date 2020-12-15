@@ -23,7 +23,6 @@
   & > .am-checkbox,
   & > .am-radio {
     min-width: $am-size-2 - rem(2px);
-    // width: $am-size-2 - rem(2px);
 
     background-color: lighten($am-color-black, 90%);
 
@@ -110,6 +109,16 @@
   }
 
   &--block {
-    width: 100%;
+    @extend .am-block;
+    @include am-blockspace($am-space-3, $am-space-3);
+
+    display: flex !important;
+  }
+
+  &--block {
+    .am-button--block {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+    }
   }
 }

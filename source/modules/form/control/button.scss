@@ -103,8 +103,8 @@
     user-select: none;
     cursor: pointer;
 
-    transition: color 0.15s, background-color 0.15s, border-color 0.15s,
-      box-shadow 0.15s;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
   }
 
   &--default {
@@ -128,7 +128,7 @@
   }
 
   &--block {
-    display: block;
-    width: 100%;
+    @extend .am-block;
+    @include am-blockspace($am-space-3, $am-space-3);
   }
 }

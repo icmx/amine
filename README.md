@@ -14,7 +14,7 @@ You can see the demo at [icmx.github.io/amine](https://icmx.github.io/amine)
   - **Flex**: mostly based on easy to use CSS Flex specifications
   - **Simple and small**: structured and clean code, up to 10kb gzipped (about 6kb currently)
   - **Good forms styling**: rich style options for all standard form widgets like buttons, inputs, checkboxes, radios etc. (mostly implemented)
-  - **Rems**: uses `rem` as main scale unit (mostly implemented)
+  - **Rems**: uses `rem` as main scale units (mostly implemented)
 
 ## License
 
