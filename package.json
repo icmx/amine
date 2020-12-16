@@ -4,10 +4,11 @@
   "description": "CSS library",
   "main": "source/amine.scss",
   "scripts": {
-    "sass-compile": "npm run sass-compile-expanded && npm run sass-compile-compressed",
-    "sass-compile-expanded": "sass --style expanded --no-source-map source/amine.scss output/amine.css",
-    "sass-compile-compressed": "sass --style compressed --no-source-map source/amine.scss output/amine.min.css",
-    "sass-watch": "sass --style expanded --no-source-map --watch source/amine.scss output/amine.watch.css"
+    "compile": "npm run compile:amine && npm run compile:amine.min && npm run compile:docs",
+    "compile:amine": "sass --style expanded --no-source-map scss/amine.scss css/amine.css",
+    "compile:amine.min": "sass --style compressed --no-source-map scss/amine.scss css/amine.min.css",
+    "compile:docs": "sass --style expanded --no-source-map scss/amine.scss docs/amine.css",
+    "watch": "sass --style expanded --no-source-map --watch scss/amine.scss docs/amine.watch.css"
   },
   "repository": {
     "type": "git",
