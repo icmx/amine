@@ -1,6 +1,6 @@
 {
   "name": "amine",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "CSS library",
   "main": "source/amine.scss",
   "scripts": {
@@ -15,8 +15,13 @@
     "url": "git+https://github.com/icmx/amine.git"
   },
   "keywords": [
+    "amine",
+    "bem",
+    "css-library",
     "css",
-    "css-library"
+    "flexbox",
+    "html",
+    "scss"
   ],
   "author": "icmx",
   "license": "MIT",
@@ -24,7 +29,8 @@
     "url": "https://github.com/icmx/amine/issues"
   },
   "homepage": "https://github.com/icmx/amine",
-  "dependencies": {
-    "sass": "^1.26.10"
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.30.0"
   }
 }
