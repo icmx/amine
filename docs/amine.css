@@ -181,7 +181,7 @@
 .am {
   margin: 0;
   color: #333333;
-  font-family: "Segoe UI", "Roboto", "Arial", "Noto Sans", sans-serif;
+  font-family: "system-ui", sans-serif;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -870,7 +870,7 @@
   border-radius: 0.1875rem;
   border-width: 0.0625rem;
   border-style: solid;
-  font-family: "Segoe UI", "Roboto", "Arial", "Noto Sans", sans-serif;
+  font-family: "system-ui", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   white-space: nowrap;
@@ -1177,7 +1177,7 @@
   width: 12rem;
   height: 2.375rem;
   padding: 0 0.5rem;
-  font-family: "Segoe UI", "Roboto", "Arial", "Noto Sans", sans-serif;
+  font-family: "system-ui", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   border-style: solid;
@@ -2259,7 +2259,7 @@
 .am-blockcode {
   box-sizing: border-box;
   padding: 1.25rem 2.25rem;
-  font-family: "Consolas", "Roboto Mono", monospace;
+  font-family: monospace;
   line-height: 1.5;
   white-space: break-spaces;
   word-break: break-all;
@@ -2274,7 +2274,7 @@
 .am-code {
   padding: 0.0625em 0.125em;
   margin: 0 -0.125em;
-  font-family: "Consolas", "Roboto Mono", monospace;
+  font-family: monospace;
   border-radius: 0.1875rem;
   color: #333333;
   background-color: #fafafa;
@@ -2283,7 +2283,7 @@
 .am-key {
   padding: 0.0625em 0.125em;
   margin: 0 -0.125em;
-  font-family: "Consolas", "Roboto Mono", monospace;
+  font-family: monospace;
   border-radius: 0.1875rem;
   color: #cccccc;
   background-color: #333333;
