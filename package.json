@@ -29,7 +29,6 @@
     "url": "https://github.com/icmx/amine/issues"
   },
   "homepage": "https://github.com/icmx/amine",
-  "dependencies": {},
   "devDependencies": {
     "sass": "^1.30.0"
   }
