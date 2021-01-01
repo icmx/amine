@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const pug = require('gulp-pug');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const rename = require('gulp-rename');
@@ -17,21 +18,32 @@ const useEnv = (environment) => {
   };
 };
 
-const isDevelopment = process.env.NODE_ENV === 'development';
-const isProduction = process.env.NODE_ENV === 'production';
+const isEnv = (environment) => process.env.NODE_ENV === environment;
 
 function styles() {
-  const srcDestParams = { sourcemaps: isDevelopment };
+  const opt = { sourcemaps: isEnv('development') };
 
   return gulp
-    .src(['scss/amine.scss'], srcDestParams)
+    .src(['scss/amine.scss'], opt)
     .pipe(sass())
     .pipe(postcss([postcssSVG]))
-    .pipe(gulp.dest('css', srcDestParams))
-    .pipe(gulp.dest('docs', srcDestParams))
+    .pipe(gulp.dest('css', opt))
+    .pipe(gulp.dest('docs', opt))
     .pipe(postcss([cssnano]))
     .pipe(rename({ basename: 'amine', suffix: '.min' }))
-    .pipe(gulp.dest('css', srcDestParams));
+    .pipe(gulp.dest('css', opt));
+}
+
+function docs() {
+  return gulp
+    .src(['docs/index.pug', 'docs/pages/*.pug'], { base: 'docs' })
+    .pipe(pug({ pretty: true }))
+    .pipe(gulp.dest('docs'));
+}
+
+function reload(cb) {
+  server.reload();
+  cb();
 }
 
 function serve(cb) {
@@ -49,10 +61,15 @@ function serve(cb) {
     )
   );
 
+  gulp.watch(
+    ['docs/index.pug', 'docs/pages/**/*.pug'],
+    gulp.series(docs, reload)
+  );
+
   return cb();
 }
 
-const build = gulp.series(gulp.parallel(styles));
+const build = gulp.series(gulp.parallel(styles, docs));
 
 module.exports.serve = gulp.series(useEnv('development'), build, serve);
 module.exports.build = gulp.series(useEnv('production'), build);

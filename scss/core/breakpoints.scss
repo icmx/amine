@@ -1,0 +1,16 @@
+// totally naive for now, oh well
+// or maybe just right and simple?
+
+$media-break: 768px;
+
+@mixin on-mobile {
+  @media (max-width: $media-break) {
+    @content;
+  }
+}
+
+@mixin on-desktop {
+  @media (min-width: $media-break) {
+    @content;
+  }
+}

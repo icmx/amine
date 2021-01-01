@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/amine.css">
+    <title>Amine — CSS library</title>
+  </head>
+  <body class="am am--layout-wide">
+    <div class="am-page-call">
+      <div class="am-content">
+        <p class="am-p"><span class="am-b">Watch out!</span> Amine is in active development and
+          thus not really stable. Please don't use it in your projects
+          now.
+        </p>
+      </div>
+    </div>
+    <div class="am-page-head">
+      <div class="am-content">
+        <div class="am-navbar am-navbar--sides"><a class="am-item" href="/"><span class="am-b">Amine</span> — CSS Library</a>
+          <div class="am-item"><a class="am-link" href="https://github.com/icmx/amine">GitHub</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="am-page-hero" style="background: url('/assets/placeholders/p16x10.svg') center/cover"></div>
+    <div class="am-page-body">
+      <div class="am-content am-content--sides">
+        <div class="am-content__main">
+          <h1 class="am-h1">Form</h1>
+          <h2 class="am-h2">Buttons</h2>
+          <h3 class="am-h3">Default</h3>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--default">Main</button>
+            <button class="am-button am-button--misc am-button--default">Misc</button>
+            <button class="am-button am-button--text am-button--default">Text</button>
+          </p>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--default" disabled>Main</button>
+            <button class="am-button am-button--misc am-button--default" disabled>Misc</button>
+            <button class="am-button am-button--text am-button--default" disabled>Text</button>
+          </p>
+          <h3 class="am-h3">Primary</h3>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--primary">Main</button>
+            <button class="am-button am-button--misc am-button--primary">Misc</button>
+            <button class="am-button am-button--text am-button--primary">Text</button>
+          </p>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--primary" disabled>Main</button>
+            <button class="am-button am-button--misc am-button--primary" disabled>Misc</button>
+            <button class="am-button am-button--text am-button--primary" disabled>Text</button>
+          </p>
+          <h3 class="am-h3">Success</h3>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--success">Main</button>
+            <button class="am-button am-button--misc am-button--success">Misc</button>
+            <button class="am-button am-button--text am-button--success">Text</button>
+          </p>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--success" disabled>Main</button>
+            <button class="am-button am-button--misc am-button--success" disabled>Misc</button>
+            <button class="am-button am-button--text am-button--success" disabled>Text</button>
+          </p>
+          <h3 class="am-h3">Warning</h3>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--warning">Main</button>
+            <button class="am-button am-button--misc am-button--warning">Misc</button>
+            <button class="am-button am-button--text am-button--warning">Text</button>
+          </p>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--warning" disabled>Main</button>
+            <button class="am-button am-button--misc am-button--warning" disabled>Misc</button>
+            <button class="am-button am-button--text am-button--warning" disabled>Text</button>
+          </p>
+          <h3 class="am-h3">Failure</h3>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--failure">Main</button>
+            <button class="am-button am-button--misc am-button--failure">Misc</button>
+            <button class="am-button am-button--text am-button--failure">Text</button>
+          </p>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--failure" disabled>Main</button>
+            <button class="am-button am-button--misc am-button--failure" disabled>Misc</button>
+            <button class="am-button am-button--text am-button--failure" disabled>Text</button>
+          </p>
+          <h2 class="am-h2">Boxed inputs</h2>
+          <p class="am-p">
+            <input class="am-input" type="text" placeholder="Text">
+          </p>
+          <p class="am-p">
+            <input class="am-input" type="text" value="With value">
+          </p>
+          <p class="am-p">
+            <input class="am-input" type="text" placeholder="Disabled placeholder" disabled>
+          </p>
+          <p class="am-p">
+            <input class="am-input" type="text" value="Disabled value" disabled>
+          </p>
+          <p class="am-p">
+            <input class="am-input" type="password" placeholder="Password">
+          </p>
+          <p class="am-p">
+            <input class="am-input" type="number" placeholder="Number">
+          </p>
+          <p class="am-p">
+            <input class="am-input" type="time" value="13:37">
+          </p>
+          <p class="am-p">
+            <input class="am-input" type="date" value="1970-01-01">
+          </p>
+          <p class="am-p">
+            <select class="am-select">
+              <option value="am-select-0">Select</option>
+              <option value="am-select-1">One</option>
+              <option value="am-select-2">Two</option>
+              <option value="am-select-3">Three</option>
+              <option value="am-select-4" disabled>Four</option>
+            </select>
+          </p>
+          <p class="am-p">
+            <textarea class="am-textarea" placeholder="Textarea"></textarea>
+          </p>
+          <p class="am-p">
+            <textarea class="am-textarea" placeholder="Textarea">With value</textarea>
+          </p>
+          <h3 class="am-h3">Inline and block</h3>
+          <p class="am-p">
+            <button class="am-button am-button--main am-button--primary">I am inline button</button>
+          </p>
+          <button class="am-button am-button--main am-button--primary am-button--block">I am block button</button>
+          <p class="am-p">
+            <select class="am-select">
+              <option value="am-select-1">I am inline select</option>
+            </select>
+          </p>
+          <select class="am-select am-select--block">
+            <option value="am-select-1">I am block select</option>
+          </select>
+          <h3 class="am-h3">Validation</h3>
+          <input class="am-input am-input--validable am-input--invalidable am-input--block" type="text" pattern="d+" placeholder="Dynamic: try to type letters or numbers">
+          <hr class="am-hr">
+          <p class="am-p">
+            <input class="am-input am-input--valid am-input--block" type="text" value="Static valid state">
+          </p>
+          <p class="am-p">
+            <input class="am-input am-input--invalid am-input--block" type="text" value="Static invalid state">
+          </p>
+          <h2 class="am-h2">Toggles</h2>
+          <p class="am-p">
+            <input class="am-checkbox" type="checkbox">
+            <input class="am-checkbox" type="checkbox" checked>
+            <input class="am-checkbox" type="checkbox" disabled>
+            <input class="am-checkbox" type="checkbox" checked disabled>
+          </p>
+          <p class="am-p">
+            <input class="am-radio" type="radio" name="am-radio-1">
+            <input class="am-radio" type="radio" name="am-radio-1" checked>
+            <input class="am-radio" type="radio" name="am-radio-2" disabled>
+            <input class="am-radio" type="radio" name="am-radio-2" disabled checked>
+          </p>
+          <p class="am-p">
+            <input class="am-switch" type="checkbox">
+            <input class="am-switch" type="checkbox" checked>
+            <input class="am-switch" type="checkbox" disabled>
+            <input class="am-switch" type="checkbox" checked disabled>
+          </p>
+          <h2 class="am-h2">Grouping</h2>
+          <div class="am-group am-group--block">
+            <input class="am-input" type="text" placeholder="Type to search">
+            <button class="am-button am-button--main am-button--primary">Let's go!</button>
+          </div>
+          <div class="am-group am-group--block">
+            <div class="am-item">Name your price</div>
+            <input class="am-input am-text-right" type="number" placeholder="120.00">
+            <div class="am-item">$</div>
+          </div>
+          <div class="am-group am-group--block">
+            <input class="am-input" type="text" placeholder="login">
+            <div class="am-item">@</div>
+            <select class="am-select">
+              <option value="inbox">inbox</option>
+              <option value="mail">mail</option>
+              <option value="noreply" disabled>noreply</option>
+            </select>
+            <div class="am-item">.example.org</div>
+          </div>
+          <div class="am-group am-group--block">
+            <button class="am-button am-button--main am-button--failure am-button--block">One</button>
+            <button class="am-button am-button--main am-button--warning am-button--block">Two</button>
+            <button class="am-button am-button--main am-button--success am-button--block">Three!</button>
+          </div>
+          <div class="am-group am-group--block">
+            <button class="am-button am-button--misc am-button--primary am-button--block">Here</button>
+            <button class="am-button am-button--misc am-button--primary am-button--block">We</button>
+            <button class="am-button am-button--main am-button--primary am-button--block">Go</button>
+            <button class="am-button am-button--misc am-button--primary am-button--block">Again</button>
+          </div>
+          <div class="am-group am-group--block">
+            <div class="am-item">Textarea is also supported</div>
+            <textarea class="am-textarea" placeholder="Yes it is!"></textarea>
+          </div>
+          <div class="am-group am-group--block">
+            <input class="am-checkbox" type="checkbox" checked>
+            <select class="am-select">
+              <option value="cs-1">Include one cutlery set</option>
+              <option value="cs-2">Include two cutlery sets</option>
+              <option value="cs-3">Include three cutlery sets</option>
+              <option value="cs-4+">Include four or more cutlery sets</option>
+            </select>
+          </div>
+          <div class="am-group am-group--block">
+            <input class="am-switch" type="checkbox">
+            <input class="am-input" type="text" placeholder="Strange group, right?">
+            <button class="am-button am-button--main am-button--failure">No</button>
+            <div class="am-item">or</div>
+            <button class="am-button am-button--main am-button--success">Yes</button>
+            <div class="am-item">?</div>
+          </div>
+          <h2 class="am-h2">Fields</h2>
+          <h3 class="am-h3">Column-oriented</h3>
+          <div class="am-field am-field--column">
+            <label class="am-field__label am-text-misc" for="field-1">Minimal example</label>
+            <input class="am-field__input am-input" id="field-1" type="text" placeholder="Just label and input">
+          </div>
+          <div class="am-field am-field--column">
+            <label class="am-field__label am-text-misc" for="field-2">Now with a validation</label>
+            <input class="am-field__input am-input am-input--invalid" id="field-2" type="text" value="PascalCaseNaming">
+            <div class="am-field__tip am-small am-failure">Please use <em class="am-i am-u">kebab-case-naming</em> in HTML and CSS</div>
+          </div>
+          <div class="am-field am-field--column">
+            <label class="am-field__label am-text-misc">Sometimes there should be a button with long, really lo-o-ong label text for it, because it's a really important action, like accepting the terms of service use.</label>
+            <button class="am-field__input am-button am-button--main am-button--success">Accept and Proceed</button>
+            <div class="am-field__tip am-small am-text-misc">Even more, there can be an additional tip, like this.</div>
+          </div>
+          <div class="am-field am-field--column">
+            <div class="am-field__label">
+              <label class="am-text-misc" for="field-3">This one is extended, but looks like previous</label>
+            </div>
+            <div class="am-field__input">
+              <input class="am-input" id="field-3" type="text" placeholder="John Unknown Doe">
+              <div class="am-field__tip am-small am-text-misc">Provide a full name please, not a short one</div>
+            </div>
+          </div>
+          <div class="am-field am-field--column">
+            <label class="am-field__label am-text-misc" for="field-4">Select is also supported</label>
+            <select class="am-field__input am-select" id="field-4">
+              <option value="true">That's right!</option>
+            </select>
+          </div>
+          <div class="am-field am-field--column">
+            <label class="am-field__label am-text-misc" for="field-5">As well as Textarea</label>
+            <textarea class="am-field__input am-textarea" id="field-5">Absolutely correct.</textarea>
+            <div class="am-field__tip am-small am-text-misc">Wait, did you forget about tips?</div>
+            <div class="am-field__tip am-small am-text-misc">Here they are!</div>
+          </div>
+          <div class="am-field am-field--column">
+            <label class="am-field__label am-text-misc">Groups fits here too</label>
+            <div class="am-group">
+              <label class="am-item" for="field-6-1">From</label>
+              <input class="am-input" id="field-6-1" type="text" value="Alice">
+              <label class="am-item" for="field-6-2">To</label>
+              <input class="am-input" id="field-6-2" type="text" value="Bob">
+            </div>
+            <div class="am-field__tip am-small am-text-misc">Yes, with validation tips.</div>
+          </div>
+          <h3 class="am-h3">Row-oriented</h3>
+          <div class="am-field am-field--row">
+            <label class="am-field__label am-text-misc" for="field-7">Minimal in a row form</label>
+            <input class="am-field__input am-input" id="field-7" type="text" value="Like column, but row">
+          </div>
+          <div class="am-field am-field--row">
+            <label class="am-field__label am-text-misc" for="field-8">What about tips now?</label>
+            <div class="am-field__input">
+              <select class="am-select" id="field-8">
+                <option value="yeah Yeah, what about them?"></option>
+                <option value="just Just look down!"></option>
+              </select>
+              <div class="am-field__tip am-small am-text-misc">They're all here, on input side</div>
+            </div>
+          </div>
+          <div class="am-field am-field--row">
+            <label class="am-field__label am-text-misc" for="field-9">Even on textarea?</label>
+            <div class="am-field__input">
+              <textarea class="am-textarea am-textarea--valid" id="field-9">Yes!</textarea>
+              <div class="am-field__tip am-small am-success">Sure, why not?</div>
+              <div class="am-field__tip am-small am-text-misc">By the way, tips may have different colors</div>
+            </div>
+          </div>
+          <div class="am-field am-field--row">
+            <label class="am-field__label am-text-misc" for="field-10">Uhm... Groups, maybe?</label>
+            <div class="am-field__input">
+              <div class="am-group">
+                <div class="am-item">Works</div>
+                <select class="am-select" id="field-10">
+                  <option value="a">excellent!</option>
+                  <option value="b">great!</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <h3 class="am-h3">For toggleable inputs</h3>
+          <div class="am-field am-field--box">
+            <label class="am-field__label am-text-misc" for="field-11">Minimal checkbox example.</label>
+            <input class="am-field__input am-checkbox" id="field-11" type="checkbox" checked>
+          </div>
+          <div class="am-field am-field--box">
+            <label class="am-field__label am-text-misc" for="field-12">Minimal switch example.</label>
+            <input class="am-field__input am-switch" id="field-12" type="checkbox" checked>
+          </div>
+          <div class="am-field am-field--box">
+            <label class="am-field__label am-text-misc" for="field-13-1">Minimal radio example — option one.</label>
+            <input class="am-field__input am-radio" id="field-13-1" name="field-13" type="radio">
+          </div>
+          <div class="am-field am-field--box">
+            <div class="am-field__label am-text-misc">
+              <label for="field-13-2">Minimal radio example — option two.</label>
+              <div class="am-field__tip am-small">Box-oriented fields can have tips too!</div>
+            </div>
+            <input class="am-field__input am-radio" id="field-13-2" name="field-13" type="radio" checked>
+          </div>
+          <div class="am-field am-field--box">
+            <label class="am-field__label am-text-misc" for="field-13-3">Disabled radio.</label>
+            <input class="am-field__input am-radio" id="field-13-3" name="field-13" type="radio" disabled>
+          </div>
+          <div class="am-field am-field--column">
+            <div class="am-field__label am-main">Now, let's combine them in a column — that's looks like a single field now.</div>
+            <div class="am-field__input">
+              <div class="am-field am-field--box">
+                <label class="am-field__label am-text-misc" for="field-14-1">Combined option one</label>
+                <input class="am-field__input am-checkbox" id="field-14-1" type="checkbox">
+              </div>
+              <div class="am-field am-field--box">
+                <label class="am-field__label am-text-misc" for="field-14-2">Combined option two</label>
+                <input class="am-field__input am-checkbox" id="field-14-2" type="checkbox" checked>
+              </div>
+              <div class="am-field am-field--box">
+                <label class="am-field__label am-text-misc" for="field-14-3">Disabled option</label>
+                <input class="am-field__input am-checkbox" id="field-14-3" type="checkbox" disabled>
+              </div>
+            </div>
+          </div>
+          <div class="am-field am-field--row">
+            <div class="am-field__label am-main">Okay, now make them row-oriented, and turn checkboxes into switches.</div>
+            <div class="am-field__input">
+              <div class="am-field am-field--box">
+                <input class="am-field__input am-switch" id="field-15-1" type="checkbox">
+                <label class="am-field__label am-text-misc" for="field-15-1">Yeah, that's a feature — when you swap input and label, it will look like this. Useful for mobile interfaces e.g.</label>
+              </div>
+              <div class="am-field am-field--box">
+                <input class="am-field__input am-switch" id="field-15-2" type="checkbox" checked>
+                <div class="am-field__label am-text-misc">
+                  <label for="field-15-2">Minimal radio example — option two.</label>
+                  <div class="am-field__tip am-small">Suppose there should be a tip, why not.</div>
+                </div>
+              </div>
+              <div class="am-field am-field--box">
+                <input class="am-field__input am-switch" id="field-15-3" type="checkbox" disabled>
+                <label class="am-field__label am-text-misc" for="field-15-3">Disabled option</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="am-content__side">
+          <h2 class="am-h2">Contents</h2>
+          <ul>
+            <li><a class="am-link" href="/pages/text.html">Text</a></li>
+            <li><a class="am-link" href="/pages/form.html">Form</a></li>
+            <li><a class="am-link" href="/pages/layout.html">Layout</a></li>
+            <li><a class="am-link" href="/pages/elements.html">Elements</a></li>
+            <li><a class="am-link" href="/pages/components.html">Components</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="am-page-foot">
+      <div class="am-content">
+        <div class="am-navbar am-navbar--sides">
+          <div class="am-item">
+            <p class="am-note">Amine v0.0.11 · by <a class="am-link" href="https://github.com/icmx">icmx</a></p>
+          </div>
+          <div class="am-item">
+            <p class="am-note am-text-right">MIT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

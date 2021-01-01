@@ -1,84 +1,57 @@
 .am-content {
-  display: flex;
-  flex-wrap: wrap;
-
   margin: 0 auto;
+  padding: 0.5rem 1rem;
 
   height: 100%;
+  box-sizing: border-box;
 
-  &--left {
-    justify-content: flex-start;
+  min-width: 0;
+
+  .am--layout-thin &,
+  &--narrow {
+    width: 45rem;
   }
 
-  &--center {
-    justify-content: center;
+  .am--layout-wide &,
+  &--wide {
+    width: 85rem;
+  }
+
+  .am--layout-full &,
+  &--full {
+    width: 100%;
   }
 
   &--sides {
-    justify-content: space-between;
+    display: flex;
+    gap: 1rem;
   }
 
-  &--right {
-    justify-content: flex-end;
-  }
-
-  &--full {
-    max-width: 100%;
-  }
-
-  &--wide {
-    max-width: rem(1400px);
-  }
-
-  &--narrow {
-    max-width: rem(800px);
-  }
-}
-
-@mixin -exact-width($width) {
-  min-width: $width;
-  max-width: $width;
-}
-
-@mixin -fraction-12($fraction) {
-  @include -exact-width(#{((100 / 12) * $fraction) + '%'});
-}
-
-.am-content > .am-item {
-  box-sizing: border-box;
-  padding: 16px;
-
-  height: 100%; // not sure if this is really needed
-
-  @media screen and (max-width: 768px) {
-    &\@d,
-    &\@\!m {
-      display: none;
+  @include on-mobile {
+    &--sides {
+      flex-direction: column-reverse;
     }
   }
 
-  @media screen and (min-width: 768px) {
-    &\@m,
-    &\@\!d {
-      display: none;
-    }
-  }
-
-  @for $i from 1 through 12 {
-    &--c#{$i} {
-      @include -fraction-12($i);
+  @include on-desktop {
+    &--sides {
+      flex-direction: row;
     }
 
-    @media screen and (max-width: 768px) {
-      &--c#{$i}\@m {
-        @include -fraction-12($i);
-      }
+    &__side {
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 300px;
+
+      min-width: 0;
     }
 
-    @media screen and (min-width: 768px) {
-      &--c#{$i}\@d {
-        @include -fraction-12($i);
-      }
+    &__main {
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 100%;
+
+      min-width: 0;
     }
   }
 }

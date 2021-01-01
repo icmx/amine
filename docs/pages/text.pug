@@ -1,0 +1,60 @@
+extends common/layout.pug
+
+block body
+  h1.am-h1 Typography
+  h2.am-h2 Alignment
+  p.am-text-left Left text align.
+  p.am-text-center Center text align.
+  p.am-text-right Right text align.
+  h2.am-h2 Coloring
+  p.am-p #[span.am-text-main Main color.]
+  p.am-p #[span.am-text-misc Misc color.]
+  p.am-p #[span.am-text-mute Mute color.]
+  p.am-p #[span.am-text-primary Primary color.]
+  p.am-p #[span.am-text-success Success color.]
+  p.am-p #[span.am-text-warning Warning color.]
+  p.am-p #[span.am-text-failure Failure color.]
+  h2.am-h2 Sizing
+  div.am-block
+    div.am-text-size-0 Size 0
+    div.am-text-size-1 Size 1
+    div.am-text-size-2 Size 2
+    div.am-text-size-3 Size 3
+    div.am-text-size-4 Size 4
+    div.am-text-size-5 Size 5
+    div.am-text-size-6 Size 6
+    div.am-text-size-7 Size 7
+  h2.am-h2 Semantic Elements
+  div.am-d Display Title. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, error?
+  div.am-h1 Heading 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, voluptas!
+  div.am-h2 Heading 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, totam!
+  div.am-h3 Heading 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt?
+  div.am-h4 Heading 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, optio!
+  div.am-h5 Heading 5. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, in?
+  div.am-h6 Heading 6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, incidunt?
+  p.am-p #[span.am-regular Regular Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus atque! Optio atque iure tempora eius a sint, blanditiis eos?]
+  p.am-p #[span.am-regular Regular Text, once more. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quis voluptatibus repellat adipisci qui, itaque possimus laborum tempore enim minima?]
+  p.am-p #[span.am-small Small Text. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus eligendi, architecto earum accusantium exercitationem natus vitae ullam autem? Ipsum, blanditiis.]
+  p.am-p #[span.am-bold Bold] and also #[span.am-b bold] shortcut.
+  p.am-p #[span.am-italic Italic] and also #[span.am-i italic] shortcut.
+  p.am-p #[span.am-underline Underline] and also #[span.am-u underline] shortcut.
+  p.am-p #[span.am-strikethrough Strikethrough] and also #[span.am-s strikethrough] shortcut.
+  p.am-p Special #[span.am-subscript subscript] and also #[span.am-sub subscript] shortcut.
+  p.am-p Special #[span.am-superscript superscript] and also #[span.am-sup superscript] shortcut.
+  p.am-p #[span.am-mark Marked text], #[span.am-key Key text] and #[span.am-code Code text]
+  pre.am-blockcode // Blockcode Text.
+  pre.am-blockcode
+    | // advanced example of blockcode
+    |
+    | document.addEventListener('load', () => {
+    | fetch('https://example.org/api/users/1')
+    |  .then(response => response.json())
+    |  .then(user => console.log(user.fullName)); // -> 'John Doe'
+    | });
+  blockquote.am-blockquote Blockquote Text.
+  blockquote.am-blockquote
+    p.am-p Advanced example of blockquote.
+    h1.am-h1 Lorem Ipsum
+    p.am-p Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aspernatur?
+    p.am-p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in earum distinctio quis enim eveniet ex temporibus, tenetur ipsam nemo.
+    p.am-p Lorem ipsum dolor sit amet.

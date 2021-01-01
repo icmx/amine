@@ -1,0 +1,246 @@
+extends common/layout.pug
+
+block body
+  h1.am-h1 Form
+  h2.am-h2 Buttons
+  h3.am-h3 Default
+  p.am-p
+    button.am-button.am-button--main.am-button--default Main
+    button.am-button.am-button--misc.am-button--default Misc
+    button.am-button.am-button--text.am-button--default Text
+  p.am-p
+    button.am-button.am-button--main.am-button--default(disabled) Main
+    button.am-button.am-button--misc.am-button--default(disabled) Misc
+    button.am-button.am-button--text.am-button--default(disabled) Text
+  h3.am-h3 Primary
+  p.am-p
+    button.am-button.am-button--main.am-button--primary Main
+    button.am-button.am-button--misc.am-button--primary Misc
+    button.am-button.am-button--text.am-button--primary Text
+  p.am-p
+    button.am-button.am-button--main.am-button--primary(disabled) Main
+    button.am-button.am-button--misc.am-button--primary(disabled) Misc
+    button.am-button.am-button--text.am-button--primary(disabled) Text
+  h3.am-h3 Success
+  p.am-p
+    button.am-button.am-button--main.am-button--success Main
+    button.am-button.am-button--misc.am-button--success Misc
+    button.am-button.am-button--text.am-button--success Text
+  p.am-p
+    button.am-button.am-button--main.am-button--success(disabled) Main
+    button.am-button.am-button--misc.am-button--success(disabled) Misc
+    button.am-button.am-button--text.am-button--success(disabled) Text
+  h3.am-h3 Warning
+  p.am-p
+    button.am-button.am-button--main.am-button--warning Main
+    button.am-button.am-button--misc.am-button--warning Misc
+    button.am-button.am-button--text.am-button--warning Text
+  p.am-p
+    button.am-button.am-button--main.am-button--warning(disabled) Main
+    button.am-button.am-button--misc.am-button--warning(disabled) Misc
+    button.am-button.am-button--text.am-button--warning(disabled) Text
+  h3.am-h3 Failure
+  p.am-p
+    button.am-button.am-button--main.am-button--failure Main
+    button.am-button.am-button--misc.am-button--failure Misc
+    button.am-button.am-button--text.am-button--failure Text
+  p.am-p
+    button.am-button.am-button--main.am-button--failure(disabled) Main
+    button.am-button.am-button--misc.am-button--failure(disabled) Misc
+    button.am-button.am-button--text.am-button--failure(disabled) Text
+  h2.am-h2 Boxed inputs
+  p.am-p: input.am-input(type="text" placeholder="Text")
+  p.am-p: input.am-input(type="text" value="With value")
+  p.am-p: input.am-input(type="text" placeholder="Disabled placeholder", disabled)
+  p.am-p: input.am-input(type="text" value="Disabled value", disabled)
+  p.am-p: input.am-input(type="password" placeholder="Password")
+  p.am-p: input.am-input(type="number" placeholder="Number")
+  p.am-p: input.am-input(type="time" value="13:37")
+  p.am-p: input.am-input(type="date" value="1970-01-01")
+  p.am-p
+    select.am-select
+      option(value="am-select-0") Select
+      option(value="am-select-1") One
+      option(value="am-select-2") Two
+      option(value="am-select-3") Three
+      option(value="am-select-4", disabled) Four
+  p.am-p
+    textarea.am-textarea(placeholder="Textarea")
+  p.am-p
+    textarea.am-textarea(placeholder="Textarea") With value
+  h3.am-h3 Inline and block
+  p.am-p: button.am-button.am-button--main.am-button--primary I am inline button
+  button.am-button.am-button--main.am-button--primary.am-button--block I am block button
+  p.am-p
+    select.am-select
+      option(value="am-select-1") I am inline select
+  select.am-select.am-select--block
+    option(value="am-select-1") I am block select
+  h3.am-h3 Validation
+  input.am-input.am-input--validable.am-input--invalidable.am-input--block(type="text" pattern="\d+" placeholder="Dynamic: try to type letters or numbers")
+  hr.am-hr
+  p.am-p: input.am-input.am-input--valid.am-input--block(type="text" value="Static valid state")
+  p.am-p: input.am-input.am-input--invalid.am-input--block(type="text" value="Static invalid state")
+  h2.am-h2 Toggles
+  p.am-p
+    input.am-checkbox(type="checkbox")
+    input.am-checkbox(type="checkbox", checked)
+    input.am-checkbox(type="checkbox", disabled)
+    input.am-checkbox(type="checkbox", checked, disabled)
+  p.am-p
+    input.am-radio(type="radio" name="am-radio-1")
+    input.am-radio(type="radio" name="am-radio-1", checked)
+    input.am-radio(type="radio" name="am-radio-2", disabled)
+    input.am-radio(type="radio" name="am-radio-2", disabled, checked)
+  p.am-p
+    input.am-switch(type="checkbox")
+    input.am-switch(type="checkbox", checked)
+    input.am-switch(type="checkbox", disabled)
+    input.am-switch(type="checkbox", checked, disabled)
+  h2.am-h2 Grouping
+  div.am-group.am-group--block
+    input.am-input(type="text" placeholder="Type to search")
+    button.am-button.am-button--main.am-button--primary Let's go!
+  div.am-group.am-group--block
+    div.am-item Name your price
+    input.am-input.am-text-right(type="number", placeholder="120.00")
+    div.am-item $
+  div.am-group.am-group--block
+    input.am-input(type="text", placeholder="login")
+    div.am-item @
+    select.am-select
+      option(value="inbox") inbox
+      option(value="mail") mail
+      option(value="noreply", disabled) noreply
+    div.am-item .example.org
+  div.am-group.am-group--block
+    button.am-button.am-button--main.am-button--failure.am-button--block One
+    button.am-button.am-button--main.am-button--warning.am-button--block Two
+    button.am-button.am-button--main.am-button--success.am-button--block Three!
+  div.am-group.am-group--block
+    button.am-button.am-button--misc.am-button--primary.am-button--block Here
+    button.am-button.am-button--misc.am-button--primary.am-button--block We
+    button.am-button.am-button--main.am-button--primary.am-button--block Go
+    button.am-button.am-button--misc.am-button--primary.am-button--block Again
+  div.am-group.am-group--block
+    div.am-item Textarea is also supported
+    textarea.am-textarea(placeholder="Yes it is!")
+  div.am-group.am-group--block
+    input.am-checkbox(type="checkbox", checked)
+    select.am-select
+      option(value="cs-1") Include one cutlery set
+      option(value="cs-2") Include two cutlery sets
+      option(value="cs-3") Include three cutlery sets
+      option(value="cs-4+") Include four or more cutlery sets
+  div.am-group.am-group--block
+    input.am-switch(type="checkbox")
+    input.am-input(type="text", placeholder="Strange group, right?")
+    button.am-button.am-button--main.am-button--failure No
+    div.am-item or
+    button.am-button.am-button--main.am-button--success Yes
+    div.am-item ?
+  h2.am-h2 Fields
+  h3.am-h3 Column-oriented
+  div.am-field.am-field--column
+    label.am-field__label.am-text-misc(for="field-1") Minimal example
+    input.am-field__input.am-input(id="field-1", type="text", placeholder="Just label and input")
+  div.am-field.am-field--column
+    label.am-field__label.am-text-misc(for="field-2") Now with a validation
+    input.am-field__input.am-input.am-input--invalid(id="field-2", type="text", value="PascalCaseNaming")
+    div.am-field__tip.am-small.am-failure Please use #[em.am-i.am-u kebab-case-naming] in HTML and CSS
+  div.am-field.am-field--column
+    label.am-field__label.am-text-misc Sometimes there should be a button with long, really lo-o-ong label text for it, because it's a really important action, like accepting the terms of service use.
+    button.am-field__input.am-button.am-button--main.am-button--success Accept and Proceed
+    div.am-field__tip.am-small.am-text-misc Even more, there can be an additional tip, like this.
+  div.am-field.am-field--column
+    div.am-field__label
+      label.am-text-misc(for="field-3") This one is extended, but looks like previous
+    div.am-field__input
+      input.am-input(id="field-3", type="text", placeholder="John Unknown Doe")
+      div.am-field__tip.am-small.am-text-misc Provide a full name please, not a short one
+  div.am-field.am-field--column
+    label.am-field__label.am-text-misc(for="field-4") Select is also supported
+    select.am-field__input.am-select(id="field-4")
+      option(value="true") That's right!
+  div.am-field.am-field--column
+    label.am-field__label.am-text-misc(for="field-5") As well as Textarea
+    textarea.am-field__input.am-textarea(id="field-5") Absolutely correct.
+    div.am-field__tip.am-small.am-text-misc Wait, did you forget about tips?
+    div.am-field__tip.am-small.am-text-misc Here they are!
+  div.am-field.am-field--column
+    label.am-field__label.am-text-misc Groups fits here too
+    div.am-group
+      label.am-item(for="field-6-1") From
+      input.am-input(id="field-6-1", type="text", value="Alice")
+      label.am-item(for="field-6-2") To
+      input.am-input(id="field-6-2", type="text", value="Bob")
+    div.am-field__tip.am-small.am-text-misc Yes, with validation tips.
+  h3.am-h3 Row-oriented
+  div.am-field.am-field--row
+    label.am-field__label.am-text-misc(for="field-7") Minimal in a row form
+    input.am-field__input.am-input(id="field-7", type="text", value="Like column, but row")
+  div.am-field.am-field--row
+    label.am-field__label.am-text-misc(for="field-8") What about tips now?
+    div.am-field__input
+      select.am-select(id="field-8")
+        option(value="yeah Yeah, what about them?")
+        option(value="just Just look down!")
+      div.am-field__tip.am-small.am-text-misc They're all here, on input side
+  div.am-field.am-field--row
+    label.am-field__label.am-text-misc(for="field-9") Even on textarea?
+    div.am-field__input
+      textarea.am-textarea.am-textarea--valid(id="field-9") Yes!
+      div.am-field__tip.am-small.am-success Sure, why not?
+      div.am-field__tip.am-small.am-text-misc By the way, tips may have different colors
+  div.am-field.am-field--row
+    label.am-field__label.am-text-misc(for="field-10") Uhm... Groups, maybe?
+    div.am-field__input
+      div.am-group
+        div.am-item Works
+        select.am-select(id="field-10")
+          option(value="a") excellent!
+          option(value="b") great!
+  h3.am-h3 For toggleable inputs
+  div.am-field.am-field--box
+    label.am-field__label.am-text-misc(for="field-11") Minimal checkbox example.
+    input.am-field__input.am-checkbox(id="field-11", type="checkbox", checked)
+  div.am-field.am-field--box
+    label.am-field__label.am-text-misc(for="field-12") Minimal switch example.
+    input.am-field__input.am-switch(id="field-12", type="checkbox", checked)
+  div.am-field.am-field--box
+    label.am-field__label.am-text-misc(for="field-13-1") Minimal radio example — option one.
+    input.am-field__input.am-radio(id="field-13-1", name="field-13", type="radio")
+  div.am-field.am-field--box
+    div.am-field__label.am-text-misc
+      label(for="field-13-2") Minimal radio example — option two.
+      div.am-field__tip.am-small Box-oriented fields can have tips too!
+    input.am-field__input.am-radio(id="field-13-2", name="field-13", type="radio", checked)
+  div.am-field.am-field--box
+    label.am-field__label.am-text-misc(for="field-13-3") Disabled radio.
+    input.am-field__input.am-radio(id="field-13-3", name="field-13", type="radio", disabled)
+  div.am-field.am-field--column
+    div.am-field__label.am-main Now, let's combine them in a column — that's looks like a single field now.
+    div.am-field__input
+      div.am-field.am-field--box
+        label.am-field__label.am-text-misc(for="field-14-1") Combined option one
+        input.am-field__input.am-checkbox(id="field-14-1", type="checkbox")
+      div.am-field.am-field--box
+        label.am-field__label.am-text-misc(for="field-14-2") Combined option two
+        input.am-field__input.am-checkbox(id="field-14-2", type="checkbox", checked)
+      div.am-field.am-field--box
+        label.am-field__label.am-text-misc(for="field-14-3") Disabled option
+        input.am-field__input.am-checkbox(id="field-14-3", type="checkbox", disabled)
+  div.am-field.am-field--row
+    div.am-field__label.am-main Okay, now make them row-oriented, and turn checkboxes into switches.
+    div.am-field__input
+      div.am-field.am-field--box
+        input.am-field__input.am-switch(id="field-15-1", type="checkbox")
+        label.am-field__label.am-text-misc(for="field-15-1") Yeah, that's a feature — when you swap input and label, it will look like this. Useful for mobile interfaces e.g.
+      div.am-field.am-field--box
+        input.am-field__input.am-switch(id="field-15-2", type="checkbox", checked)
+        div.am-field__label.am-text-misc
+          label(for="field-15-2") Minimal radio example — option two.
+          div.am-field__tip.am-small Suppose there should be a tip, why not.
+      div.am-field.am-field--box
+        input.am-field__input.am-switch(id="field-15-3", type="checkbox", disabled)
+        label.am-field__label.am-text-misc(for="field-15-3") Disabled option
