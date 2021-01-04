@@ -1,6 +1,9 @@
 extends common/layout.pug
+include common/side.pug
 
-block body
+block side
+  +side("form")
+block main
   h1.am-h1 Form
   h2.am-h2 Buttons
   h3.am-h3 Default

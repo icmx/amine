@@ -6,7 +6,7 @@ html(lang="en", translate="no")
     meta(http-equiv="Pragma" content="no-cache")
     meta(http-equiv="Expires" content="0")
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    base(href="https://icmx.github.io/amine/")
+    base(href=mode === "development" ? "/" : "https://icmx.github.io/amine/")
     link(rel="stylesheet" href="amine.css")
     title Amine — CSS library
   body.am.am--layout-wide
@@ -19,25 +19,19 @@ html(lang="en", translate="no")
     div.am-page-head
       div.am-content
         div.am-navbar.am-navbar--sides
-          a.am-item(href="index.html") #[span.am-b Amine] — CSS Library
+          a.am-item.am-link(href="index.html") #[span.am-b Amine] — CSS Library
           div.am-item #[a.am-link(href="https://github.com/icmx/amine") GitHub]
-    div.am-page-hero(style="background: url('assets/placeholders/p16x10.svg') center/cover")
+    div.am-page-hero(style={background: "url('assets/placeholders/p16x10.svg') center/cover"})
     div.am-page-body
       div.am-content.am-content--sides
         div.am-content__main
-          block body
+          block main
         div.am-content__side
-          h2.am-h2 Contents
-          ul
-            li: a.am-link(href="pages/text.html") Text
-            li: a.am-link(href="pages/form.html") Form
-            li: a.am-link(href="pages/layout.html") Layout
-            li: a.am-link(href="pages/elements.html") Elements
-            li: a.am-link(href="pages/components.html") Components
+          block side
     div.am-page-foot
       div.am-content
         div.am-navbar.am-navbar--sides
           div.am-item
-            p.am-note Amine v0.0.12 · by #[a.am-link(href="https://github.com/icmx") icmx]
+            p.am-note Amine v#{version} · by #[a.am-link(href="https://github.com/icmx") icmx]
           div.am-item
             p.am-note.am-text-right MIT

@@ -1,6 +1,9 @@
 extends common/layout.pug
+include common/side.pug
 
-block body
+block side
+  +side("text")
+block main
   h1.am-h1 Typography
   h2.am-h2 Alignment
   p.am-text-left Left text align.

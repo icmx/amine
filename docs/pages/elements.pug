@@ -1,6 +1,9 @@
 extends common/layout.pug
+include common/side.pug
 
-block body
+block side
+  +side("elements")
+block main
   h1.am-h1 Elements
   h2.am-h2 Table
   h3.am-h3 Comfy form

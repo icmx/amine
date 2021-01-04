@@ -1,6 +1,9 @@
 extends common/layout.pug
+include common/side.pug
 
-block body
+block side
+  +side("layout")
+block main
   h1.am-h1 Layout
   h2.am-h2 Navbar
   div.am-navbar

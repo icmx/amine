@@ -1,13 +1,16 @@
 extends common/layout.pug
+include common/side.pug
 
-block body
+block side
+  +side("components")
+block main
   h1.am-h1 Components
   h2.am-h2 Media
   div.am-media
     div.am-media__hero
       img.am-media-image.am-media-image--square.am-media-image--large(src='assets/placeholders/p1x1.svg')
     div.am-media__body
-      | That's a good thing to place some content, like post comments, file attachments and more. However I&apos;m not really sure how image from left should be changed.
+      | That's a good thing to place some content, like post comments, file attachments and more. However I'm not really sure how image from left should be changed.
   div.am-media
     div.am-media__hero
       img.am-media-image.am-media-image--square.am-media-image--small(src='assets/placeholders/p1x1.svg')

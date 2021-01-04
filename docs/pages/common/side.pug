@@ -1,0 +1,8 @@
+mixin side(url)
+  h2.am-h2 Contents
+  ul
+    li: a.am-link(class=url === 'text' ? 'am-link--selected' : '', href="pages/text.html") Typography
+    li: a.am-link(class=url === 'form' ? 'am-link--selected' : '', href="pages/form.html") Form
+    li: a.am-link(class=url === 'layout' ? 'am-link--selected' : '', href="pages/layout.html") Layout
+    li: a.am-link(class=url === 'elements' ? 'am-link--selected' : '', href="pages/elements.html") Elements
+    li: a.am-link(class=url === 'components' ? 'am-link--selected' : '', href="pages/components.html") Components

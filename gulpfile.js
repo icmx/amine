@@ -9,6 +9,8 @@ const postcssSVG = require('postcss-svg');
 
 const server = require('browser-sync').create();
 
+const package = require('./package.json');
+
 sass.compiler = require('sass');
 
 const useEnv = (environment) => {
@@ -17,6 +19,8 @@ const useEnv = (environment) => {
     cb();
   };
 };
+
+const getEnv = () => process.env.NODE_ENV;
 
 const isEnv = (environment) => process.env.NODE_ENV === environment;
 
@@ -37,7 +41,12 @@ function styles() {
 function docs() {
   return gulp
     .src(['docs/index.pug', 'docs/pages/*.pug'], { base: 'docs' })
-    .pipe(pug({ pretty: true }))
+    .pipe(
+      pug({
+        pretty: true,
+        locals: { mode: getEnv(), version: package.version },
+      })
+    )
     .pipe(gulp.dest('docs'));
 }
 
