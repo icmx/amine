@@ -423,7 +423,7 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  min-width: 1.5rem;
+  min-width: 2.375rem;
   min-height: 1.5rem;
   line-height: 1.5rem;
   padding: 0.125rem 0.75rem;
@@ -537,9 +537,9 @@
 
 .am-hr {
   border: none;
-  margin: 24px 0;
   width: 100%;
   height: 1px;
+  margin: 1.5rem 0;
   background-color: #cccccc;
 }
 
@@ -570,10 +570,6 @@
   border-collapse: collapse;
   width: 100%;
 }
-.am-table th {
-  text-align: left;
-  font-weight: 600;
-}
 .am-table thead tr {
   border-bottom: solid 1px #999999;
 }
@@ -586,26 +582,19 @@
 .am-table tfoot tr {
   border-top: solid 1px #999999;
 }
-.am-table--comfy th {
-  font-size: 12pt;
-  padding: 8px 12px;
+.am-table th {
+  text-align: left;
+  font-weight: 700;
 }
+.am-table--comfy th,
 .am-table--comfy td {
-  font-size: 12pt;
-  padding: 8px 12px;
-}
-.am-table--compact th {
-  font-size: 0.85em;
-  padding: 8px 12px;
-}
-.am-table--compact td {
-  font-size: 0.85em;
-  padding: 8px 12px;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
 }
 .am-table--compact th,
 .am-table--compact td {
-  padding: 4px 4px;
-  font-size: 11pt;
+  font-size: 0.875rem;
+  padding: 0.25rem;
   border-left: solid 1px #cccccc;
 }
 .am-table--compact th:first-child,
@@ -613,7 +602,7 @@
   border-left: none;
 }
 .am-table--interactive tbody tr {
-  transition: background-color 0.16s;
+  transition: background-color 0.2s;
   cursor: pointer;
 }
 .am-table--interactive tbody tr:hover {
