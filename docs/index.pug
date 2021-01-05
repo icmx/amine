@@ -1,12 +1,10 @@
 extends pages/common/layout.pug
+include pages/common/side.pug
 
+block hero
+  div.am-page-hero(style={background: "url('assets/placeholders/p16x10.svg') center/cover"})
 block main
   div.am-item.am-item--c12
-    h1.am-h1 Amine
+    h1.am-d Amine #[span.am-badge.am-badge--warning.am-pulsing--warning unstable]
     p.am-p Amine is a balanced CSS library based on BEM and flex.
-    ul
-      li: a.am-link(href="pages/text.html") Text
-      li: a.am-link(href="pages/form.html") Form
-      li: a.am-link(href="pages/layout.html") Layout
-      li: a.am-link(href="pages/elements.html") Elements
-      li: a.am-link(href="pages/components.html") Components
+    +side()

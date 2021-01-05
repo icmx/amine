@@ -11,20 +11,20 @@
   display: inline-block;
   vertical-align: middle;
 
-  max-width: 240px;
-  min-height: 26px;
-  line-height: 26px;
-  padding: 0px 8px;
-  margin: 2px;
+  max-width: $am-size-0 * 4;
+  min-height: $am-size-3;
+  line-height: $am-size-3;
+  padding: rem(2px) $am-space-9;
+  margin: rem(2px);
 
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 
-  font-size: 0.8em;
-  font-weight: 400;
+  font-size: $am-font-size-7;
+  font-weight: $am-font-weight-normal;
 
-  border-radius: 3px;
+  border-radius: $am-radius-regular;
 
   &--default {
     @include -coloring($am-color-default);

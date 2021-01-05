@@ -386,17 +386,17 @@
 .am-badge {
   display: inline-block;
   vertical-align: middle;
-  max-width: 240px;
-  min-height: 26px;
-  line-height: 26px;
-  padding: 0px 8px;
-  margin: 2px;
+  max-width: 18rem;
+  min-height: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0.125rem 0.5rem;
+  margin: 0.125rem;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  font-size: 0.8em;
+  font-size: 0.875rem;
   font-weight: 400;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
 }
 .am-badge--default {
   color: #262626;
@@ -423,14 +423,14 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  padding: 0px 12px;
-  margin: 2px;
-  min-width: 24px;
-  min-height: 26px;
-  line-height: 26px;
-  border-radius: 1000px;
-  font-size: 0.8em;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0.125rem 0.75rem;
+  margin: 0.125rem;
+  font-size: 0.875rem;
   font-weight: 400;
+  border-radius: 10000px;
   text-align: center;
   white-space: nowrap;
 }
@@ -457,10 +457,10 @@
   display: inline-block;
   vertical-align: middle;
   box-sizing: border-box;
-  min-width: 10px;
-  min-height: 10px;
-  margin: 2px;
-  border-radius: 1000px;
+  min-width: 0.5rem;
+  min-height: 0.5rem;
+  margin: 0.125rem;
+  border-radius: 50%;
 }
 .am-dot {
   color: #ffffff;
@@ -489,35 +489,35 @@
   content: " ";
   position: absolute;
   display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 1000px;
-  box-shadow: 0px 0px 0px 2px #ffffff;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.125rem #ffffff;
 }
 .am-overdot--top-right::after, .am-overdot--bottom-right::after {
   content: " ";
   position: absolute;
   display: block;
-  width: 10px;
-  height: 10px;
-  border-radius: 1000px;
-  box-shadow: 0px 0px 0px 2px #ffffff;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0.125rem #ffffff;
 }
 .am-overdot--top-left::before {
-  top: -6px;
-  left: -6px;
+  top: -0.25rem;
+  left: -0.25rem;
 }
 .am-overdot--top-right::after {
-  top: -6px;
-  right: -6px;
+  top: -0.25rem;
+  right: -0.25rem;
 }
 .am-overdot--bottom-left::before {
-  bottom: -6px;
-  left: -6px;
+  bottom: -0.25rem;
+  left: -0.25rem;
 }
 .am-overdot--bottom-right::after {
-  bottom: -6px;
-  right: -6px;
+  bottom: -0.25rem;
+  right: -0.25rem;
 }
 .am-overdot--default::before, .am-overdot--default::after {
   background-color: #262626;

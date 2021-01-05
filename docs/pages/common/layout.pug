@@ -2,26 +2,23 @@ doctype html
 html(lang="en", translate="no")
   head
     meta(charset="utf-8")
-    meta(http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate")
-    meta(http-equiv="Pragma" content="no-cache")
-    meta(http-equiv="Expires" content="0")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="Cache-Control", content="no-cache, no-store, must-revalidate")
+    meta(http-equiv="Pragma", content="no-cache")
+    meta(http-equiv="Expires", content="0")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
     base(href=mode === "development" ? "/" : "https://icmx.github.io/amine/")
-    link(rel="stylesheet" href="amine.css")
+    link(rel="stylesheet", href="amine.css")
     title Amine — CSS library
   body.am.am--layout-wide
     div.am-page-call
       div.am-content
-        p.am-p.
-          #[span.am-b Watch out!] Amine is in active development and
-          thus not really stable. Please don't use it in your projects
-          now.
+        p.am-p #[span.am-b Watch out!] Amine is in active development and thus not really stable. Please don't use it in your projects now.
     div.am-page-head
       div.am-content
         div.am-navbar.am-navbar--sides
           a.am-item.am-link(href="index.html") #[span.am-b Amine] — CSS Library
           div.am-item #[a.am-link(href="https://github.com/icmx/amine") GitHub]
-    div.am-page-hero(style={background: "url('assets/placeholders/p16x10.svg') center/cover"})
+    block hero
     div.am-page-body
       div.am-content.am-content--sides
         div.am-content__main
