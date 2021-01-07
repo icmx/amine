@@ -44,7 +44,7 @@ function docs() {
     .pipe(
       pug({
         pretty: true,
-        locals: { mode: getEnv(), version: package.version },
+        locals: { environment: getEnv(), version: package.version },
       })
     )
     .pipe(gulp.dest('docs'));

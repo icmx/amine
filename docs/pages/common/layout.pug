@@ -6,7 +6,7 @@ html(lang="en", translate="no")
     meta(http-equiv="Pragma", content="no-cache")
     meta(http-equiv="Expires", content="0")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    base(href=mode === "development" ? "/" : "https://icmx.github.io/amine/")
+    base(href=environment === "development" ? "/" : "https://icmx.github.io/amine/")
     link(rel="stylesheet", href="amine.css")
     title Amine — CSS library
   body.am.am--layout-wide
@@ -30,6 +30,6 @@ html(lang="en", translate="no")
         div.am-navbar.am-navbar--sides.am-navbar--top
           div.am-item
             p.am-note Amine v#{version} by #[a.am-link(href="https://github.com/icmx") icmx]
-            p.am-note #[a.am-link(href="https://unsplash.com/photos/kMiare0UFcU") Photo] by #[a.am-link(href="https://unsplash.com/@maartendeckers") Maarten Deckers]
+            p.am-note Photo by #[a.am-link(href="https://unsplash.com/@ripato") Ricardo Gomez Angel]
           div.am-item
             p.am-note.am-text-right MIT

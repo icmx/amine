@@ -2,7 +2,12 @@ extends pages/common/layout.pug
 include pages/common/side.pug
 
 block hero
-  div.am-page-hero(style={background: "url('https://images.unsplash.com/photo-1517840600399-c7c2ff4c0fb5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1920&q=75') center/cover"})
+  div.am-page-hero(style={
+    "background-image": "url('https://images.unsplash.com/photo-1546072921-51e1a830f091?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&fit=crop&w=1920&q=75')",
+    "background-position": "center",
+    "background-size": "cover",
+    "background-repeat": "no-repeat"
+  })
 block main
   div.am-item.am-item--c12
     h1.am-d Amine #[span.am-badge.am-badge--warning.am-sup unstable]
