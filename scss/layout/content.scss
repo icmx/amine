@@ -1,0 +1,57 @@
+.am-content {
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+
+  height: 100%;
+  box-sizing: border-box;
+
+  min-width: 0;
+
+  .am--layout-thin &,
+  &--narrow {
+    width: 45rem;
+  }
+
+  .am--layout-wide &,
+  &--wide {
+    width: 85rem;
+  }
+
+  .am--layout-full &,
+  &--full {
+    width: 100%;
+  }
+
+  &--sides {
+    display: flex;
+    gap: 1rem;
+  }
+
+  @include on-mobile {
+    &--sides {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @include on-desktop {
+    &--sides {
+      flex-direction: row;
+    }
+
+    &__side {
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 300px;
+
+      min-width: 0;
+    }
+
+    &__main {
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 100%;
+
+      min-width: 0;
+    }
+  }
+}

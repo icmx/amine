@@ -1,0 +1,234 @@
+extends common/layout.pug
+include common/side.pug
+
+block side
+  +side("elements")
+block main
+  h1.am-h1 Elements
+  h2.am-h2 Table
+  h3.am-h3 Comfy form
+  div.am-table-scroller-x
+    table.am-table.am-table--comfy
+      thead
+        tr
+          th.am-table--thin #
+          th Name
+          th Creator
+          th.am-table--nowrap Public Release
+          th License
+      tbody
+        tr
+          td 1
+          td GNU/Linux
+          td Richard Stallman for GNU, Linus Torvalds for Linux, Community
+          td 1991
+          td GNU GPLv2
+        tr
+          td 2
+          td Windows
+          td Microsoft
+          td 1993
+          td Proprietary
+        tr
+          td 3
+          td iOS
+          td Apple Inc.
+          td 2007
+          td Proprietary
+        tr
+          td 4
+          td Android
+          td Android, Inc., Google
+          td 2008
+          td Apache 2.0, GNU GPLv2
+  h3.am-h3 Compact form
+  div.am-table-scroller-x
+    table.am-table.am-table--compact
+      thead
+        tr
+          th.am-table--thin #
+          th Name
+          th Creator
+          th.am-table--nowrap Public Release
+          th License
+      tbody
+        tr
+          td 1
+          td GNU/Linux
+          td Richard Stallman for GNU, Linus Torvalds for Linux, Community
+          td 1991
+          td GNU GPLv2
+        tr
+          td 2
+          td Windows
+          td Microsoft
+          td 1993
+          td Proprietary
+        tr
+          td 3
+          td iOS
+          td Apple Inc.
+          td 2007
+          td Proprietary
+        tr
+          td 4
+          td Android
+          td Android, Inc., Google
+          td 2008
+          td Apache 2.0, GNU GPLv2
+  h3.am-h3 Features
+  div.am-table-scroller-x
+    table.am-table.am-table--comfy.am-table--interactive
+      thead
+        tr
+          th.am-table--thin #
+          th Name
+          th Creator
+          th.am-table--nowrap.am-table--selection-trl.am-table--selection-primary Public Release
+          th License
+      tbody
+        tr
+          td 1
+          td GNU/Linux
+          td Richard Stallman for GNU, Linus Torvalds for Linux, Community
+          td.am-table--selection-rl.am-table--selection-primary 1991
+          td GNU GPLv2
+        tr
+          td 2
+          td Windows
+          td Microsoft
+          td.am-table--selection-rl.am-table--selection-primary 1993
+          td Proprietary
+        tr.am-table--mark-primary
+          td 3
+          td iOS
+          td Apple Inc.
+          td.am-table--selection-rl.am-table--selection-primary 2007
+          td Proprietary
+        tr
+          td 4
+          td Android
+          td Android, Inc., Google
+          td.am-table--selection-rbl.am-table--selection-primary 2008
+          td Apache 2.0, GNU GPLv2
+  h2.am-h2 Badges
+  p.am-p
+    span.am-badge.am-badge--default default
+    span.am-badge.am-badge--default miscellaneous
+    span.am-badge.am-badge--default background
+    span.am-badge.am-badge--default non-special
+    span.am-badge.am-badge--default stateless
+    span.am-badge.am-badge--default oblique
+    span.am-badge.am-badge--default 1
+  p.am-p
+    span.am-badge.am-badge--primary primary
+    span.am-badge.am-badge--primary regular
+    span.am-badge.am-badge--primary operational
+    span.am-badge.am-badge--primary works
+    span.am-badge.am-badge--primary acceptable
+    span.am-badge.am-badge--primary improved
+    span.am-badge.am-badge--primary generic
+    span.am-badge.am-badge--primary typical
+    span.am-badge.am-badge--primary 2
+  p.am-p
+    span.am-badge.am-badge--success success
+    span.am-badge.am-badge--success great
+    span.am-badge.am-badge--success super
+    span.am-badge.am-badge--success outstanding
+    span.am-badge.am-badge--success marvelous
+    span.am-badge.am-badge--success perfect
+    span.am-badge.am-badge--success stable
+    span.am-badge.am-badge--success new
+    span.am-badge.am-badge--success special
+    span.am-badge.am-badge--success ideal
+    span.am-badge.am-badge--success cool
+    span.am-badge.am-badge--success 3
+  p.am-p
+    span.am-badge.am-badge--warning warning
+    span.am-badge.am-badge--warning strange
+    span.am-badge.am-badge--warning incomplete
+    span.am-badge.am-badge--warning non-standard
+    span.am-badge.am-badge--warning deprecated
+    span.am-badge.am-badge--warning misused
+    span.am-badge.am-badge--warning paused
+    span.am-badge.am-badge--warning waiting
+    span.am-badge.am-badge--warning 4
+  p.am-p
+    span.am-badge.am-badge--failure failure
+    span.am-badge.am-badge--failure bad
+    span.am-badge.am-badge--failure wrong
+    span.am-badge.am-badge--failure invalid
+    span.am-badge.am-badge--failure closed
+    span.am-badge.am-badge--failure unstable
+    span.am-badge.am-badge--failure dangerous
+    span.am-badge.am-badge--failure 5
+  p.am-p
+    span.am-badge.am-badge--default.am-pulsing--default pulsing
+    span.am-mute —
+    span.am-badge.am-badge--primary.am-pulsing--primary pulsing
+    span.am-mute —
+    span.am-badge.am-badge--success.am-pulsing--success pulsing
+    span.am-mute —
+    span.am-badge.am-badge--warning.am-pulsing--warning pulsing
+    span.am-mute —
+    span.am-badge.am-badge--failure.am-pulsing--failure pulsing
+  h2.am-h2 Blobs and Dots
+  p.am-p
+    span.am-blob.am-blob--default default
+    span.am-blob.am-blob--default 99+
+    span.am-blob.am-blob--default 4
+    span.am-mute —
+    span.am-dot.am-dot--default
+  p.am-p
+    span.am-blob.am-blob--primary primary
+    span.am-blob.am-blob--primary 99+
+    span.am-blob.am-blob--primary 4
+    span.am-mute —
+    span.am-dot.am-dot--primary
+  p.am-p
+    span.am-blob.am-blob--success success
+    span.am-blob.am-blob--success 99+
+    span.am-blob.am-blob--success 4
+    span.am-mute —
+    span.am-dot.am-dot--success
+  p.am-p
+    span.am-blob.am-blob--warning warning
+    span.am-blob.am-blob--warning 99+
+    span.am-blob.am-blob--warning 4
+    span.am-mute —
+    span.am-dot.am-dot--warning
+  p.am-p
+    span.am-blob.am-blob--failure failure
+    span.am-blob.am-blob--failure 99+
+    span.am-blob.am-blob--failure 4
+    span.am-mute —
+    span.am-dot.am-dot--failure
+  hr.am-hr
+  p.am-p
+    span.am-blob.am-blob--default.am-pulsing--default D
+    span.am-mute —
+    span.am-blob.am-blob--primary.am-pulsing--primary P
+    span.am-mute —
+    span.am-blob.am-blob--success.am-pulsing--success S
+    span.am-mute —
+    span.am-blob.am-blob--warning.am-pulsing--warning W
+    span.am-mute —
+    span.am-blob.am-blob--failure.am-pulsing--failure F
+  p.am-p
+    span.am-dot.am-dot--default.am-pulsing--default
+    span.am-mute —
+    span.am-dot.am-dot--primary.am-pulsing--primary
+    span.am-mute —
+    span.am-dot.am-dot--success.am-pulsing--success
+    span.am-mute —
+    span.am-dot.am-dot--warning.am-pulsing--warning
+    span.am-mute —
+    span.am-dot.am-dot--failure.am-pulsing--failure
+  p.am-p
+    button.am-button.am-button--main.am-button--default.am-overdot.am-overdot--failure.am-overdot--top-left &nwarr;
+    span.am-mute —
+    button.am-button.am-button--main.am-button--default.am-overdot.am-overdot--failure.am-overdot--top-right &nearr;
+  p.am-p
+    button.am-button.am-button--main.am-button--default.am-overdot.am-overdot--failure.am-overdot--bottom-left &swarr;
+    span.am-mute —
+    button.am-button.am-button--main.am-button--default.am-overdot.am-overdot--failure.am-overdot--bottom-right &searr;

@@ -1,0 +1,95 @@
+// Page layout with all zones:
+//
+// div.am-page-call
+//   div.am-content ...
+// div.am-page-head
+//   div.am-content ...
+// div.am-page-hero
+//   div.am-content Want some text here?
+// div.am-page-body
+//   div.am-content ...
+// div.am-page-foot
+//   div.am-content ...
+//
+// For .am-page-head, it must have fixed size which is 3.5rem (56px)
+// now, so its .am-content will have that size.
+//
+// Any .am-content can directly include child elements, like so:
+//
+// div.am-content
+//   h1 Hello
+//   p Lorem ipsum dolor sit amet...
+//
+// Or, there can be sides and main part:
+//
+// div.am-content.am-content--sides
+//   .am-content__side Left side (Optional)
+//   .am-content__main Main part
+//   .am-content__side Right side (Optional)
+//
+// TODO: add .am-page-drop for backdrop shadow
+// TODO: add .am-page-modal for modal window
+// TODO: add .am-page-side for sidebar (?)
+
+%am-page-zone {
+  display: flex;
+  // justify-content: center; // not sure if it's really needed
+}
+
+.am-page-call {
+  @extend %am-page-zone;
+
+  background-color: lighten($am-color-failure, 36%);
+  border-bottom: solid rem(1px) lighten($am-color-black, 90%);
+}
+
+.am-page-head {
+  @extend %am-page-zone;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  background-color: darken($am-color-white, 0%);
+  border-bottom: solid rem(1px) lighten($am-color-black, 90%);
+
+  & > .am-content {
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.am-page-hero {
+  @extend %am-page-zone;
+
+  height: 32rem;
+  background-color: lighten($am-color-primary, 36%);
+}
+
+.am-page-body {
+  @extend %am-page-zone;
+
+  min-height: 50vh;
+
+  background-color: darken($am-color-white, 0%);
+
+  & > .am-content {
+    margin-top: $am-space-1;
+    margin-bottom: $am-space-1;
+  }
+}
+
+.am-page-foot {
+  @extend %am-page-zone;
+
+  height: 8rem;
+
+  background-color: darken($am-color-white, 0%);
+  border-top: solid rem(1px) lighten($am-color-black, 90%);
+
+  & > .am-content {
+    margin-top: $am-space-1;
+    margin-bottom: $am-space-1;
+  }
+}

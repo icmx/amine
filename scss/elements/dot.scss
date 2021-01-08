@@ -3,10 +3,12 @@
   vertical-align: middle;
   box-sizing: border-box;
 
-  min-width: 10px;
-  min-height: 10px;
+  min-width: $am-size-9;
+  min-height: $am-size-9;
 
-  border-radius: 1000px;
+  margin: rem(2px);
+
+  border-radius: $am-radius-circle;
 
   & {
     color: $am-color-white;
@@ -46,11 +48,11 @@
       position: absolute;
       display: block;
 
-      width: 10px;
-      height: 10px;
+      width: $am-size-9;
+      height: $am-size-9;
 
-      border-radius: 1000px;
-      box-shadow: 0px 0px 0px 2px $am-color-white;
+      border-radius: $am-radius-circle;
+      box-shadow: 0 0 0 rem(2px) $am-color-white;
     }
   }
 
@@ -61,39 +63,39 @@
       position: absolute;
       display: block;
 
-      width: 10px;
-      height: 10px;
+      width: $am-size-9;
+      height: $am-size-9;
 
-      border-radius: 1000px;
-      box-shadow: 0px 0px 0px 2px $am-color-white;
+      border-radius: $am-radius-circle;
+      box-shadow: 0 0 0 rem(2px) $am-color-white;
     }
   }
 
   &--top-left {
     &::before {
-      top: -6px;
-      left: -6px;
+      top: -#{$am-size-9 / 2};
+      left: -#{$am-size-9 / 2};
     }
   }
 
   &--top-right {
     &::after {
-      top: -6px;
-      right: -6px;
+      top: -#{$am-size-9 / 2};
+      right: -#{$am-size-9 / 2};
     }
   }
 
   &--bottom-left {
     &::before {
-      bottom: -6px;
-      left: -6px;
+      bottom: -#{$am-size-9 / 2};
+      left: -#{$am-size-9 / 2};
     }
   }
 
   &--bottom-right {
     &::after {
-      bottom: -6px;
-      right: -6px;
+      bottom: -#{$am-size-9 / 2};
+      right: -#{$am-size-9 / 2};
     }
   }
 

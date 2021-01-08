@@ -1,0 +1,31 @@
+extends common/layout.pug
+include common/side.pug
+
+block side
+  +side("layout")
+block main
+  h1.am-h1 Layout
+  h2.am-h2 Navbar
+  div.am-navbar
+    div.am-item.am-item--max.am-item--trunc
+      | Great news everyone! #[span.am-mute one hour ago]
+    button.am-item.am-button.am-button--misc.am-button--primary Read
+  div.am-navbar
+    div.am-item.am-item--max.am-item--trunc That's a pretty long text, which will be truncated on any screen. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non praesentium minima pariatur id, odit voluptate. Cumque, laboriosam pariatur exercitationem in sed maiores cupiditate temporibus rerum ad molestiae nesciunt dolorem natus?
+    div.am-item
+      button.am-button.am-button--main.am-button--failure Button text must be short!
+  div.am-navbar
+    div.am-item
+      button.am-button.am-button--main.am-button--primary Done
+    div.am-item.am-item--max
+      button.am-button.am-button--text.am-button--primary Cancel
+    div.am-item
+      button.am-button.am-button--text.am-button--failure Remove
+  div.am-navbar.am-navbar--left
+    button.am-button.am-button--main.am-button--primary Confirm
+    button.am-button.am-button--misc.am-button--primary Select
+    button.am-button.am-button--misc.am-button--primary Back
+  div.am-navbar.am-navbar--right
+    button.am-button.am-button--misc.am-button--primary Back
+    button.am-button.am-button--misc.am-button--primary Select
+    button.am-button.am-button--main.am-button--primary Confirm

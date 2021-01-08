@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://icmx.github.io/amine/">
+    <link rel="stylesheet" href="amine.css">
+    <title>Amine — CSS library</title>
+  </head>
+  <body class="am am--layout-wide">
+    <div class="am-page-call">
+      <div class="am-content">
+        <p class="am-p"><span class="am-b">Watch out!</span> Amine is in active development and thus not really stable. Please don't use it in your projects now.</p>
+      </div>
+    </div>
+    <div class="am-page-head">
+      <div class="am-content">
+        <div class="am-navbar am-navbar--sides"><a class="am-item am-link" href="index.html"><span class="am-b">Amine</span> — CSS Library</a>
+          <div class="am-item"><a class="am-link" href="https://github.com/icmx/amine">GitHub</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="am-page-body">
+      <div class="am-content am-content--sides">
+        <div class="am-content__main">
+          <h1 class="am-h1">Typography</h1>
+          <h2 class="am-h2">Alignment</h2>
+          <p class="am-text-left">Left text align.</p>
+          <p class="am-text-center">Center text align.</p>
+          <p class="am-text-right">Right text align.</p>
+          <h2 class="am-h2">Coloring</h2>
+          <p class="am-p"><span class="am-text-main">Main color.</span></p>
+          <p class="am-p"><span class="am-text-misc">Misc color.</span></p>
+          <p class="am-p"><span class="am-text-mute">Mute color.</span></p>
+          <p class="am-p"><span class="am-text-primary">Primary color.</span></p>
+          <p class="am-p"><span class="am-text-success">Success color.</span></p>
+          <p class="am-p"><span class="am-text-warning">Warning color.</span></p>
+          <p class="am-p"><span class="am-text-failure">Failure color.</span></p>
+          <h2 class="am-h2">Sizing</h2>
+          <div class="am-block">
+            <div class="am-text-size-0">Size 0</div>
+            <div class="am-text-size-1">Size 1</div>
+            <div class="am-text-size-2">Size 2</div>
+            <div class="am-text-size-3">Size 3</div>
+            <div class="am-text-size-4">Size 4</div>
+            <div class="am-text-size-5">Size 5</div>
+            <div class="am-text-size-6">Size 6</div>
+            <div class="am-text-size-7">Size 7</div>
+          </div>
+          <h2 class="am-h2">Semantic Elements</h2>
+          <div class="am-d">Display Title. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, error?</div>
+          <div class="am-h1">Heading 1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, voluptas!</div>
+          <div class="am-h2">Heading 2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, totam!</div>
+          <div class="am-h3">Heading 3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, sunt?</div>
+          <div class="am-h4">Heading 4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, optio!</div>
+          <div class="am-h5">Heading 5. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe, in?</div>
+          <div class="am-h6">Heading 6. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, incidunt?</div>
+          <p class="am-p"><span class="am-regular">Regular Text. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, natus atque! Optio atque iure tempora eius a sint, blanditiis eos?</span></p>
+          <p class="am-p"><span class="am-regular">Regular Text, once more. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel quis voluptatibus repellat adipisci qui, itaque possimus laborum tempore enim minima?</span></p>
+          <p class="am-p"><span class="am-small">Small Text. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus eligendi, architecto earum accusantium exercitationem natus vitae ullam autem? Ipsum, blanditiis.</span></p>
+          <p class="am-p"><span class="am-bold">Bold</span> and also <span class="am-b">bold</span> shortcut.</p>
+          <p class="am-p"><span class="am-italic">Italic</span> and also <span class="am-i">italic</span> shortcut.</p>
+          <p class="am-p"><span class="am-underline">Underline</span> and also <span class="am-u">underline</span> shortcut.</p>
+          <p class="am-p"><span class="am-strikethrough">Strikethrough</span> and also <span class="am-s">strikethrough</span> shortcut.</p>
+          <p class="am-p">Special <span class="am-subscript">subscript</span> and also <span class="am-sub">subscript</span> shortcut.</p>
+          <p class="am-p">Special <span class="am-superscript">superscript</span> and also <span class="am-sup">superscript</span> shortcut.</p>
+          <p class="am-p"><span class="am-mark">Marked text</span>, <span class="am-key">Key text</span> and <span class="am-code">Code text</span></p>
+          <pre class="am-blockcode">// Blockcode Text.</pre>
+          <pre class="am-blockcode">// advanced example of blockcode
+
+document.addEventListener('load', () => {
+fetch('https://example.org/api/users/1')
+ .then(response => response.json())
+ .then(user => console.log(user.fullName)); // -> 'John Doe'
+});</pre>
+          <blockquote class="am-blockquote">Blockquote Text.</blockquote>
+          <blockquote class="am-blockquote">
+            <p class="am-p"><span class="am-i">Advanced example of blockquote.</span></p>
+            <h1 class="am-h1">Lorem Ipsum</h1>
+            <p class="am-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aspernatur?</p>
+            <p class="am-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in earum distinctio quis enim eveniet ex temporibus, tenetur ipsam nemo.</p>
+            <p class="am-p">Lorem ipsum dolor sit amet.</p>
+          </blockquote>
+        </div>
+        <div class="am-content__side">
+          <h2 class="am-h2">Contents</h2>
+          <ul>
+            <li><a class="am-link am-link--selected" href="pages/text.html">Typography</a></li>
+            <li><a class="am-link" href="pages/form.html">Form</a></li>
+            <li><a class="am-link" href="pages/layout.html">Layout</a></li>
+            <li><a class="am-link" href="pages/elements.html">Elements</a></li>
+            <li><a class="am-link" href="pages/components.html">Components</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="am-page-foot">
+      <div class="am-content">
+        <div class="am-navbar am-navbar--sides am-navbar--top">
+          <div class="am-item">
+            <p class="am-note">Amine v0.0.13 by <a class="am-link" href="https://github.com/icmx">icmx</a></p>
+            <p class="am-note">Photo by <a class="am-link" href="https://unsplash.com/@ripato">Ricardo Gomez Angel</a></p>
+          </div>
+          <div class="am-item">
+            <p class="am-note am-text-right">MIT</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

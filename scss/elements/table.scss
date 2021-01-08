@@ -2,15 +2,6 @@
   border-collapse: collapse;
   width: 100%;
 
-  th {
-    text-align: left;
-    font-weight: 600;
-  }
-
-  // td {
-  //   // well, no styles for this time
-  // }
-
   thead {
     tr {
       border-bottom: solid 1px lighten($am-color-black, 60%);
@@ -33,33 +24,24 @@
     }
   }
 
-  &--comfy {
-    th {
-      font-size: 12pt;
-      padding: 8px 12px;
-    }
+  th {
+    text-align: left;
+    font-weight: $am-font-weight-bold;
+  }
 
+  &--comfy {
+    th,
     td {
-      font-size: 12pt;
-      padding: 8px 12px;
+      font-size: $am-font-size-6;
+      padding: $am-space-9 $am-space-8;
     }
   }
 
   &--compact {
-    th {
-      font-size: 0.85em;
-      padding: 8px 12px;
-    }
-
-    td {
-      font-size: 0.85em;
-      padding: 8px 12px;
-    }
-
     th,
     td {
-      padding: 4px 4px;
-      font-size: 11pt;
+      font-size: $am-font-size-7;
+      padding: $am-space-9 / 2;
 
       border-left: solid 1px lighten($am-color-black, 80%);
     }
@@ -72,7 +54,7 @@
 
   &--interactive {
     tbody tr {
-      transition: background-color 0.16s;
+      transition: background-color 0.2s;
       cursor: pointer;
     }
 
@@ -114,16 +96,22 @@
   }
 
   &--selection {
-    $_selections: (t, top, null, null, null), (r, null, right, null, null),
-      (tr, top, right, null, null), (b, null, null, bottom, null),
-      (tb, top, null, bottom, null), (rb, null, right, bottom, null),
-      (trb, top, right, bottom, null), (l, null, null, null, left),
-      (tl, top, null, null, left), (rl, null, right, null, left),
-      (trl, top, right, null, left), (bl, null, null, bottom, left),
-      (tbl, top, null, bottom, left), (rbl, null, right, bottom, left),
-      (trbl, top, right, bottom, left), (a, top, right, bottom, left);
+    $_selections: (t, top, null, null, null),
+      (r, null, right, null, null), (tr, top, right, null, null),
+      (b, null, null, bottom, null), (tb, top, null, bottom, null),
+      (rb, null, right, bottom, null), (trb, top, right, bottom, null),
+      (l, null, null, null, left), (tl, top, null, null, left),
+      (rl, null, right, null, left), (trl, top, right, null, left),
+      (bl, null, null, bottom, left), (tbl, top, null, bottom, left),
+      (rbl, null, right, bottom, left), (trbl, top, right, bottom, left),
+      (a, top, right, bottom, left);
 
-    @mixin _selection($top: null, $right: null, $bottom: null, $left: null) {
+    @mixin _selection(
+      $top: null,
+      $right: null,
+      $bottom: null,
+      $left: null
+    ) {
       @if ($top) {
         border-top-width: 3px !important;
         border-top-style: solid;
@@ -159,10 +147,11 @@
 
   &--align {
     $_aligns: (a, middle, center), (t, top, null), (tl, top, left),
-      (tc, top, center), (tr, top, right), (m, middle, null), (ml, middle, left),
-      (mc, middle, center), (mr, middle, right), (b, bottom, null),
-      (bl, bottom, left), (bc, bottom, center), (br, bottom, right),
-      (l, null, left), (c, null, left), (r, null, left);
+      (tc, top, center), (tr, top, right), (m, middle, null),
+      (ml, middle, left), (mc, middle, center), (mr, middle, right),
+      (b, bottom, null), (bl, bottom, left), (bc, bottom, center),
+      (br, bottom, right), (l, null, left), (c, null, left),
+      (r, null, left);
 
     @mixin _align($x: null, $y: null) {
       @if ($x) {
@@ -192,6 +181,6 @@
 
 .am-table-scroller-x {
   //This is not recommended.
-  
+
   overflow-x: auto;
 }
