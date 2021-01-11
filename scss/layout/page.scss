@@ -63,8 +63,12 @@
 .am-page-hero {
   @extend %am-page-zone;
 
-  height: 32rem;
   background-color: lighten($am-color-primary, 36%);
+
+  & > .am-content {
+    margin-top: $am-space-0 * 2;
+    margin-bottom: $am-space-0 * 2;
+  }
 }
 
 .am-page-body {

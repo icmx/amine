@@ -1,6 +1,6 @@
 # Amine
 
-Simple CSS library, currently in active development.
+Balanced CSS library based on BEM and flex, currently in active development.
 
 You can see the demo at [icmx.github.io/amine](https://icmx.github.io/amine)
 

@@ -1,7 +1,7 @@
 {
   "name": "amine",
-  "version": "0.0.13",
-  "description": "CSS library",
+  "version": "0.0.14",
+  "description": "Balanced CSS library based on BEM and flex, currently in active development",
   "main": "source/amine.scss",
   "scripts": {
     "serve": "gulp serve",

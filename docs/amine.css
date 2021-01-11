@@ -1816,8 +1816,11 @@ ol.am-list {
 }
 
 .am-page-hero {
-  height: 32rem;
   background-color: #e0e6fa;
+}
+.am-page-hero > .am-content {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
 }
 
 .am-page-body {

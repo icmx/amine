@@ -19,17 +19,11 @@ html(lang="en", translate="no")
           a.am-item.am-link(href="index.html") #[span.am-b Amine] — CSS Library
           div.am-item #[a.am-link(href="https://github.com/icmx/amine") GitHub]
     block hero
-    div.am-page-body
-      div.am-content.am-content--sides
-        div.am-content__main
-          block main
-        div.am-content__side
-          block side
+    block body
     div.am-page-foot
       div.am-content
         div.am-navbar.am-navbar--sides.am-navbar--top
           div.am-item
             p.am-note Amine v#{version} by #[a.am-link(href="https://github.com/icmx") icmx]
-            p.am-note Photo by #[a.am-link(href="https://unsplash.com/@ripato") Ricardo Gomez Angel]
           div.am-item
             p.am-note.am-text-right MIT
