@@ -566,34 +566,6 @@
   pointer-events: none;
 }
 
-.am-list {
-  padding-left: 1.5rem;
-  line-height: 1.5;
-}
-.am-list {
-  margin-top: 1.5rem !important;
-  margin-bottom: 1.5rem !important;
-}
-.am-list li {
-  padding-left: 0.5rem;
-}
-.am-list li {
-  margin-top: 0.25rem !important;
-  margin-bottom: 0.25rem !important;
-}
-.am-list .am-list {
-  margin-top: 0.25rem !important;
-  margin-bottom: 0.25rem !important;
-}
-
-ul.am-list {
-  list-style: disc;
-}
-
-ol.am-list {
-  list-style: decimal;
-}
-
 .am-table {
   border-collapse: collapse;
   width: 100%;
@@ -2154,4 +2126,32 @@ ol.am-list {
 .am-note {
   font-size: 0.875rem;
   color: #999999;
+}
+
+.am-list {
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+.am-list {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+.am-list li {
+  padding-left: 0.5rem;
+}
+.am-list li {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+.am-list .am-list {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+
+ul.am-list {
+  list-style: disc;
+}
+
+ol.am-list {
+  list-style: decimal;
 }

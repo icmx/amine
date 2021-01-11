@@ -10,8 +10,7 @@ block body
         div.am-media
           div.am-media__hero
             img.am-media-image.am-media-image--square.am-media-image--large(src='assets/placeholders/p1x1.svg')
-          div.am-media__body
-            | That's a good thing to place some content, like post comments, file attachments and more. However I'm not really sure how image from left should be changed.
+          div.am-media__body That's a good thing to place some content, like post comments, file attachments and more. However I'm not really sure how image from left should be changed.
         div.am-media
           div.am-media__hero
             img.am-media-image.am-media-image--square.am-media-image--small(src='assets/placeholders/p1x1.svg')
@@ -21,48 +20,38 @@ block body
                 span.am-b file-attachments.zip
               div.am-item
                 a.am-link(href='#') Download
-            div.am-small.am-mute 10.0 KB · from icmx
+            div.am-note 10.0 KB · from icmx
         div.am-media
           div.am-media__hero
             img.am-media-image.am-media-image--square.am-media-image--small(src='assets/placeholders/p1x1.svg')
           div.am-media__body
             div.am-navbar.am-navbar--sides
               div.am-item.am-item--trunc
-                span.am-b
-                  | Very long file name which will obviously truncated on narrow screens like phones or even small laptops LATEST (2).rar
+                span.am-b Very long file name which will obviously truncated on narrow screens like phones or even small laptops LATEST (2).rar
               div.am-item
                 a.am-link(href='#') Download
-            div.am-small.am-mute 756.28 MB · from JaneBrownDoe11
+            div.am-note 756.28 MB · from JaneBrownDoe11
         div.am-media
           div.am-media__hero
             img.am-media-image.am-media-image--circle.am-media-image--regular(src='assets/placeholders/p1x1.svg')
           div.am-media__body
-            div.am-regular
-              span.am-bold John Doe
-              span.am-mute May 24, 2018
-            div.am-small
-              div.am-mute @johndoe
+            div.am-regular #[span.am-bold John Doe] #[span.am-note May 24, 2018 · @johndoe]
             textarea.am-textarea.am-textarea--block Hey look, it can be even reply form!
             div.am-navbar.am-navbar--right
               button.am-button.am-button--main.am-button--primary Reply
         h2.am-h2 Card
         div.am-card
-          div.am-card__body
-            strong.am-b Minimal example
-            | — card body is the only required element, all others are optional.
+          div.am-card__body #[strong.am-b Minimal example] — card body is the only required element, anything else is optional.
         div.am-card
-          div.am-card__head
-            strong.am-b Now with a head element
-          div.am-card__body Like previous example, but with a head.
+          div.am-card__head #[strong.am-b Now with a head element]
+          div.am-card__body Like previous one, but with a head.
         div.am-card
           div.am-card__call.am-card__call--primary Important message here
-          div.am-card__head
-            strong.am-b Card with call
-          div.am-card__body Which text can I place here?
+          div.am-card__head #[strong.am-b Card with call]
+          div.am-card__body Which text should I place here?
         div.am-card
           img.am-card__hero(src="assets/placeholders/p16x10.svg")
-          div.am-card__head
-            strong.am-b Card with an image
+          div.am-card__head #[strong.am-b Card with an image]
           div.am-card__body How about this?
         div.am-card
           img.am-card__hero(src="assets/placeholders/p16x10.svg")
@@ -72,10 +61,8 @@ block body
                 img.am-media-image.am-media-image--circle.am-media-image--small(src="assets/placeholders/p1x1.svg")
               div.am-media__body
                 div.am-navbar
-                  div.am-item.am-item--max.am-item--trunc
-                    span.am-bold John the Long Name User Which Should be Truncated
-                  div.am-item.am-item--min
-                    span.am-note 2h ago
+                  div.am-item.am-item--max.am-item--trunc #[span.am-bold John the Long Name User Which Should be Truncated]
+                  div.am-item.am-item--min #[span.am-note 2h ago]
           div.am-card__body Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quae assumenda fuga facilis modi quis dolorum pariatur laudantium nam ex tenetur, neque eveniet recusandae soluta cupiditate, dolore exercitationem dolor nemo!
       div.am-content__side
         +side("components")

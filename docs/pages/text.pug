@@ -45,7 +45,7 @@ block body
         p.am-p #[span.am-strikethrough Strikethrough] and also #[span.am-s strikethrough] shortcut.
         p.am-p Special #[span.am-subscript subscript] and also #[span.am-sub subscript] shortcut.
         p.am-p Special #[span.am-superscript superscript] and also #[span.am-sup superscript] shortcut.
-        p.am-p #[span.am-mark Marked text], #[span.am-key Key text] and #[span.am-code Code text]
+        p.am-p #[span.am-mark Marked text], #[span.am-key Key text], #[span.am-code Code text] and also #[span.am-note Note text]
         pre.am-blockcode // Blockcode Text.
         pre.am-blockcode
           | // advanced example of blockcode
@@ -62,5 +62,27 @@ block body
           p.am-p Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, aspernatur?
           p.am-p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in earum distinctio quis enim eveniet ex temporibus, tenetur ipsam nemo.
           p.am-p Lorem ipsum dolor sit amet.
+        p.am-p Unordered list example
+        ul.am-list
+          li Lorem item
+          li Ipsum item
+          li Dolor item
+            ul.am-list
+              li Sit item
+              li Amet item
+              li Consectetur item
+          li Sit item
+          li Amet item
+        p.am-p Same, but ordered
+        ol.am-list
+          li Lorem item
+          li Ipsum item
+          li Dolor item
+            ol.am-list
+              li Sit item
+              li Amet item
+              li Consectetur item
+          li Sit item
+          li Amet item
       div.am-content__side
         +side("text")
