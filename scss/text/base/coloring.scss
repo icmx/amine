@@ -1,27 +1,27 @@
 .am-text-main {
-  color: lighten($am-color-black, 20%);
+  color: lighten($am-palette-black, 20%);
 }
 
 .am-text-misc {
-  color: lighten($am-color-black, 40%);
+  color: lighten($am-palette-black, 40%);
 }
 
 .am-text-mute {
-  color: lighten($am-color-black, 60%);
+  color: lighten($am-palette-black, 60%);
 }
 
 .am-text-primary {
-  color: $am-color-primary;
+  color: $am-palette-primary;
 }
 
 .am-text-success {
-  color: $am-color-success;
+  color: $am-palette-success;
 }
 
 .am-text-warning {
-  color: $am-color-warning;
+  color: $am-palette-warning;
 }
 
 .am-text-failure {
-  color: $am-color-failure;
+  color: $am-palette-failure;
 }

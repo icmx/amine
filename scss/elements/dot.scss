@@ -11,27 +11,23 @@
   border-radius: $am-radius-circle;
 
   & {
-    color: $am-color-white;
-  }
-
-  &--default {
-    background-color: $am-color-default;
+    color: $am-palette-white;
   }
 
   &--primary {
-    background-color: $am-color-primary;
+    background-color: $am-palette-primary;
   }
 
   &--success {
-    background-color: $am-color-success;
+    background-color: $am-palette-success;
   }
 
   &--warning {
-    background-color: $am-color-warning;
+    background-color: $am-palette-warning;
   }
 
   &--failure {
-    background-color: $am-color-failure;
+    background-color: $am-palette-failure;
   }
 }
 
@@ -52,7 +48,7 @@
       height: $am-size-9;
 
       border-radius: $am-radius-circle;
-      box-shadow: 0 0 0 rem(2px) $am-color-white;
+      box-shadow: 0 0 0 rem(2px) $am-palette-white;
     }
   }
 
@@ -67,7 +63,7 @@
       height: $am-size-9;
 
       border-radius: $am-radius-circle;
-      box-shadow: 0 0 0 rem(2px) $am-color-white;
+      box-shadow: 0 0 0 rem(2px) $am-palette-white;
     }
   }
 
@@ -99,38 +95,31 @@
     }
   }
 
-  &--default {
-    &::before,
-    &::after {
-      background-color: $am-color-default;
-    }
-  }
-
   &--primary {
     &::before,
     &::after {
-      background-color: $am-color-primary;
+      background-color: $am-palette-primary;
     }
   }
 
   &--success {
     &::before,
     &::after {
-      background-color: $am-color-success;
+      background-color: $am-palette-success;
     }
   }
 
   &--warning {
     &::before,
     &::after {
-      background-color: $am-color-warning;
+      background-color: $am-palette-warning;
     }
   }
 
   &--failure {
     &::before,
     &::after {
-      background-color: $am-color-failure;
+      background-color: $am-palette-failure;
     }
   }
 }

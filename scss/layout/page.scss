@@ -39,8 +39,7 @@
 .am-page-call {
   @extend %am-page-zone;
 
-  background-color: lighten($am-color-failure, 36%);
-  border-bottom: solid rem(1px) lighten($am-color-black, 90%);
+  border-bottom: solid rem(1px) lighten($am-palette-black, 90%);
 }
 
 .am-page-head {
@@ -50,8 +49,8 @@
   top: 0;
   z-index: 10;
 
-  background-color: darken($am-color-white, 0%);
-  border-bottom: solid rem(1px) lighten($am-color-black, 90%);
+  background-color: darken($am-palette-white, 0%);
+  border-bottom: solid rem(1px) lighten($am-palette-black, 90%);
 
   & > .am-content {
     height: 3.5rem;
@@ -62,8 +61,6 @@
 
 .am-page-hero {
   @extend %am-page-zone;
-
-  background-color: lighten($am-color-primary, 36%);
 
   & > .am-content {
     margin-top: $am-space-0 * 2;
@@ -76,7 +73,7 @@
 
   min-height: 50vh;
 
-  background-color: darken($am-color-white, 0%);
+  background-color: darken($am-palette-white, 0%);
 
   & > .am-content {
     margin-top: $am-space-1;
@@ -89,8 +86,8 @@
 
   height: 8rem;
 
-  background-color: darken($am-color-white, 0%);
-  border-top: solid rem(1px) lighten($am-color-black, 90%);
+  background-color: darken($am-palette-white, 0%);
+  border-top: solid rem(1px) lighten($am-palette-black, 90%);
 
   & > .am-content {
     margin-top: $am-space-1;

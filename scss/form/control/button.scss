@@ -15,7 +15,7 @@
   }
 
   &.am-button--main {
-    color: $am-color-white;
+    color: $am-palette-white;
     background-color: $color;
     border-color: transparent;
 
@@ -28,8 +28,8 @@
     }
 
     &:disabled {
-      color: lighten($am-color-black, 60%);
-      background-color: lighten($am-color-black, 80%);
+      color: lighten($am-palette-black, 60%);
+      background-color: lighten($am-palette-black, 80%);
     }
   }
 
@@ -39,7 +39,7 @@
     border-color: $color;
 
     &:hover {
-      color: $am-color-white;
+      color: $am-palette-white;
       background-color: darken($color, 5%);
       border-color: transparent;
     }
@@ -49,9 +49,9 @@
     }
 
     &:disabled {
-      color: lighten($am-color-black, 60%);
+      color: lighten($am-palette-black, 60%);
       background-color: transparent;
-      border-color: lighten($am-color-black, 80%);
+      border-color: lighten($am-palette-black, 80%);
     }
   }
 
@@ -61,7 +61,7 @@
     border-color: transparent;
 
     &:hover {
-      color: $am-color-white;
+      color: $am-palette-white;
       background-color: darken($color, 5%);
     }
 
@@ -70,7 +70,7 @@
     }
 
     &:disabled {
-      color: lighten($am-color-black, 60%);
+      color: lighten($am-palette-black, 60%);
       background-color: transparent;
     }
   }
@@ -107,24 +107,20 @@
       box-shadow 0.2s;
   }
 
-  &--default {
-    @include -coloring($am-color-default);
-  }
-
   &--primary {
-    @include -coloring($am-color-primary);
+    @include -coloring($am-palette-primary);
   }
 
   &--success {
-    @include -coloring($am-color-success);
+    @include -coloring($am-palette-success);
   }
 
   &--warning {
-    @include -coloring($am-color-warning);
+    @include -coloring($am-palette-warning);
   }
 
   &--failure {
-    @include -coloring($am-color-failure);
+    @include -coloring($am-palette-failure);
   }
 
   &--block {

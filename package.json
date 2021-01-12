@@ -1,6 +1,6 @@
 {
   "name": "amine",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Balanced CSS library based on BEM and flex, currently in active development",
   "main": "source/amine.scss",
   "scripts": {

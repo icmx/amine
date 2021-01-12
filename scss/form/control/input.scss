@@ -28,72 +28,72 @@
 
   & {
     & {
-      color: lighten($am-color-black, 10%);
-      background-color: lighten($am-color-black, 100%);
-      border-color: lighten($am-color-black, 80%);
+      color: lighten($am-palette-black, 10%);
+      background-color: lighten($am-palette-black, 100%);
+      border-color: lighten($am-palette-black, 80%);
 
       &::placeholder {
-        color: transparentize(lighten($am-color-black, 10%), 0.7);
+        color: transparentize(lighten($am-palette-black, 10%), 0.7);
       }
     }
 
     &:hover {
-      border-color: lighten($am-color-black, 60%);
+      border-color: lighten($am-palette-black, 60%);
     }
 
     &:focus {
-      border-color: $am-color-primary;
-      box-shadow: -shared-input-box-shadow($am-color-primary);
+      border-color: $am-palette-primary;
+      box-shadow: -shared-input-box-shadow($am-palette-primary);
 
       z-index: 1;
 
       &::placeholder {
-        color: transparentize(lighten($am-color-black, 10%), 0.8);
+        color: transparentize(lighten($am-palette-black, 10%), 0.8);
       }
     }
 
     &:focus:hover {
-      border-color: darken($am-color-primary, 15%);
+      border-color: darken($am-palette-primary, 15%);
     }
   }
 
   &--valid,
   &--validable:valid {
     & {
-      border-color: $am-color-success;
+      border-color: $am-palette-success;
     }
 
     &:hover {
-      border-color: darken($am-color-success, 5%);
+      border-color: darken($am-palette-success, 5%);
     }
 
     &:focus {
-      border-color: darken($am-color-success, 5%);
-      box-shadow: -shared-input-box-shadow($am-color-success);
+      border-color: darken($am-palette-success, 5%);
+      box-shadow: -shared-input-box-shadow($am-palette-success);
     }
 
     &:focus:hover {
-      border-color: darken($am-color-success, 5%);
+      border-color: darken($am-palette-success, 5%);
     }
   }
 
   &--invalid,
   &--invalidable:invalid {
     & {
-      border-color: $am-color-failure;
+      border-color: $am-palette-failure;
     }
 
     &:hover {
-      border-color: darken($am-color-failure, 5%);
+      border-color: darken($am-palette-failure, 5%);
     }
 
     &:focus {
-      border-color: darken($am-color-failure, 5%);
-      box-shadow: -shared-input-box-shadow($am-color-failure);
+      border-color: darken($am-palette-failure, 5%);
+      box-shadow: -shared-input-box-shadow($am-palette-failure);
     }
 
     &:focus:hover {
-      border-color: darken($am-color-failure, 5%);
+      border-color: darken($am-palette-failure, 5%);
     }
   }
 
@@ -110,10 +110,10 @@
   &:disabled {
     cursor: not-allowed;
 
-    color: transparentize(lighten($am-color-black, 10%), 0.5);
-    background-color: transparentize(lighten($am-color-black, 75%), 0.5);
+    color: transparentize(lighten($am-palette-black, 10%), 0.5);
+    background-color: transparentize(lighten($am-palette-black, 75%), 0.5);
 
-    border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+    border-color: transparentize(lighten($am-palette-black, 80%), 0.5);
   }
 
   transition: color 0.2s, background-color 0.2s, border-color 0.2s,

@@ -50,25 +50,25 @@
   & {
     & {
       &::before {
-        background-color: lighten($am-color-black, 100%);
+        background-color: lighten($am-palette-black, 100%);
         background-size: 0;
-        border-color: lighten($am-color-black, 80%);
+        border-color: lighten($am-palette-black, 80%);
       }
 
       &:hover::before {
-        border-color: lighten($am-color-black, 60%);
+        border-color: lighten($am-palette-black, 60%);
       }
 
       &:focus::before {
-        border-color: $am-color-primary;
-        box-shadow: -shared-input-box-shadow($am-color-primary);
+        border-color: $am-palette-primary;
+        box-shadow: -shared-input-box-shadow($am-palette-primary);
       }
     }
 
     &:checked {
       &::before {
         border-color: transparent;
-        background-color: $am-color-primary;
+        background-color: $am-palette-primary;
 
         background-image: url('../assets/icons/check.svg');
         background-size: rem(24px);
@@ -77,7 +77,7 @@
       }
 
       &:hover::before {
-        background-color: darken($am-color-primary, 15%);
+        background-color: darken($am-palette-primary, 15%);
       }
     }
   }
@@ -88,14 +88,14 @@
 
       & {
         &::before {
-          border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+          border-color: transparentize(lighten($am-palette-black, 80%), 0.5);
         }
       }
 
       &:checked {
         &::before {
           border-color: transparent;
-          background-color: transparentize($am-color-primary, 0.5);
+          background-color: transparentize($am-palette-primary, 0.5);
         }
       }
     }
@@ -121,25 +121,25 @@
   & {
     & {
       &::before {
-        background-color: lighten($am-color-black, 100%);
+        background-color: lighten($am-palette-black, 100%);
         background-size: 0;
-        border-color: lighten($am-color-black, 80%);
+        border-color: lighten($am-palette-black, 80%);
       }
 
       &:hover::before {
-        border-color: lighten($am-color-black, 60%);
+        border-color: lighten($am-palette-black, 60%);
       }
 
       &:focus::before {
-        border-color: $am-color-primary;
-        box-shadow: -shared-input-box-shadow($am-color-primary);
+        border-color: $am-palette-primary;
+        box-shadow: -shared-input-box-shadow($am-palette-primary);
       }
     }
 
     &:checked {
       &::before {
         border-color: transparent;
-        background-color: $am-color-primary;
+        background-color: $am-palette-primary;
 
         background-image: url('../assets/icons/radio.svg');
         background-size: rem(24px);
@@ -148,7 +148,7 @@
       }
 
       &:hover::before {
-        background-color: darken($am-color-primary, 15%);
+        background-color: darken($am-palette-primary, 15%);
       }
     }
   }
@@ -159,14 +159,14 @@
 
       & {
         &::before {
-          border-color: transparentize(lighten($am-color-black, 80%), 0.5);
+          border-color: transparentize(lighten($am-palette-black, 80%), 0.5);
         }
       }
 
       &:checked {
         &::before {
           border-color: transparent;
-          background-color: transparentize($am-color-primary, 0.5);
+          background-color: transparentize($am-palette-primary, 0.5);
         }
       }
     }
@@ -229,35 +229,35 @@
   & {
     & {
       &::before {
-        background-color: lighten($am-color-black, 80%);
+        background-color: lighten($am-palette-black, 80%);
       }
 
       &::after {
-        background-color: lighten($am-color-black, 95%);
+        background-color: lighten($am-palette-black, 95%);
       }
 
       &:hover::before {
-        background-color: lighten($am-color-black, 60%);
+        background-color: lighten($am-palette-black, 60%);
       }
 
       &:focus::before {
-        border-color: $am-color-primary;
-        box-shadow: -shared-input-box-shadow($am-color-primary);
+        border-color: $am-palette-primary;
+        box-shadow: -shared-input-box-shadow($am-palette-primary);
       }
     }
 
     &:checked {
       &::before {
         border-color: transparent;
-        background-color: $am-color-primary;
+        background-color: $am-palette-primary;
       }
 
       &::after {
-        background-color: lighten($am-color-black, 95%);
+        background-color: lighten($am-palette-black, 95%);
       }
 
       &:hover::before {
-        background-color: darken($am-color-primary, 15%);
+        background-color: darken($am-palette-primary, 15%);
       }
     }
   }
@@ -268,14 +268,14 @@
         cursor: not-allowed;
 
         &::before {
-          background-color: transparentize(lighten($am-color-black, 80%), 0.5);
+          background-color: transparentize(lighten($am-palette-black, 80%), 0.5);
         }
       }
 
       &:checked {
         &::before {
           border-color: transparent;
-          background-color: transparentize($am-color-primary, 0.5);
+          background-color: transparentize($am-palette-primary, 0.5);
         }
       }
     }

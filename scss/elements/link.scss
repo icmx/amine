@@ -1,7 +1,7 @@
 .am-link,
 .am-a {
   & {
-    color: $am-color-primary;
+    color: $am-palette-primary;
     text-decoration: none;
 
     transition: color 0.2s, box-shadow 0.2s;
@@ -10,16 +10,16 @@
   }
 
   &:hover {
-    box-shadow: inset 0 -0.125em lighten($am-color-primary, 28%);
+    box-shadow: inset 0 -0.125em lighten($am-palette-primary, 28%);
   }
 
   &:active {
-    color: $am-color-failure;
-    box-shadow: inset 0 -0.125em lighten($am-color-failure, 28%);
+    color: $am-palette-failure;
+    box-shadow: inset 0 -0.125em lighten($am-palette-failure, 28%);
   }
 
   &--selected {
-    color: lighten($am-color-black, 20%);
+    color: lighten($am-palette-black, 20%);
     font-weight: $am-font-weight-bold;
 
     pointer-events: none;

@@ -1,0 +1,63 @@
+// This is an updated coloring model which will be extended later.
+
+//   - semantic
+//     - primary
+//     - success
+//     - warning
+//     - failure
+//   - stroke
+//     - white
+//       - main
+//       - misc
+//       - mute
+//     - black
+//       - main
+//       - misc
+//       - mute
+//     - debug
+
+// Resulting variables are:
+
+$am-palette-primary: #4169e1;
+$am-palette-success: #15c662;
+$am-palette-warning: #ff9011;
+$am-palette-failure: #e94e30;
+
+$am-palette-black: #000000;
+
+$am-palette-black-main: lighten($am-palette-black, 20%);
+$am-palette-black-misc: lighten($am-palette-black, 40%);
+$am-palette-black-mute: lighten($am-palette-black, 60%);
+
+$am-palette-white: #ffffff;
+
+$am-palette-white-main: darken($am-palette-white, 2%);
+$am-palette-white-misc: darken($am-palette-white, 4%);
+$am-palette-white-mute: darken($am-palette-white, 6%);
+
+// TODO: add semantic comment and unknown colors
+// TODO: extend to 100..900 values list for any semantic and stroke
+
+// Now, here are the coloring helper classes
+
+.am-color-primary { color: $am-palette-primary; }
+.am-color-success { color: $am-palette-success; }
+.am-color-warning { color: $am-palette-warning; }
+.am-color-failure { color: $am-palette-failure; }
+.am-color-black-main { color: $am-palette-black-main; }
+.am-color-black-misc { color: $am-palette-black-misc; }
+.am-color-black-mute { color: $am-palette-black-mute; }
+.am-color-white-main { color: $am-palette-white-main; }
+.am-color-white-misc { color: $am-palette-white-misc; }
+.am-color-white-mute { color: $am-palette-white-mute; }
+
+.am-background-primary { background-color: $am-palette-primary; }
+.am-background-success { background-color: $am-palette-success; }
+.am-background-warning { background-color: $am-palette-warning; }
+.am-background-failure { background-color: $am-palette-failure; }
+.am-background-black-main { background-color: $am-palette-black-main; }
+.am-background-black-misc { background-color: $am-palette-black-misc; }
+.am-background-black-mute { background-color: $am-palette-black-mute; }
+.am-background-white-main { background-color: $am-palette-white-main; }
+.am-background-white-misc { background-color: $am-palette-white-misc; }
+.am-background-white-mute { background-color: $am-palette-white-mute; }

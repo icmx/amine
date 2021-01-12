@@ -4,13 +4,13 @@
 
   thead {
     tr {
-      border-bottom: solid 1px lighten($am-color-black, 60%);
+      border-bottom: solid 1px lighten($am-palette-black, 60%);
     }
   }
 
   tbody {
     tr {
-      border-top: solid 1px lighten($am-color-black, 80%);
+      border-top: solid 1px lighten($am-palette-black, 80%);
     }
 
     tr:first-child {
@@ -20,7 +20,7 @@
 
   tfoot {
     tr {
-      border-top: solid 1px lighten($am-color-black, 60%);
+      border-top: solid 1px lighten($am-palette-black, 60%);
     }
   }
 
@@ -43,7 +43,7 @@
       font-size: $am-font-size-7;
       padding: $am-space-9 / 2;
 
-      border-left: solid 1px lighten($am-color-black, 80%);
+      border-left: solid 1px lighten($am-palette-black, 80%);
     }
 
     th:first-child,
@@ -59,39 +59,38 @@
     }
 
     tbody tr:hover {
-      background-color: lighten($am-color-black, 85%);
+      background-color: lighten($am-palette-black, 85%);
     }
 
     tbody tr:active {
-      background-color: lighten($am-color-black, 80%);
+      background-color: lighten($am-palette-black, 80%);
     }
   }
 
   $-colors: (
-    primary: $am-color-primary,
-    neutral: $am-color-neutral,
-    success: $am-color-success,
-    warning: $am-color-warning,
-    failure: $am-color-failure,
+    primary: $am-palette-primary,
+    success: $am-palette-success,
+    warning: $am-palette-warning,
+    failure: $am-palette-failure,
   );
 
   @each $key, $value in $-colors {
     &--mark-#{$key} {
-      background-color: mix($value, $am-color-white, 20%);
+      background-color: mix($value, $am-palette-white, 20%);
     }
 
     &--interactive &--mark-#{$key} {
       &:hover {
-        background-color: mix($value, $am-color-white, 25%);
+        background-color: mix($value, $am-palette-white, 25%);
       }
 
       &:active {
-        background-color: mix($value, $am-color-white, 30%);
+        background-color: mix($value, $am-palette-white, 30%);
       }
     }
 
     &--selection-#{$key} {
-      border-color: mix($value, $am-color-white, 40%) !important;
+      border-color: mix($value, $am-palette-white, 40%) !important;
     }
   }
 

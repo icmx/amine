@@ -139,12 +139,12 @@
   padding: $am-space-4 $am-space-2;
 
   padding-left: $am-space-2 - rem(8px);
-  border-left: solid rem(8px) lighten($am-color-black, 96%);
+  border-left: solid rem(8px) lighten($am-palette-black, 96%);
 
   border-top-right-radius: $am-radius-regular;
   border-bottom-right-radius: $am-radius-regular;
 
-  background-color: lighten($am-color-black, 98%);
+  background-color: lighten($am-palette-black, 98%);
 }
 
 .am-blockcode {
@@ -163,7 +163,7 @@
 
   border-radius: $am-radius-regular;
 
-  background-color: lighten($am-color-black, 98%) !important;
+  background-color: lighten($am-palette-black, 98%) !important;
 }
 
 .am-code {
@@ -174,8 +174,8 @@
 
   border-radius: $am-radius-regular;
 
-  color: lighten($am-color-black, 20%);
-  background-color: lighten($am-color-black, 98%);
+  color: lighten($am-palette-black, 20%);
+  background-color: lighten($am-palette-black, 98%);
 }
 
 .am-key {
@@ -186,8 +186,8 @@
 
   border-radius: $am-radius-regular;
 
-  color: lighten($am-color-black, 80%);
-  background-color: lighten($am-color-black, 20%);
+  color: lighten($am-palette-black, 80%);
+  background-color: lighten($am-palette-black, 20%);
 }
 
 .am-mark {
@@ -196,14 +196,14 @@
 
   border-radius: $am-radius-regular;
 
-  color: lighten($am-color-black, 20%);
-  background-color: lighten($am-color-warning, 42%);
+  color: lighten($am-palette-black, 20%);
+  background-color: lighten($am-palette-warning, 42%);
 }
 
 .am-note {
   font-size: $am-font-size-7;
 
-  color: lighten($am-color-black, 60%);
+  color: lighten($am-palette-black, 60%);
 }
 
 .am-list {
@@ -215,7 +215,7 @@
   & li {
     @include am-blockspace($am-space-9 / 2, $am-space-9 / 2);
 
-    padding-left: $am-space-9;
+    padding-left: $am-space-9 / 2;
   }
 
   & .am-list {

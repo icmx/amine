@@ -9,7 +9,6 @@
   padding: rem(2px) $am-space-8;
   margin: rem(2px);
 
-
   font-size: $am-font-size-7;
   font-weight: $am-font-weight-normal;
 
@@ -19,26 +18,22 @@
   white-space: nowrap;
 
   & {
-    color: $am-color-white;
-  }
-
-  &--default {
-    background-color: $am-color-default;
+    color: $am-palette-white;
   }
 
   &--primary {
-    background-color: $am-color-primary;
+    background-color: $am-palette-primary;
   }
 
   &--success {
-    background-color: $am-color-success;
+    background-color: $am-palette-success;
   }
 
   &--warning {
-    background-color: $am-color-warning;
+    background-color: $am-palette-warning;
   }
 
   &--failure {
-    background-color: $am-color-failure;
+    background-color: $am-palette-failure;
   }
 }

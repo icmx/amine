@@ -1,9 +1,8 @@
 $-colors: (
-  default: $am-color-default,
-  primary: $am-color-primary,
-  success: $am-color-success,
-  warning: $am-color-warning,
-  failure: $am-color-failure,
+  primary: $am-palette-primary,
+  success: $am-palette-success,
+  warning: $am-palette-warning,
+  failure: $am-palette-failure,
 );
 
 @each $key, $value in $-colors {
