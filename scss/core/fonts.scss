@@ -1,5 +1,5 @@
-$am-font-family-regular:    'system-ui', sans-serif; // NEXT: ui-sans-serif
-$am-font-family-monospace:  monospace;               // NEXT: ui-monospace
+$am-font-family-regular:    'system-ui', sans-serif; // TODO: ui-sans-serif
+$am-font-family-monospace:  monospace;               // TODO: ui-monospace
 
 $am-font-size-0:            4.500rem;
 $am-font-size-1:            3.000rem;
@@ -20,3 +20,21 @@ $am-letter-spacing-1:      -0.01rem;
 
 $am-line-height-0:          1.25;
 $am-line-height-1:          1.50;
+
+.am-font-size-0 { font-size: $am-font-size-0; }
+.am-font-size-1 { font-size: $am-font-size-1; }
+.am-font-size-2 { font-size: $am-font-size-2; }
+.am-font-size-3 { font-size: $am-font-size-3; }
+.am-font-size-4 { font-size: $am-font-size-4; }
+.am-font-size-5 { font-size: $am-font-size-5; }
+.am-font-size-6 { font-size: $am-font-size-6; }
+.am-font-size-7 { font-size: $am-font-size-7; }
+
+.am-font-weight-thin   { font-weight: $am-font-weight-thin;   }
+.am-font-weight-normal { font-weight: $am-font-weight-normal; }
+.am-font-weight-bold   { font-weight: $am-font-weight-bold;   }
+.am-font-weight-bolder { font-weight: $am-font-weight-bolder; }
+
+.am-text-left   { text-align: left;   }
+.am-text-center { text-align: center; }
+.am-text-right  { text-align: right;  }

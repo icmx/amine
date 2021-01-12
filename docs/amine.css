@@ -1,3 +1,63 @@
+.am-font-size-0 {
+  font-size: 4.5rem;
+}
+
+.am-font-size-1 {
+  font-size: 3rem;
+}
+
+.am-font-size-2 {
+  font-size: 2.25rem;
+}
+
+.am-font-size-3 {
+  font-size: 1.5rem;
+}
+
+.am-font-size-4 {
+  font-size: 1.25rem;
+}
+
+.am-font-size-5 {
+  font-size: 1.125rem;
+}
+
+.am-font-size-6 {
+  font-size: 1rem;
+}
+
+.am-font-size-7 {
+  font-size: 0.875rem;
+}
+
+.am-font-weight-thin {
+  font-weight: 200;
+}
+
+.am-font-weight-normal {
+  font-weight: 400;
+}
+
+.am-font-weight-bold {
+  font-weight: 700;
+}
+
+.am-font-weight-bolder {
+  font-weight: 900;
+}
+
+.am-text-left {
+  text-align: left;
+}
+
+.am-text-center {
+  text-align: center;
+}
+
+.am-text-right {
+  text-align: right;
+}
+
 .am-color-primary {
   color: #4169e1;
 }
@@ -1669,78 +1729,6 @@
   overflow: visible;
   white-space: normal;
   text-overflow: unset;
-}
-
-.am-text-left {
-  text-align: left;
-}
-
-.am-text-center {
-  text-align: center;
-}
-
-.am-text-right {
-  text-align: right;
-}
-
-.am-text-main {
-  color: #333333;
-}
-
-.am-text-misc {
-  color: #666666;
-}
-
-.am-text-mute {
-  color: #999999;
-}
-
-.am-text-primary {
-  color: #4169e1;
-}
-
-.am-text-success {
-  color: #15c662;
-}
-
-.am-text-warning {
-  color: #ff9011;
-}
-
-.am-text-failure {
-  color: #e94e30;
-}
-
-.am-text-size-0 {
-  font-size: 4.5rem;
-}
-
-.am-text-size-1 {
-  font-size: 3rem;
-}
-
-.am-text-size-2 {
-  font-size: 2.25rem;
-}
-
-.am-text-size-3 {
-  font-size: 1.5rem;
-}
-
-.am-text-size-4 {
-  font-size: 1.25rem;
-}
-
-.am-text-size-5 {
-  font-size: 1.125rem;
-}
-
-.am-text-size-6 {
-  font-size: 1rem;
-}
-
-.am-text-size-7 {
-  font-size: 0.875rem;
 }
 
 .am-display,

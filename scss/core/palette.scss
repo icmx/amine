@@ -1,7 +1,7 @@
 // This is an updated coloring model which will be extended later.
 
+//   - primary
 //   - semantic
-//     - primary
 //     - success
 //     - warning
 //     - failure
@@ -35,7 +35,7 @@ $am-palette-white-main: darken($am-palette-white, 2%);
 $am-palette-white-misc: darken($am-palette-white, 4%);
 $am-palette-white-mute: darken($am-palette-white, 6%);
 
-// TODO: add semantic comment and unknown colors
+// TODO: add semantic comment, neutral and unknown colors
 // TODO: extend to 100..900 values list for any semantic and stroke
 
 // Now, here are the coloring helper classes
