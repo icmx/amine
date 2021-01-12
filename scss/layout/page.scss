@@ -71,8 +71,6 @@
 .am-page-body {
   @extend %am-page-zone;
 
-  min-height: 50vh;
-
   background-color: darken($am-palette-white, 0%);
 
   & > .am-content {
@@ -83,8 +81,6 @@
 
 .am-page-foot {
   @extend %am-page-zone;
-
-  height: 8rem;
 
   background-color: darken($am-palette-white, 0%);
   border-top: solid rem(1px) lighten($am-palette-black, 90%);

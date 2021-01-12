@@ -1672,7 +1672,6 @@
 }
 
 .am-page-body {
-  min-height: 50vh;
   background-color: white;
 }
 .am-page-body > .am-content {
@@ -1681,7 +1680,6 @@
 }
 
 .am-page-foot {
-  height: 8rem;
   background-color: white;
   border-top: solid 0.0625rem #e6e6e6;
 }
