@@ -178,7 +178,7 @@
   0% {
     box-shadow: 0 0 0 0 rgba(65, 105, 225, 0.4);
   }
-  75% {
+  25% {
     box-shadow: 0 0 0 8px transparent;
   }
   100% {
@@ -197,7 +197,7 @@
   0% {
     box-shadow: 0 0 0 0 rgba(21, 198, 98, 0.4);
   }
-  75% {
+  25% {
     box-shadow: 0 0 0 8px transparent;
   }
   100% {
@@ -216,7 +216,7 @@
   0% {
     box-shadow: 0 0 0 0 rgba(255, 144, 17, 0.4);
   }
-  75% {
+  25% {
     box-shadow: 0 0 0 8px transparent;
   }
   100% {
@@ -235,7 +235,7 @@
   0% {
     box-shadow: 0 0 0 0 rgba(233, 78, 48, 0.4);
   }
-  75% {
+  25% {
     box-shadow: 0 0 0 8px transparent;
   }
   100% {
