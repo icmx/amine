@@ -1931,7 +1931,6 @@
 }
 
 .am-list {
-  padding-left: 1.5rem;
   line-height: 1.5;
 }
 .am-list {
@@ -1949,11 +1948,31 @@
   margin-top: 0.25rem !important;
   margin-bottom: 0.25rem !important;
 }
+.am-list dt {
+  font-weight: 700;
+}
+.am-list dt {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.25rem !important;
+}
+.am-list dd {
+  margin-left: 0;
+}
+.am-list dd {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
 
 ul.am-list {
+  padding-left: 1.5rem;
   list-style: disc;
 }
 
 ol.am-list {
+  padding-left: 1.5rem;
   list-style: decimal;
+}
+
+dl.am-list {
+  padding-left: 0;
 }

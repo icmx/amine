@@ -209,7 +209,6 @@
 .am-list {
   @include am-blockspace($am-space-3, $am-space-3);
 
-  padding-left: $am-space-3;
   line-height: $am-line-height-1;
 
   & li {
@@ -221,12 +220,30 @@
   & .am-list {
     @include am-blockspace($am-space-9 / 2, $am-space-9 / 2);
   }
+
+  & dt {
+    @include am-blockspace($am-space-9, $am-space-9 / 2);
+
+    font-weight: $am-font-weight-bold;
+  }
+
+  & dd {
+    @include am-blockspace($am-space-9 / 2, $am-space-9 / 2);
+
+    margin-left: 0;
+  }
 }
 
 ul.am-list {
+  padding-left: $am-space-3;
   list-style: disc;
 }
 
 ol.am-list {
+  padding-left: $am-space-3;
   list-style: decimal;
+}
+
+dl.am-list {
+  padding-left: 0;
 }
