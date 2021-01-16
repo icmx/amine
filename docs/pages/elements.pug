@@ -1,5 +1,9 @@
 extends common/layout.pug
+include common/call.pug
 include common/side.pug
+
+block call
+  +call()
 
 block body
   div.am-page-body
@@ -83,37 +87,38 @@ block body
             thead
               tr
                 th.am-table--thin #
-                th Name
+                th.am-table--selection-trl.am-table--selection-primary Name
                 th Creator
-                th.am-table--nowrap.am-table--selection-trl.am-table--selection-primary Public Release
+                th.am-table--nowrap.am-table--selection-trl.am-table--selection-failure Public Release
                 th License
             tbody
               tr
                 td 1
-                td GNU/Linux
+                td.am-table--selection-rl.am-table--selection-primary GNU/Linux
                 td Richard Stallman for GNU, Linus Torvalds for Linux, Community
-                td.am-table--selection-rl.am-table--selection-primary 1991
+                td.am-table--selection-rl.am-table--selection-failure 1991
                 td GNU GPLv2
               tr
                 td 2
-                td Windows
+                td.am-table--selection-rl.am-table--selection-primary Windows
                 td Microsoft
-                td.am-table--selection-rl.am-table--selection-primary 1993
+                td.am-table--selection-rl.am-table--selection-failure 1993
                 td Proprietary
               tr.am-table--mark-primary
                 td 3
-                td iOS
+                td.am-table--selection-rl.am-table--selection-primary iOS
                 td Apple Inc.
-                td.am-table--selection-rl.am-table--selection-primary 2007
+                td.am-table--selection-rl.am-table--selection-failure 2007
                 td Proprietary
               tr
                 td 4
-                td Android
+                td.am-table--selection-rbl.am-table--selection-primary Android
                 td Android, Inc., Google
-                td.am-table--selection-rbl.am-table--selection-primary 2008
+                td.am-table--selection-rbl.am-table--selection-failure 2008
                 td Apache 2.0, GNU GPLv2
         h2.am-h2 Badges
         p.am-p
+          span.am-badge.am-badge--primary 1
           span.am-badge.am-badge--primary primary
           span.am-badge.am-badge--primary regular
           span.am-badge.am-badge--primary operational
@@ -122,8 +127,8 @@ block body
           span.am-badge.am-badge--primary improved
           span.am-badge.am-badge--primary generic
           span.am-badge.am-badge--primary typical
-          span.am-badge.am-badge--primary 2
         p.am-p
+          span.am-badge.am-badge--success 2
           span.am-badge.am-badge--success success
           span.am-badge.am-badge--success great
           span.am-badge.am-badge--success super
@@ -135,8 +140,8 @@ block body
           span.am-badge.am-badge--success special
           span.am-badge.am-badge--success ideal
           span.am-badge.am-badge--success cool
-          span.am-badge.am-badge--success 3
         p.am-p
+          span.am-badge.am-badge--warning 4
           span.am-badge.am-badge--warning warning
           span.am-badge.am-badge--warning strange
           span.am-badge.am-badge--warning incomplete
@@ -145,8 +150,8 @@ block body
           span.am-badge.am-badge--warning misused
           span.am-badge.am-badge--warning paused
           span.am-badge.am-badge--warning waiting
-          span.am-badge.am-badge--warning 4
         p.am-p
+          span.am-badge.am-badge--failure 5
           span.am-badge.am-badge--failure failure
           span.am-badge.am-badge--failure bad
           span.am-badge.am-badge--failure wrong
@@ -154,7 +159,6 @@ block body
           span.am-badge.am-badge--failure closed
           span.am-badge.am-badge--failure unstable
           span.am-badge.am-badge--failure dangerous
-          span.am-badge.am-badge--failure 5
         p.am-p
           span.am-badge.am-badge--primary.am-pulsing--primary pulsing
           span.am-mute —

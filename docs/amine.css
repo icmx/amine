@@ -361,19 +361,19 @@
 }
 .am-badge--primary {
   color: #4169e1;
-  background-color: rgba(65, 105, 225, 0.05);
+  background-color: #f0f3fd;
 }
 .am-badge--success {
   color: #15c662;
-  background-color: rgba(21, 198, 98, 0.05);
+  background-color: #ecfaf2;
 }
 .am-badge--warning {
   color: #ff9011;
-  background-color: rgba(255, 144, 17, 0.05);
+  background-color: #fff6ec;
 }
 .am-badge--failure {
   color: #e94e30;
-  background-color: rgba(233, 78, 48, 0.05);
+  background-color: #fdf1ee;
 }
 
 .am-blob {
@@ -554,58 +554,58 @@
   cursor: pointer;
 }
 .am-table--interactive tbody tr:hover {
-  background-color: #d9d9d9;
+  background-color: #e0e0e0;
 }
 .am-table--interactive tbody tr:active {
-  background-color: #cccccc;
+  background-color: #d6d6d6;
 }
 .am-table--mark-primary {
-  background-color: #d9e1f9;
+  background-color: #f0f3fd;
 }
 .am-table--interactive .am-table--mark-primary:hover {
-  background-color: #d0daf8;
+  background-color: #e8edfb;
 }
 .am-table--interactive .am-table--mark-primary:active {
-  background-color: #c6d2f6;
+  background-color: #e1e7fa;
 }
 .am-table--selection-primary {
-  border-color: #b3c3f3 !important;
+  border-color: #d1dbf8 !important;
 }
 .am-table--mark-success {
-  background-color: #d0f4e0;
+  background-color: #ecfaf2;
 }
 .am-table--interactive .am-table--mark-success:hover {
-  background-color: #c5f1d8;
+  background-color: #e3f8ec;
 }
 .am-table--interactive .am-table--mark-success:active {
-  background-color: #b9eed0;
+  background-color: #daf6e6;
 }
 .am-table--selection-success {
-  border-color: #a1e8c0 !important;
+  border-color: #c7f1d9 !important;
 }
 .am-table--mark-warning {
-  background-color: #ffe9cf;
+  background-color: #fff6ec;
 }
 .am-table--interactive .am-table--mark-warning:hover {
-  background-color: #ffe3c4;
+  background-color: #fff2e2;
 }
 .am-table--interactive .am-table--mark-warning:active {
-  background-color: #ffdeb8;
+  background-color: #ffedd9;
 }
 .am-table--selection-warning {
-  border-color: #ffd3a0 !important;
+  border-color: #ffe4c6 !important;
 }
 .am-table--mark-failure {
-  background-color: #fbdcd6;
+  background-color: #fdf1ee;
 }
 .am-table--interactive .am-table--mark-failure:hover {
-  background-color: #fad3cb;
+  background-color: #fceae6;
 }
 .am-table--interactive .am-table--mark-failure:active {
-  background-color: #f8cac1;
+  background-color: #fbe3de;
 }
 .am-table--selection-failure {
-  border-color: #f6b8ac !important;
+  border-color: #fad5cd !important;
 }
 .am-table--selection-t {
   border-top-width: 3px !important;

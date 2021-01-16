@@ -1,5 +1,9 @@
 extends common/layout.pug
+include common/call.pug
 include common/side.pug
+
+block call
+  +call()
 
 block body
   div.am-page-body

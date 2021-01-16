@@ -4,7 +4,7 @@
 
 @mixin -coloring($color) {
   color: $color;
-  background-color: transparentize($color, 0.95);
+  background-color: mix($color, $am-palette-white, 8%);;
 }
 
 .am-badge {

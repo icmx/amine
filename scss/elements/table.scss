@@ -59,11 +59,11 @@
     }
 
     tbody tr:hover {
-      background-color: lighten($am-palette-black, 85%);
+      background-color: mix($am-palette-black, $am-palette-white, 12%);
     }
 
     tbody tr:active {
-      background-color: lighten($am-palette-black, 80%);
+      background-color: mix($am-palette-black, $am-palette-white, 16%);
     }
   }
 
@@ -76,21 +76,21 @@
 
   @each $key, $value in $-colors {
     &--mark-#{$key} {
-      background-color: mix($value, $am-palette-white, 20%);
+      background-color: mix($value, $am-palette-white, 8%);
     }
 
     &--interactive &--mark-#{$key} {
       &:hover {
-        background-color: mix($value, $am-palette-white, 25%);
+        background-color: mix($value, $am-palette-white, 12%);
       }
 
       &:active {
-        background-color: mix($value, $am-palette-white, 30%);
+        background-color: mix($value, $am-palette-white, 16%);
       }
     }
 
     &--selection-#{$key} {
-      border-color: mix($value, $am-palette-white, 40%) !important;
+      border-color: mix($value, $am-palette-white, 24%) !important;
     }
   }
 
